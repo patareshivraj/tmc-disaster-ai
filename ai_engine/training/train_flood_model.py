@@ -6,7 +6,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.pipeline import Pipeline
+from imblearn.pipeline import Pipeline
+from imblearn.over_sampling import SMOTE
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 from ai_engine.features.flood_features import create_flood_features
@@ -41,10 +42,11 @@ def train_and_save_model():
     # Model
     model = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        ('classifier', RandomForestClassifier(n_estimators=100, random_state=42, class_weight='balanced'))
+        ('smote', SMOTE(random_state=42)),
+        ('classifier', RandomForestClassifier(n_estimators=100, random_state=42, class_weight='balanced', max_depth=10))
     ])
     
-    print("Training Random Forest model...")
+    print("Training Random Forest model with SMOTE...")
     model.fit(X_train, y_train)
     
     print("Evaluating model...")

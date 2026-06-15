@@ -35,11 +35,11 @@ class FloodPredictionEngine:
         # Predict probability of class 1 (Flood)
         prob = self.model.predict_proba(input_data)[0][1] * 100
         
-        if prob > 80:
+        if prob > 50:
             risk = "Critical"
-        elif prob > 60:
+        elif prob > 25:
             risk = "High"
-        elif prob > 30:
+        elif prob > 10:
             risk = "Moderate"
         else:
             risk = "Low"
