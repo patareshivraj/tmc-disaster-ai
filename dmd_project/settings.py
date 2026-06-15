@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'accounts',
     'disaster',
     'ai_engine',
+    'ai_api',
 ]
 
 MIDDLEWARE = [

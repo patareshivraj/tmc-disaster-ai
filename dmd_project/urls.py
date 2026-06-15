@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('api/ai/', include('ai_api.urls')),
     path('admin/', admin.site.urls),
     
     # API Routes
