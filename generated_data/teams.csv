@@ -1,0 +1,51 @@
+team_id,team_name,ward,leader_name,member_count,vehicles,boats,equipment_count,availability
+ef0b77c1-6db9-446a-89d1-dd5164d27483,TDRF Unit 1 - Uthalsar,Uthalsar,Rajesh Pawar,12,2,0,33,Available
+c817e48c-ce7c-4952-8e1a-ac0b46a1edbf,TDRF Unit 2 - Diva,Diva,Amit Joshi,18,1,0,31,Available
+17eee070-c3aa-40ae-a131-fe3d6c8e91fb,TDRF Unit 3 - Diva,Diva,Ravi Patil,22,2,3,48,Available
+827528a1-f208-48de-a434-c7076aa490f6,TDRF Unit 4 - Vartak Nagar,Vartak Nagar,Rajesh Jadhav,18,3,1,39,Available
+6f6b8367-b666-41b5-a40f-838fdf00c91d,TDRF Unit 5 - Majiwada-Manpada,Majiwada-Manpada,Amit Deshmukh,17,1,1,64,Available
+5a61f204-e39c-4f37-9341-436dd94281ba,TDRF Unit 6 - Naupada-Kopri,Naupada-Kopri,Ramesh Kulkarni,8,4,0,90,Available
+e7905758-357f-4b5f-9247-cac178e47642,TDRF Unit 7 - Majiwada-Manpada,Majiwada-Manpada,Ravi Shinde,7,1,0,57,Maintenance
+fd6b659a-0d4d-4edd-81f9-9c6c40cbff1d,TDRF Unit 8 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Amit Kadam,13,4,1,40,Available
+49d873a3-5f10-4428-9891-a4dbc02f3201,TDRF Unit 9 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Anil Deshmukh,24,2,0,40,Available
+0c312e7c-f6e4-446f-a70e-387aa28af7e9,TDRF Unit 10 - Vartak Nagar,Vartak Nagar,Deepak Shinde,15,1,0,24,Deployed
+2493f8d3-2e2f-472c-a952-f703c642c9ab,TDRF Unit 11 - Kalwa,Kalwa,Anil Deshmukh,11,5,2,47,Available
+4291da72-22df-4d0d-abf9-6ba017f96346,TDRF Unit 12 - Kalwa,Kalwa,Ramesh Jadhav,13,2,1,91,Available
+14642537-8b77-4ba0-b2b8-2ec89516110f,TDRF Unit 13 - Kalwa,Kalwa,Ravi Kadam,16,2,1,85,Available
+722feb4b-2255-47ae-bcbe-c4d52546f221,TDRF Unit 14 - Naupada-Kopri,Naupada-Kopri,Amit Jadhav,25,2,1,96,Available
+1ab3fa56-30c2-4e3e-8d75-e1f9db48ec51,TDRF Unit 15 - Kalwa,Kalwa,Ravi Kale,21,3,0,34,Available
+d3b9a4a2-b46e-4c25-a062-a1d81a8ca8a6,TDRF Unit 16 - Diva,Diva,Anil Gaikwad,8,3,3,40,Available
+baeaedf3-7468-4603-b20e-2e375a39da59,TDRF Unit 17 - Vartak Nagar,Vartak Nagar,Deepak Jadhav,21,1,1,84,Available
+1c8c44e1-e641-4758-aac8-2a20bad1aa9e,TDRF Unit 18 - Wagle Estate,Wagle Estate,Prakash Jadhav,22,5,0,96,Available
+3ac09ee6-d077-457a-ad85-7bf393eed99d,TDRF Unit 19 - Naupada-Kopri,Naupada-Kopri,Amit Gaikwad,14,2,0,50,Deployed
+4c96d0b6-f5c3-4aa0-b62d-981046263703,TDRF Unit 20 - Uthalsar,Uthalsar,Amit Kale,7,5,0,36,Available
+0562c5ad-afb5-4d1d-94c1-a813712dbc6e,TDRF Unit 21 - Diva,Diva,Suresh Pawar,21,5,3,47,Deployed
+4d602b7a-6032-430b-982d-575494079f4b,TDRF Unit 22 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Anil Kadam,25,3,1,86,Available
+e4951dad-d924-43f4-9764-8bc238735df0,TDRF Unit 23 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Vijay Deshmukh,15,1,0,95,Available
+d9336828-7d6f-4b8e-8898-f73d32624efd,TDRF Unit 24 - Uthalsar,Uthalsar,Rajesh Shinde,7,1,1,29,Available
+d9f243f0-5323-496e-9e7d-373350b4652b,TDRF Unit 25 - Vartak Nagar,Vartak Nagar,Ramesh Shinde,22,2,1,51,Available
+e2aba832-c4d4-4124-b207-0a0f8f88b3a2,TDRF Unit 26 - Kalwa,Kalwa,Vijay Deshmukh,8,4,2,74,Available
+1ccb9208-2b61-4424-9893-640f50e1b452,TDRF Unit 27 - Naupada-Kopri,Naupada-Kopri,Amit Patil,17,3,0,51,Available
+f06b8e57-5fbb-4750-9549-9920ada8bdf5,TDRF Unit 28 - Diva,Diva,Ramesh Jadhav,18,2,2,79,Available
+1b33d925-887a-4bc2-a901-9ef262f454ed,TDRF Unit 29 - Uthalsar,Uthalsar,Ramesh Kulkarni,8,1,0,31,Deployed
+bdeab3fa-b549-47d5-a185-e6c0ee5d9a32,TDRF Unit 30 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Suresh Kadam,20,4,0,71,Deployed
+29889dc3-4c01-440b-ba24-a3b83dcebd00,TDRF Unit 31 - Wagle Estate,Wagle Estate,Sanjay Patil,17,3,1,56,Available
+95303d56-4d65-46cd-b9ce-41c14946401e,TDRF Unit 32 - Diva,Diva,Ramesh Jadhav,11,3,1,27,Available
+1c939118-9988-456b-98d0-1d3c17ef261a,TDRF Unit 33 - Diva,Diva,Rajesh Gaikwad,6,1,3,84,Deployed
+bbd5f6b7-a820-4878-b039-3935295fa934,TDRF Unit 34 - Diva,Diva,Suresh Patil,21,1,1,28,Available
+8f036d5c-4392-4550-afbe-76f8485af2ef,TDRF Unit 35 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Sanjay Deshmukh,23,2,0,99,Available
+dafd998e-aa0b-4e5b-8afe-62d66bd354c4,TDRF Unit 36 - Diva,Diva,Prakash Pawar,11,3,1,53,Available
+efc54e8f-124a-4778-80a8-59ab2b77e830,TDRF Unit 37 - Vartak Nagar,Vartak Nagar,Ramesh Gaikwad,7,1,1,99,Maintenance
+3d23af3e-7cdb-427e-924b-3c9617493a67,TDRF Unit 38 - Uthalsar,Uthalsar,Amit Kulkarni,11,5,1,36,Deployed
+c7504e95-2463-43ee-9ad3-1597cb3bb923,TDRF Unit 39 - Uthalsar,Uthalsar,Vijay Gaikwad,14,2,1,89,Available
+38d76da5-8b41-4edd-8363-60677b9255b8,TDRF Unit 40 - Diva,Diva,Rajesh Kulkarni,14,1,1,53,Available
+1acf0f7b-7eba-4a89-9c0c-847b320f076e,TDRF Unit 41 - Uthalsar,Uthalsar,Deepak Jadhav,13,3,0,63,Available
+364c1e0b-2b95-4b75-8f3f-0fd1b48cc830,TDRF Unit 42 - Vartak Nagar,Vartak Nagar,Deepak Kale,13,1,0,74,Deployed
+0749e235-1143-4102-b1b8-b65900cc3503,TDRF Unit 43 - Naupada-Kopri,Naupada-Kopri,Rajesh Gaikwad,9,3,0,76,Available
+386ab8b7-587e-41fe-9076-8d892d5cfb33,TDRF Unit 44 - Kalwa,Kalwa,Deepak Patil,8,1,1,89,Available
+17f4db7d-b483-4379-9320-263c2f6b0a11,TDRF Unit 45 - Majiwada-Manpada,Majiwada-Manpada,Ravi Kulkarni,9,4,0,25,Available
+7d448854-968b-4528-a3fd-225c39d02637,TDRF Unit 46 - Naupada-Kopri,Naupada-Kopri,Prakash Shinde,12,1,1,91,Deployed
+acdce3de-ca79-43eb-b0ba-e2fe10c3e416,TDRF Unit 47 - Kalwa,Kalwa,Ravi Jadhav,12,2,1,72,Available
+5c6b9a1c-3da0-4b3d-a89b-7e09c967e87a,TDRF Unit 48 - Majiwada-Manpada,Majiwada-Manpada,Sanjay Shinde,13,2,0,68,Deployed
+09d1e7d1-2ca5-4207-8c14-4041c23028df,TDRF Unit 49 - Mumbra,Mumbra,Vijay Shinde,19,3,2,49,Available
+613147f2-030c-4fde-9fb5-3a6bc0054b71,TDRF Unit 50 - Lokmanya-Savarkar Nagar,Lokmanya-Savarkar Nagar,Sanjay Gaikwad,13,1,1,64,Available

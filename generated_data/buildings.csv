@@ -1,0 +1,1001 @@
+building_id,building_name,ward,area,year_built,inspection_date,condition,risk_level,recommended_action
+1762ac42-383f-4054-92c4-cde99951bd08,Building 1 CHS,Naupada-Kopri,Sector 4,2001,2021-09-18,Good,C3,Repair
+690c66a9-f524-4bea-8beb-58c7233185ca,Building 2 CHS,Naupada-Kopri,Sector 4,1983,2020-12-23,Poor,C3,Repair
+56e0e8e6-b0fc-49a6-97b0-bc1e76e47824,Building 3 CHS,Diva,Sector 4,2005,2022-11-23,Fair,C3,Repair
+a7f12118-7c9d-4422-acb0-4f38ce89d89f,Building 4 CHS,Kalwa,Sector 1,1999,2018-07-01,Good,Safe,Monitor
+64e8e841-05e9-47cb-8442-4a0b0c2b2052,Building 5 CHS,Lokmanya-Savarkar Nagar,Sector 12,2016,2024-01-15,Fair,Safe,Monitor
+12ff0fca-85bd-4dd8-89dc-e911a92e9bbb,Building 6 CHS,Majiwada-Manpada,Sector 4,2005,2021-09-14,Fair,Safe,Monitor
+2360fa68-d5e9-4edc-98cf-7a7fc78a9d1d,Building 7 CHS,Kalwa,Sector 10,1988,2021-08-29,Fair,Safe,Monitor
+4554274a-dac4-4c24-a3fa-af15baa2a380,Building 8 CHS,Kalwa,Sector 6,2020,2022-09-19,Good,Safe,Monitor
+3b907738-43bd-4e39-9b71-657b597725e1,Building 9 CHS,Naupada-Kopri,Sector 10,2022,2024-02-23,Good,Safe,Monitor
+3a2915fb-5ecc-4033-ae55-f2f34dfea7eb,Building 10 CHS,Majiwada-Manpada,Sector 15,1986,2024-10-20,Fair,C3,Repair
+1c0bf3e7-acae-4850-bb82-0f7d7e162828,Building 11 CHS,Diva,Sector 16,2006,2020-05-25,Good,Safe,Monitor
+920c292f-cd4a-4f61-bf77-eb28ac248144,Building 12 CHS,Majiwada-Manpada,Sector 3,1971,2025-06-12,Dilapidated,C2A,Evacuate
+c704b356-c38c-41e8-9185-cdebb65917c1,Building 13 CHS,Wagle Estate,Sector 1,1980,2020-03-26,Dilapidated,C2A,Evacuate
+2aa90c8d-0bd1-473a-9863-bd606ae52cfd,Building 14 CHS,Mumbra,Sector 14,1955,2018-10-26,Poor,C2A,Evacuate
+f08237d0-d8fd-4dfd-8ea1-a3fc6966545d,Building 15 CHS,Kalwa,Sector 16,2023,2025-10-23,Good,Safe,Monitor
+b97edbaa-4a48-4982-80fc-b2fff5ca9e41,Building 16 CHS,Uthalsar,Sector 14,2001,2018-01-23,Fair,Safe,Monitor
+b62a8f87-c339-4776-962d-344f85aec95f,Building 17 CHS,Mumbra,Sector 2,1978,2023-10-23,Poor,C3,Repair
+d537a12d-1c56-4baf-88d9-6af194ec3b1f,Building 18 CHS,Wagle Estate,Sector 15,2021,2021-08-23,Good,Safe,Monitor
+35924f98-02ab-4317-aaa8-6f3fed9fc0c2,Building 19 CHS,Majiwada-Manpada,Sector 15,2017,2024-09-04,Fair,Safe,Monitor
+f35b5fdc-efcf-4700-9859-a1ae3d32b89d,Building 20 CHS,Mumbra,Sector 6,2014,2024-02-23,Good,Safe,Monitor
+e99372a5-6ce6-4b8a-9a3c-cd5206c1a5c5,Building 21 CHS,Vartak Nagar,Sector 17,2010,2020-10-09,Good,Safe,Monitor
+a8785259-e9c6-4b20-905d-7fbfbbff92e1,Building 22 CHS,Mumbra,Sector 3,2012,2021-01-29,Good,Safe,Monitor
+c34e6bae-dd2b-4ad1-adf9-4250ae27d679,Building 23 CHS,Uthalsar,Sector 5,1986,2024-01-22,Fair,Safe,Monitor
+3822c5bf-02e3-4d71-9e4f-f3cd644099cd,Building 24 CHS,Lokmanya-Savarkar Nagar,Sector 3,1969,2025-12-03,Poor,C2B,Repair
+89cd6fc3-6f9d-4075-bcdc-3bc471002a4c,Building 25 CHS,Naupada-Kopri,Sector 7,2003,2022-08-31,Fair,Safe,Monitor
+8f3f832b-62c8-4536-afc7-aa72b15af6a6,Building 26 CHS,Naupada-Kopri,Sector 19,2003,2025-10-19,Fair,C3,Repair
+343c5e14-79da-4b9a-ab40-c95c6d154198,Building 27 CHS,Kalwa,Sector 14,1998,2021-05-08,Fair,C2B,Repair
+5c6f2ddb-9507-4a65-a224-a57a51ec95dc,Building 28 CHS,Lokmanya-Savarkar Nagar,Sector 16,2018,2024-02-15,Good,Safe,Monitor
+38368d20-dc1a-44df-8ede-a72a213f12d0,Building 29 CHS,Majiwada-Manpada,Sector 13,1978,2022-05-12,Poor,C2A,Evacuate
+87d97d4f-d2dd-4ff8-a5ed-1ff7b3e009d9,Building 30 CHS,Diva,Sector 1,1971,2024-12-23,Fair,C3,Repair
+b49a4a18-fbdc-4299-9af4-85bbaba28304,Building 31 CHS,Kalwa,Sector 5,2000,2018-12-10,Fair,Safe,Monitor
+8a7acec2-0bee-4da4-a94a-9ed158ea362d,Building 32 CHS,Kalwa,Sector 11,2009,2020-12-01,Good,Safe,Monitor
+ffe81b18-14f4-4854-aa2d-1a8b0766f063,Building 33 CHS,Vartak Nagar,Sector 14,1977,2022-04-02,Dilapidated,C2A,Evacuate
+1422fd99-429e-4003-ba04-c4e1b5327211,Building 34 CHS,Naupada-Kopri,Sector 12,1982,2024-01-19,Fair,C2A,Evacuate
+803f8c86-e4f3-4f49-93ea-00d756253525,Building 35 CHS,Naupada-Kopri,Sector 1,1978,2025-04-23,Dilapidated,C2B,Repair
+aebd9994-fd8d-4e98-817b-f935612195a7,Building 36 CHS,Lokmanya-Savarkar Nagar,Sector 5,1981,2019-09-17,Poor,C1,Demolish
+0eb10740-dd64-43ac-b7ba-c5a1becb93ef,Building 37 CHS,Lokmanya-Savarkar Nagar,Sector 15,2010,2024-04-29,Good,Safe,Monitor
+aead6b8d-7569-4a22-b5b9-f5c4300d0600,Building 38 CHS,Uthalsar,Sector 6,1982,2024-10-23,Dilapidated,C1,Demolish
+4c74bbf5-fcf7-4172-b9b7-a2ac5138ed2b,Building 39 CHS,Kalwa,Sector 13,1989,2021-07-01,Fair,Safe,Monitor
+7a5f44b1-885c-4965-a7f9-9824846d3d79,Building 40 CHS,Lokmanya-Savarkar Nagar,Sector 4,1975,2025-01-13,Poor,C2B,Repair
+c48f2edd-713b-49b4-8071-6b5cd7bf64d5,Building 41 CHS,Naupada-Kopri,Sector 12,1988,2019-05-11,Good,Safe,Monitor
+74926f47-2964-46cb-8f1e-b400be903dfe,Building 42 CHS,Uthalsar,Sector 17,2018,2022-02-26,Good,Safe,Monitor
+4e6c89bf-1ec2-4a77-920f-6e5909c2ea8c,Building 43 CHS,Uthalsar,Sector 14,1993,2023-07-01,Fair,Safe,Monitor
+636004dd-e448-41f2-906b-9a0f7fd8d122,Building 44 CHS,Wagle Estate,Sector 14,1996,2025-12-07,Good,C3,Repair
+d908328b-b080-4465-936c-7afa5981b697,Building 45 CHS,Diva,Sector 16,1972,2021-01-11,Dilapidated,C3,Repair
+a2e614d0-e842-4858-869e-70b04d8022fc,Building 46 CHS,Vartak Nagar,Sector 11,2009,2026-03-14,Good,Safe,Monitor
+237dd5cb-998d-4508-b563-2bcb039fe830,Building 47 CHS,Lokmanya-Savarkar Nagar,Sector 15,1981,2023-01-21,Fair,C1,Demolish
+24b8103b-5c0e-4e2f-901e-62e987d2b041,Building 48 CHS,Majiwada-Manpada,Sector 1,2022,2022-04-02,Good,Safe,Monitor
+a15d40c1-241c-4646-a112-f86c4c55d1f7,Building 49 CHS,Mumbra,Sector 7,2013,2020-01-15,Good,Safe,Monitor
+ef49b184-3099-4a4d-8162-efde47a127ad,Building 50 CHS,Vartak Nagar,Sector 18,1995,2024-09-07,Good,Safe,Monitor
+143f79c8-18dc-44bd-9891-5f52ee9c0e07,Building 51 CHS,Kalwa,Sector 16,1951,2020-09-15,Dilapidated,C1,Demolish
+da697c10-a88a-452d-a6bf-e89a9c880ffb,Building 52 CHS,Mumbra,Sector 16,2021,2025-09-29,Good,Safe,Monitor
+ff5a744d-f84d-4241-ae98-0c4679e75312,Building 53 CHS,Vartak Nagar,Sector 8,2007,2019-01-17,Good,Safe,Monitor
+f732e14f-3a23-4834-8529-39339800509f,Building 54 CHS,Majiwada-Manpada,Sector 16,2001,2024-07-10,Good,Safe,Monitor
+5ebff4f4-4c5f-4694-a353-cb0125853303,Building 55 CHS,Diva,Sector 11,2020,2022-10-09,Good,Safe,Monitor
+063a5bbe-f3d7-45a4-9311-ebe1d15ce001,Building 56 CHS,Lokmanya-Savarkar Nagar,Sector 4,1995,2020-10-26,Good,Safe,Monitor
+236baaec-f8d0-49cb-8f20-d3e23d78af25,Building 57 CHS,Wagle Estate,Sector 7,1974,2025-09-27,Poor,C2B,Repair
+82eb854b-39b8-4ee8-a503-9e309553d085,Building 58 CHS,Diva,Sector 20,1977,2024-08-11,Dilapidated,C2A,Evacuate
+8a3b141f-97eb-4f99-9bcc-1a8538cee704,Building 59 CHS,Lokmanya-Savarkar Nagar,Sector 12,1986,2021-04-28,Poor,C3,Repair
+8105b131-827a-4521-831b-26f5ffa18704,Building 60 CHS,Vartak Nagar,Sector 2,1972,2019-06-03,Poor,C2B,Repair
+0643f3db-5683-4d90-83a1-51a0f6ea4823,Building 61 CHS,Mumbra,Sector 4,1956,2019-06-02,Dilapidated,C2B,Repair
+ccc28f7e-3b72-4b37-98b7-cd430aa2a7ef,Building 62 CHS,Majiwada-Manpada,Sector 6,1951,2022-12-10,Dilapidated,C2A,Evacuate
+a64ecea2-5850-4889-a4ad-e528062394e4,Building 63 CHS,Uthalsar,Sector 13,1956,2019-04-13,Poor,C3,Repair
+9c47fdd6-437c-49a0-843e-b9a0c356e3ca,Building 64 CHS,Naupada-Kopri,Sector 5,2012,2025-01-22,Good,Safe,Monitor
+ec5d2744-b51a-4aae-bbc3-639f4be2efd8,Building 65 CHS,Lokmanya-Savarkar Nagar,Sector 4,1969,2018-12-15,Fair,C3,Repair
+08c9f44d-8493-4f67-b51b-c190a6e27dcf,Building 66 CHS,Lokmanya-Savarkar Nagar,Sector 17,2021,2024-10-19,Good,Safe,Monitor
+48b7ef70-dd14-4446-9829-b06418ab12b1,Building 67 CHS,Kalwa,Sector 10,1998,2024-08-07,Fair,Safe,Monitor
+bdb06181-609c-432b-9c60-7d53513baef0,Building 68 CHS,Uthalsar,Sector 7,2022,2024-11-02,Good,Safe,Monitor
+fc2618b8-050b-491a-8365-9f59e6d6d710,Building 69 CHS,Wagle Estate,Sector 18,1977,2020-09-09,Poor,C1,Demolish
+a5921756-d75a-475d-9659-7415ddb31854,Building 70 CHS,Mumbra,Sector 10,1959,2025-09-24,Poor,C2A,Evacuate
+a3e33dec-58e9-4dec-a895-5f020fe0ee47,Building 71 CHS,Mumbra,Sector 3,1954,2025-11-19,Poor,C2B,Repair
+1ad14aab-3d54-422f-84a3-05e17d106be6,Building 72 CHS,Lokmanya-Savarkar Nagar,Sector 14,1979,2025-01-04,Fair,C2B,Repair
+ac466a8e-cf30-4c56-a5ba-c2da701304e5,Building 73 CHS,Wagle Estate,Sector 3,1964,2020-12-24,Dilapidated,C2B,Repair
+cfd9280d-7bd9-4866-b2b9-81e65ba94054,Building 74 CHS,Vartak Nagar,Sector 15,1957,2024-05-20,Poor,C2A,Evacuate
+c08a648b-6279-4eb5-ab8d-475efb2df14b,Building 75 CHS,Vartak Nagar,Sector 17,1965,2022-07-07,Dilapidated,C2A,Evacuate
+3f06d1cd-9bb3-4b7d-9769-7de162b99260,Building 76 CHS,Naupada-Kopri,Sector 14,2019,2019-11-04,Good,Safe,Monitor
+4644e45f-bb49-4139-9730-0b90a068edeb,Building 77 CHS,Naupada-Kopri,Sector 9,1991,2020-07-26,Good,Safe,Monitor
+86fdadf2-0924-41c5-8754-b93c96c811b6,Building 78 CHS,Diva,Sector 15,2023,2023-08-30,Good,Safe,Monitor
+a93ef94a-eb0c-4c06-a991-9616f1f1ee77,Building 79 CHS,Mumbra,Sector 3,1985,2025-02-13,Poor,C2B,Repair
+9356d34f-4120-48f5-af22-49c4da83a0a5,Building 80 CHS,Majiwada-Manpada,Sector 4,2010,2021-09-27,Good,Safe,Monitor
+5f43753e-0de4-48f0-b548-dfb88cf3ecb5,Building 81 CHS,Kalwa,Sector 18,1970,2021-03-26,Poor,C2B,Repair
+f6d1dbab-8fa9-4395-b071-75f7d0ce363c,Building 82 CHS,Uthalsar,Sector 13,1954,2021-08-17,Dilapidated,C2A,Evacuate
+f03dcc3d-56a4-4d8d-b9eb-cef0f67411d7,Building 83 CHS,Diva,Sector 15,2015,2018-01-05,Good,Safe,Monitor
+e780e7a3-7298-43be-a4bb-2d12dc232e80,Building 84 CHS,Mumbra,Sector 15,2002,2024-12-25,Fair,Safe,Monitor
+5b332efc-ca92-4375-b798-7071bc4ad756,Building 85 CHS,Mumbra,Sector 16,1956,2021-03-25,Poor,C2B,Repair
+e81a0721-ce0f-4175-bbe9-21e03379c412,Building 86 CHS,Wagle Estate,Sector 10,1965,2020-09-07,Poor,C2B,Repair
+58bddd9d-6bf1-4133-9644-add2ba2b6c39,Building 87 CHS,Uthalsar,Sector 8,2020,2022-07-30,Good,Safe,Monitor
+83a7fbfb-0cc6-4769-b0a4-df45256899ee,Building 88 CHS,Mumbra,Sector 10,1964,2019-09-23,Dilapidated,C1,Demolish
+d2bf35d0-0ebb-400c-8d02-ea8e084e86ca,Building 89 CHS,Mumbra,Sector 16,2015,2022-08-29,Good,Safe,Monitor
+02798983-ec20-4d30-85c5-edd4b9aaecca,Building 90 CHS,Diva,Sector 5,1981,2020-02-20,Dilapidated,C1,Demolish
+f5310a86-ef0a-4ffa-9a13-eec030f97ab3,Building 91 CHS,Majiwada-Manpada,Sector 17,1958,2022-08-27,Poor,C2B,Repair
+af20435b-5b60-4580-ba63-823f868c71bf,Building 92 CHS,Mumbra,Sector 5,1984,2021-05-07,Fair,C2A,Evacuate
+961e1003-7ad8-4a97-9eaa-d771966ab445,Building 93 CHS,Majiwada-Manpada,Sector 18,2007,2021-11-14,Good,Safe,Monitor
+1eb4fc32-96b5-4120-98ed-602211dd7eab,Building 94 CHS,Lokmanya-Savarkar Nagar,Sector 8,2019,2021-08-11,Good,Safe,Monitor
+cf13bc8b-bbe8-4d42-b761-00f0f7d97c1b,Building 95 CHS,Majiwada-Manpada,Sector 16,2023,2023-01-24,Good,Safe,Monitor
+2e32d59d-e6a6-4d16-a848-ec4afd013f28,Building 96 CHS,Wagle Estate,Sector 16,1998,2025-04-24,Fair,Safe,Monitor
+f309135f-c200-452f-9f07-fe93ef40a52a,Building 97 CHS,Uthalsar,Sector 15,1954,2021-09-21,Poor,C3,Repair
+1623c52c-b87e-4993-a04c-3ea385c09b1e,Building 98 CHS,Wagle Estate,Sector 14,1962,2026-02-07,Dilapidated,C2A,Evacuate
+ce7f3288-57a8-49a0-8d84-7076ec382c98,Building 99 CHS,Majiwada-Manpada,Sector 20,1969,2020-12-21,Poor,C2B,Repair
+72093269-a59f-4255-95ad-c8e4a90d7821,Building 100 CHS,Diva,Sector 13,2000,2025-07-25,Good,C3,Repair
+909ae532-e97b-4852-bae7-80822702feb8,Building 101 CHS,Diva,Sector 2,1990,2023-06-22,Good,C3,Repair
+b420ef27-6e8f-4f68-b342-dbab1adba42a,Building 102 CHS,Lokmanya-Savarkar Nagar,Sector 3,1958,2021-03-23,Poor,C2B,Repair
+158ce77b-4c0b-4a0b-a5f4-ac4c7d34475c,Building 103 CHS,Uthalsar,Sector 15,2005,2025-11-23,Poor,C3,Repair
+1e0b3035-2b01-4e9d-aeee-a34d4f6bf858,Building 104 CHS,Majiwada-Manpada,Sector 2,1971,2018-07-08,Dilapidated,C3,Repair
+6389ed18-03fb-4035-9ba6-2bda24aa242b,Building 105 CHS,Diva,Sector 14,1987,2020-09-27,Fair,Safe,Monitor
+16a52469-96a6-458b-a74b-253a9bd74892,Building 106 CHS,Wagle Estate,Sector 3,2022,2022-03-30,Good,Safe,Monitor
+a75a9e61-7426-4227-89cb-76652cfcbb1f,Building 107 CHS,Wagle Estate,Sector 8,1998,2024-07-16,Good,Safe,Monitor
+3ce3314d-ae53-494d-862f-596b823d746e,Building 108 CHS,Vartak Nagar,Sector 1,2009,2023-02-26,Good,Safe,Monitor
+657d3c0d-0292-46d5-80f8-afdce55e3fbc,Building 109 CHS,Diva,Sector 6,2009,2025-08-07,Fair,Safe,Monitor
+e9a82875-bbfa-48a9-a086-76d312abc118,Building 110 CHS,Vartak Nagar,Sector 14,1959,2024-08-03,Dilapidated,C2A,Evacuate
+8f31ac6a-f0be-4b64-9834-2439f8b5bfb0,Building 111 CHS,Mumbra,Sector 4,1982,2022-04-25,Dilapidated,C2A,Evacuate
+0229a4be-ee12-4970-a3d9-281019262e84,Building 112 CHS,Vartak Nagar,Sector 1,1980,2021-04-26,Poor,C2A,Evacuate
+63c39eeb-21ae-4082-a435-f3c867638d9a,Building 113 CHS,Naupada-Kopri,Sector 20,2000,2025-09-10,Fair,Safe,Monitor
+872dafa3-2ec3-4e83-afde-5a30e6a69856,Building 114 CHS,Lokmanya-Savarkar Nagar,Sector 20,2013,2021-03-18,Good,Safe,Monitor
+9e0f9445-4ea4-4c79-a39c-8ffbf2aa4a96,Building 115 CHS,Wagle Estate,Sector 4,1995,2020-10-23,Fair,Safe,Monitor
+f5ab5ae5-130d-46a4-a135-98c90bf3f995,Building 116 CHS,Majiwada-Manpada,Sector 5,1955,2024-07-01,Poor,C2A,Evacuate
+850553b3-b34d-423c-964f-40f7ad4b2501,Building 117 CHS,Wagle Estate,Sector 7,1961,2022-08-29,Fair,C2A,Evacuate
+a4654cec-ff84-40fa-b8c4-65ff500f76e1,Building 118 CHS,Diva,Sector 17,1966,2022-02-07,Dilapidated,C3,Repair
+65beab18-698d-45e2-839a-684f39693956,Building 119 CHS,Vartak Nagar,Sector 11,1984,2023-05-28,Fair,C2A,Evacuate
+0d54c82a-07a6-49dd-824e-82dec51ea782,Building 120 CHS,Kalwa,Sector 18,1964,2020-07-13,Dilapidated,C1,Demolish
+52572c45-c077-41dd-8957-c0f5357faedc,Building 121 CHS,Diva,Sector 4,1996,2020-12-19,Fair,Safe,Monitor
+53b9ffd7-934c-4f6c-9e20-595fb687ce94,Building 122 CHS,Vartak Nagar,Sector 19,2008,2025-07-16,Good,Safe,Monitor
+94554421-a612-4ba9-a1a0-9507ced0a133,Building 123 CHS,Lokmanya-Savarkar Nagar,Sector 16,1998,2019-03-20,Good,C2B,Repair
+b6a1f59c-01fe-46a6-bcf3-b6d7ec636da6,Building 124 CHS,Lokmanya-Savarkar Nagar,Sector 3,1953,2021-09-05,Dilapidated,C3,Repair
+74ef16d7-7cf3-4ce3-bcf6-934837825faf,Building 125 CHS,Kalwa,Sector 4,2009,2021-05-22,Fair,Safe,Monitor
+b8f58f79-3bc0-469d-83b5-ad3ce2abbf9f,Building 126 CHS,Uthalsar,Sector 4,1967,2023-07-11,Poor,C1,Demolish
+d2a9d0c1-6643-4425-8327-7cadc6eef937,Building 127 CHS,Majiwada-Manpada,Sector 18,1980,2023-02-02,Fair,C1,Demolish
+732de612-dada-4059-b559-51ff7d1eeb15,Building 128 CHS,Uthalsar,Sector 16,2003,2022-08-27,Fair,C3,Repair
+77f31b50-937d-494d-b868-7ac615a2557d,Building 129 CHS,Majiwada-Manpada,Sector 7,2002,2025-09-28,Poor,Safe,Monitor
+2bac092f-d094-4847-b750-95a9ae5dc7b3,Building 130 CHS,Majiwada-Manpada,Sector 4,2006,2020-08-25,Good,Safe,Monitor
+30aaab2d-67cb-4c3b-be27-70b972d1ae1b,Building 131 CHS,Naupada-Kopri,Sector 13,1997,2022-01-09,Fair,C2B,Repair
+1b9ce67d-3695-4065-b170-6dfbeacbc538,Building 132 CHS,Uthalsar,Sector 7,1985,2023-02-06,Poor,C1,Demolish
+e5f067eb-b92f-4efb-bda7-8e9a5c918102,Building 133 CHS,Lokmanya-Savarkar Nagar,Sector 3,1952,2019-05-31,Poor,C2A,Evacuate
+8eaccb98-eed1-4ea3-a743-66ef43040279,Building 134 CHS,Lokmanya-Savarkar Nagar,Sector 11,2020,2020-06-03,Good,Safe,Monitor
+5d609bab-a3dc-4366-be0c-d2781aeb13c9,Building 135 CHS,Wagle Estate,Sector 5,1968,2021-02-09,Dilapidated,C2B,Repair
+6f5a9214-e9a5-40ce-b1e5-32cdda51d789,Building 136 CHS,Uthalsar,Sector 1,2019,2019-12-16,Good,Safe,Monitor
+47e4e174-1f8f-44ff-a754-21879c7caec8,Building 137 CHS,Majiwada-Manpada,Sector 1,1966,2020-09-01,Poor,C2B,Repair
+e2e0ba29-135d-4aa9-a7e2-558ec815acb7,Building 138 CHS,Diva,Sector 4,1972,2022-09-21,Poor,C1,Demolish
+dfc3e48d-2a64-4907-b3b2-c7fd26a5cac2,Building 139 CHS,Uthalsar,Sector 15,1958,2023-10-04,Dilapidated,C2B,Repair
+5be34d9f-f169-4754-b6ee-1210b0ff8ef0,Building 140 CHS,Naupada-Kopri,Sector 17,2014,2024-11-24,Good,Safe,Monitor
+8044c1c2-27d9-4e20-b5dd-1595206a52f2,Building 141 CHS,Mumbra,Sector 13,1988,2018-09-07,Fair,C2B,Repair
+dba13d73-1cf6-4c89-9479-9811f8f22fbf,Building 142 CHS,Uthalsar,Sector 3,2004,2022-12-22,Good,Safe,Monitor
+7bef0ff4-be67-4348-b1db-939787eda27b,Building 143 CHS,Diva,Sector 11,1991,2021-01-31,Good,Safe,Monitor
+432ca625-651f-435e-9db4-0b4d056dd69f,Building 144 CHS,Diva,Sector 20,1998,2023-02-02,Poor,Safe,Monitor
+dc9f8b81-4883-4e7e-a65e-f2a6f21e04b1,Building 145 CHS,Diva,Sector 7,2005,2025-05-05,Fair,C3,Repair
+42cbb9d2-3f7d-4987-88e1-f9f198bd7c30,Building 146 CHS,Mumbra,Sector 13,2005,2021-10-20,Fair,Safe,Monitor
+ba5c8836-2b2a-48a6-8e90-a93441ed9104,Building 147 CHS,Vartak Nagar,Sector 12,2003,2021-07-04,Good,Safe,Monitor
+22857802-16dc-425e-8b83-f586e305c7ca,Building 148 CHS,Uthalsar,Sector 3,1969,2019-01-09,Dilapidated,C2A,Evacuate
+fc8355d6-aadc-4b72-91db-fd88a842e4bb,Building 149 CHS,Diva,Sector 2,2005,2019-06-17,Fair,C3,Repair
+6e58c287-5081-4206-9b35-7c10a2c0159f,Building 150 CHS,Uthalsar,Sector 14,2025,2025-06-19,Fair,Safe,Monitor
+a572bb96-d7ef-4acd-8dbc-ec2787288308,Building 151 CHS,Naupada-Kopri,Sector 10,1995,2022-09-29,Good,C2B,Repair
+479389ee-cd20-479b-9879-daba79197f48,Building 152 CHS,Wagle Estate,Sector 16,1989,2020-05-21,Fair,Safe,Monitor
+0690bb41-a1de-479b-8ee9-d428a6851666,Building 153 CHS,Majiwada-Manpada,Sector 4,1978,2024-03-28,Fair,C2A,Evacuate
+127bef4c-11d1-40b3-952f-3bf29cd8a21f,Building 154 CHS,Diva,Sector 1,1985,2024-04-16,Dilapidated,C3,Repair
+67aa65dc-8912-4fa6-a4af-0649a5df99bc,Building 155 CHS,Majiwada-Manpada,Sector 12,1984,2021-06-19,Poor,C2A,Evacuate
+e65a00e9-5668-4dcf-9521-1db286cedeb1,Building 156 CHS,Kalwa,Sector 3,1950,2025-05-16,Poor,C1,Demolish
+ee5569bf-b8d1-4e0a-b183-14ca9625f1fb,Building 157 CHS,Diva,Sector 7,1968,2019-01-11,Dilapidated,C3,Repair
+02156edc-382c-48db-969c-fc84d224076f,Building 158 CHS,Vartak Nagar,Sector 11,1998,2022-02-24,Fair,Safe,Monitor
+afe656a9-35bd-42d6-ae73-5d84cf3f988b,Building 159 CHS,Wagle Estate,Sector 20,2022,2022-03-22,Good,Safe,Monitor
+8db80bf2-2c33-4b1e-96c8-182853afdce5,Building 160 CHS,Kalwa,Sector 16,1956,2025-06-04,Dilapidated,C2A,Evacuate
+803b0016-e357-4ee6-a5a8-33dcde84135a,Building 161 CHS,Diva,Sector 4,2006,2020-06-01,Good,Safe,Monitor
+b9c69045-6267-450e-853b-b1f34594db78,Building 162 CHS,Mumbra,Sector 17,1994,2025-08-11,Fair,Safe,Monitor
+639f9e9f-3736-432f-89ef-24842a8766c2,Building 163 CHS,Naupada-Kopri,Sector 1,1989,2024-09-20,Fair,Safe,Monitor
+0749da16-df52-4880-885a-30436173e130,Building 164 CHS,Vartak Nagar,Sector 10,1976,2019-07-17,Poor,C2A,Evacuate
+2a0f7d93-4378-4229-ba68-daed6b45378e,Building 165 CHS,Wagle Estate,Sector 5,1991,2022-10-30,Fair,Safe,Monitor
+9fcc85c7-9cac-426f-af73-ccffa09cb345,Building 166 CHS,Majiwada-Manpada,Sector 3,1998,2024-04-07,Fair,Safe,Monitor
+dc3be6b7-dcf9-4cb5-b6dd-bdec2ec417a2,Building 167 CHS,Mumbra,Sector 3,2000,2018-03-18,Good,Safe,Monitor
+a02352aa-829c-4bf9-baf7-8a0376a50c67,Building 168 CHS,Kalwa,Sector 10,1990,2025-12-16,Fair,Safe,Monitor
+31801b1e-647c-4745-9ce0-31096582cb38,Building 169 CHS,Mumbra,Sector 12,1964,2019-12-05,Dilapidated,C3,Repair
+1f5e08e6-45af-4d3a-908f-731eb9b82ed7,Building 170 CHS,Kalwa,Sector 17,1961,2022-11-20,Dilapidated,C1,Demolish
+012b7f47-02b9-43d8-ba34-3b8bbb818d7a,Building 171 CHS,Lokmanya-Savarkar Nagar,Sector 11,1960,2021-10-22,Poor,C2A,Evacuate
+8af87017-f8d0-4855-81f7-e23bb853ce03,Building 172 CHS,Diva,Sector 7,1971,2023-12-14,Poor,C2B,Repair
+bb7bcece-bb06-4ac2-ac12-7ed33b363c7d,Building 173 CHS,Wagle Estate,Sector 8,1994,2025-03-28,Fair,C2B,Repair
+b31ad087-dbf8-45da-8536-5ec538adb6ba,Building 174 CHS,Wagle Estate,Sector 3,1963,2024-10-03,Poor,C1,Demolish
+f7c97493-aedf-48a5-818d-e385bb138b5b,Building 175 CHS,Mumbra,Sector 19,1972,2023-03-16,Fair,C2B,Repair
+f26f68bf-d657-4dbb-b9b8-b06dea02f0f6,Building 176 CHS,Mumbra,Sector 3,1991,2019-09-11,Good,Safe,Monitor
+9465d0cf-bbad-48f4-b057-7e30fb0631ab,Building 177 CHS,Vartak Nagar,Sector 19,2010,2021-05-25,Good,Safe,Monitor
+7d7c4f16-2637-4041-ad61-3e024007ca81,Building 178 CHS,Mumbra,Sector 2,1957,2023-03-07,Poor,C1,Demolish
+69332879-a580-4103-b760-796fab4631bd,Building 179 CHS,Uthalsar,Sector 20,1957,2025-03-25,Poor,C2A,Evacuate
+2251561f-14fc-4481-9eee-2fe896c4c42f,Building 180 CHS,Diva,Sector 2,2014,2024-07-05,Good,Safe,Monitor
+6baeee41-97a0-4e36-9fab-a5e1b219de71,Building 181 CHS,Lokmanya-Savarkar Nagar,Sector 11,2007,2024-05-30,Fair,Safe,Monitor
+95c52ce2-bca7-41a4-90a9-9c5be1c06eee,Building 182 CHS,Mumbra,Sector 4,2010,2018-09-11,Good,Safe,Monitor
+0691fef3-82a7-457f-b78e-b8b1961f1d0c,Building 183 CHS,Wagle Estate,Sector 2,1993,2025-03-31,Poor,Safe,Monitor
+cbc59ecf-fa5d-4f22-9fb6-3e7c68455366,Building 184 CHS,Diva,Sector 20,1981,2023-11-17,Dilapidated,C3,Repair
+b92559a9-4f05-4e2e-b93c-47b36eca7dcb,Building 185 CHS,Kalwa,Sector 11,1970,2022-05-06,Poor,C3,Repair
+cbc6b243-7237-4ff5-bd13-ea64e12c26db,Building 186 CHS,Majiwada-Manpada,Sector 4,1956,2018-09-27,Dilapidated,C2B,Repair
+5806164d-17e1-4d07-94a9-68ad9a53d211,Building 187 CHS,Vartak Nagar,Sector 20,2021,2021-03-09,Good,Safe,Monitor
+2e6d70cd-2119-4d3d-ac11-ec76ce24554d,Building 188 CHS,Majiwada-Manpada,Sector 10,1969,2019-08-03,Poor,C2B,Repair
+f33fcdb4-e6d7-487f-b558-27ae669b57e0,Building 189 CHS,Vartak Nagar,Sector 18,2000,2018-12-14,Fair,C3,Repair
+3d9f4c35-25c9-4235-809b-9daaadedcbdd,Building 190 CHS,Diva,Sector 3,1998,2019-06-08,Good,Safe,Monitor
+727e8cb5-cf55-44e6-b608-c3963bae13c5,Building 191 CHS,Wagle Estate,Sector 7,2004,2021-06-19,Fair,Safe,Monitor
+fed9b668-f39a-4389-8340-bcd53323c487,Building 192 CHS,Wagle Estate,Sector 5,1993,2020-07-16,Poor,Safe,Monitor
+a1b2f2e3-cb78-414e-a1b4-19d1fbc381bc,Building 193 CHS,Diva,Sector 17,1959,2023-09-11,Poor,C2B,Repair
+e51a599a-5b9a-4321-ac83-4e10a2c7c536,Building 194 CHS,Wagle Estate,Sector 20,1954,2024-12-06,Dilapidated,C3,Repair
+c79314c9-577f-41e8-82cb-e115dbdb5e69,Building 195 CHS,Wagle Estate,Sector 15,1998,2025-10-08,Fair,Safe,Monitor
+a02450a8-93b3-4c94-8cf3-6e8591d32c28,Building 196 CHS,Mumbra,Sector 20,1955,2020-08-30,Dilapidated,C2B,Repair
+78864763-42ab-4b4f-8ad0-6da96028d8ee,Building 197 CHS,Diva,Sector 8,1986,2020-08-16,Good,C3,Repair
+29afa6c3-bae3-4464-81b2-9080e472ad1b,Building 198 CHS,Majiwada-Manpada,Sector 19,1989,2020-03-05,Poor,C3,Repair
+334e7e81-e1af-484b-a01b-ba49bb4fa879,Building 199 CHS,Kalwa,Sector 17,2006,2021-02-28,Good,Safe,Monitor
+171bccf3-866e-48d6-b5c9-dba865a5700d,Building 200 CHS,Lokmanya-Savarkar Nagar,Sector 20,2017,2019-10-26,Good,Safe,Monitor
+14429c85-ea66-4278-963f-15151ea17e68,Building 201 CHS,Majiwada-Manpada,Sector 18,1967,2023-05-23,Fair,C1,Demolish
+2fa37c12-f3ab-479c-98e7-84bd926239d8,Building 202 CHS,Vartak Nagar,Sector 3,1963,2019-05-26,Dilapidated,C2B,Repair
+4d631332-da25-4607-9b40-f34537d69ce9,Building 203 CHS,Kalwa,Sector 3,1970,2019-08-27,Poor,C3,Repair
+296cee30-1c15-493d-962d-c7c709804e90,Building 204 CHS,Kalwa,Sector 2,1978,2018-04-20,Fair,C3,Repair
+9fc0996e-8549-47a4-b6f0-9391dfad2e32,Building 205 CHS,Majiwada-Manpada,Sector 8,2000,2018-12-01,Fair,Safe,Monitor
+a61a2218-d1d2-4b4f-aa64-f3feb9db4648,Building 206 CHS,Majiwada-Manpada,Sector 5,1953,2026-01-06,Poor,C1,Demolish
+2ebd5282-6644-4518-8e01-55abaec14dcd,Building 207 CHS,Wagle Estate,Sector 16,1967,2023-04-20,Poor,C3,Repair
+7c5d9c68-90ca-40d9-9f26-1675740f5275,Building 208 CHS,Naupada-Kopri,Sector 9,2007,2018-11-21,Good,Safe,Monitor
+f668d41f-8e95-44d9-bf70-f2316ad15b02,Building 209 CHS,Diva,Sector 14,1977,2026-02-26,Fair,C2B,Repair
+681350fc-f9f7-407e-af24-76a0b460f5e2,Building 210 CHS,Naupada-Kopri,Sector 8,1964,2019-05-15,Dilapidated,C2A,Evacuate
+a5e7ce35-6c9c-461a-9d07-bb5e90172032,Building 211 CHS,Uthalsar,Sector 16,2003,2018-09-15,Good,Safe,Monitor
+497be859-d62f-4105-a496-c656308bce91,Building 212 CHS,Lokmanya-Savarkar Nagar,Sector 5,2018,2023-10-12,Good,Safe,Monitor
+0395d779-37ef-48f7-99b6-a0cb064ae3d3,Building 213 CHS,Kalwa,Sector 6,1987,2020-09-12,Fair,Safe,Monitor
+1e194903-5c80-46e0-b8cc-e8789fe565ac,Building 214 CHS,Diva,Sector 17,1960,2023-11-25,Dilapidated,C2A,Evacuate
+e0ea9627-d1b1-45f9-8df9-bcd5fe2bfa71,Building 215 CHS,Mumbra,Sector 2,2014,2022-05-19,Good,Safe,Monitor
+f96c2d4f-eb5c-4e12-9ca6-ad0e3f2a5259,Building 216 CHS,Majiwada-Manpada,Sector 3,1999,2018-03-08,Poor,Safe,Monitor
+d72d4964-12ec-4b7f-8f5e-b23951995fe8,Building 217 CHS,Majiwada-Manpada,Sector 5,1994,2019-03-01,Fair,Safe,Monitor
+0374d0f0-5218-4552-b6f7-fe95fb9c4faa,Building 218 CHS,Wagle Estate,Sector 15,1955,2025-03-17,Poor,C2A,Evacuate
+2a507c06-5d10-4fa3-8908-e3e208afeb46,Building 219 CHS,Uthalsar,Sector 15,2011,2019-07-07,Good,Safe,Monitor
+a6d4ec98-2ef6-4df3-92dd-cca352dc8166,Building 220 CHS,Naupada-Kopri,Sector 11,1954,2020-03-28,Poor,C1,Demolish
+12d431c7-d866-4e8f-bad4-bf13d4f3e08e,Building 221 CHS,Mumbra,Sector 9,1989,2024-02-03,Fair,C2B,Repair
+7b522be6-c983-4764-b6c1-86dd2c2c70e7,Building 222 CHS,Naupada-Kopri,Sector 11,1954,2022-01-02,Dilapidated,C1,Demolish
+c0210dc7-b260-4524-8732-ab48dccb07e1,Building 223 CHS,Mumbra,Sector 13,1984,2022-06-27,Poor,C2A,Evacuate
+09295b39-2eb4-422d-96f3-db01965ec964,Building 224 CHS,Majiwada-Manpada,Sector 17,1993,2023-07-31,Poor,Safe,Monitor
+37c88ffd-ba08-4844-bff3-64cd5a5cef56,Building 225 CHS,Kalwa,Sector 20,1984,2018-11-20,Fair,C2B,Repair
+cee627e3-1c03-4859-a946-3bfe5adf8dc5,Building 226 CHS,Majiwada-Manpada,Sector 10,1973,2018-11-24,Dilapidated,C2A,Evacuate
+cc025ae0-f405-4a02-b063-61788922cbfc,Building 227 CHS,Mumbra,Sector 12,1989,2019-11-14,Fair,C3,Repair
+dc9cf2eb-08e1-40f6-8e2a-2061f600f03a,Building 228 CHS,Kalwa,Sector 9,2007,2021-12-15,Good,Safe,Monitor
+f818d0c6-dfd9-4d6c-82ab-3f8da5de46d5,Building 229 CHS,Diva,Sector 6,1957,2022-01-28,Poor,C2B,Repair
+110c22c4-5781-414d-b43a-1463bc335707,Building 230 CHS,Naupada-Kopri,Sector 5,1953,2022-11-30,Poor,C2B,Repair
+e4706b63-6a35-4a37-9222-8eb4bea9b0c2,Building 231 CHS,Kalwa,Sector 19,1958,2022-01-23,Poor,C2B,Repair
+f2fa9776-b5cd-4641-8449-9b9e408815ac,Building 232 CHS,Majiwada-Manpada,Sector 15,1954,2022-02-28,Dilapidated,C2B,Repair
+bbf4c3f6-10d0-408b-88de-1f252b880cdc,Building 233 CHS,Majiwada-Manpada,Sector 9,1959,2022-06-19,Dilapidated,C2B,Repair
+743a4f09-65b3-4f37-a85e-4535694dfb95,Building 234 CHS,Mumbra,Sector 17,1981,2020-02-02,Fair,C1,Demolish
+5ed3ad49-e301-4b38-bc43-a83fa164ef81,Building 235 CHS,Mumbra,Sector 7,1999,2020-12-02,Poor,Safe,Monitor
+284c5fa0-8a64-43cf-9021-069541ed88c7,Building 236 CHS,Uthalsar,Sector 5,1986,2020-03-30,Good,C2B,Repair
+b7d28a4b-d93d-4f92-a033-c7a1b40d56ac,Building 237 CHS,Uthalsar,Sector 11,1959,2022-12-29,Dilapidated,C3,Repair
+68a160da-c7ad-4df7-aad9-561bbd6c3fa1,Building 238 CHS,Vartak Nagar,Sector 6,1994,2021-04-04,Good,Safe,Monitor
+772a3953-ab2a-4ec8-9d20-9e67c19df02a,Building 239 CHS,Lokmanya-Savarkar Nagar,Sector 5,1972,2019-05-13,Dilapidated,C2B,Repair
+ff4a0835-c404-4983-b4a1-200f8f1d114a,Building 240 CHS,Majiwada-Manpada,Sector 15,1980,2024-03-19,Dilapidated,C1,Demolish
+5e3f9d3e-f56e-4342-8f5a-fc48799aba5b,Building 241 CHS,Vartak Nagar,Sector 13,2020,2020-02-04,Good,Safe,Monitor
+9e04d61b-7a39-43a1-82b6-96505b37fcb6,Building 242 CHS,Uthalsar,Sector 5,2011,2022-08-05,Good,Safe,Monitor
+ed7ce9c0-4850-45b4-ae9e-1ebc67227358,Building 243 CHS,Diva,Sector 12,1990,2025-08-17,Good,Safe,Monitor
+d8e22c6f-42b1-47b0-b386-0e355b1d8b9e,Building 244 CHS,Wagle Estate,Sector 5,1966,2025-03-05,Fair,C2B,Repair
+92aab782-d28f-4c88-8884-2c52997bb825,Building 245 CHS,Diva,Sector 5,2005,2019-05-24,Fair,C3,Repair
+ff041452-cdfe-4feb-a4f2-bdf125eebfe4,Building 246 CHS,Lokmanya-Savarkar Nagar,Sector 12,1988,2025-12-15,Fair,Safe,Monitor
+4d905166-ef3e-4057-b2c4-f0d5d2233bdc,Building 247 CHS,Vartak Nagar,Sector 7,2016,2018-11-20,Good,Safe,Monitor
+ff53e08e-812f-4b89-a63f-64a8165e6c08,Building 248 CHS,Vartak Nagar,Sector 20,2020,2025-01-04,Good,Safe,Monitor
+84a4edeb-a707-4f10-a1e3-c2b8909fda34,Building 249 CHS,Wagle Estate,Sector 19,2018,2025-03-10,Good,Safe,Monitor
+45d7965f-70e6-4561-a749-5b64862bd03a,Building 250 CHS,Majiwada-Manpada,Sector 19,2024,2025-05-22,Good,Safe,Monitor
+02644de6-9e4d-405b-95f4-00bda7542a61,Building 251 CHS,Vartak Nagar,Sector 7,1955,2018-07-06,Fair,C1,Demolish
+efdff0f9-67fb-4596-82a7-d78422790340,Building 252 CHS,Naupada-Kopri,Sector 16,2023,2025-03-02,Good,Safe,Monitor
+b8391df5-c9a6-4ecd-9cdf-30d2a4ab7bba,Building 253 CHS,Mumbra,Sector 8,2019,2021-05-22,Good,Safe,Monitor
+bac1ffdb-f240-4db5-914a-7f5a9c71fcec,Building 254 CHS,Wagle Estate,Sector 15,2001,2018-09-03,Fair,Safe,Monitor
+2531c7e6-534b-471f-82a1-0a522fb314fa,Building 255 CHS,Wagle Estate,Sector 11,2003,2024-10-20,Fair,Safe,Monitor
+e8d3e050-c95a-4abe-8294-348a279f516e,Building 256 CHS,Wagle Estate,Sector 12,1990,2022-06-22,Good,C3,Repair
+febb69ce-ce47-457d-b713-71d1f21df8d3,Building 257 CHS,Lokmanya-Savarkar Nagar,Sector 15,2015,2021-07-31,Good,Safe,Monitor
+0b05a236-3e84-4a0b-b88a-0f55c168ade9,Building 258 CHS,Naupada-Kopri,Sector 10,1965,2019-02-01,Poor,C2A,Evacuate
+c7ffe31e-730f-40d8-8bb0-c91573620f1c,Building 259 CHS,Majiwada-Manpada,Sector 19,1999,2019-10-17,Good,Safe,Monitor
+15847cdf-5209-4d83-a99e-c9c3cf0eefc9,Building 260 CHS,Mumbra,Sector 16,1990,2023-10-10,Fair,Safe,Monitor
+e02648b8-e1df-492f-b955-485efe61b5a2,Building 261 CHS,Diva,Sector 15,1989,2022-05-30,Fair,Safe,Monitor
+704e4220-839d-47bf-8ab7-e570e2c34eac,Building 262 CHS,Vartak Nagar,Sector 16,1980,2018-07-27,Poor,C2A,Evacuate
+60470fdb-b586-4207-87de-170c0bd5c127,Building 263 CHS,Uthalsar,Sector 14,2010,2018-02-03,Good,Safe,Monitor
+1d96ce3e-a306-41fb-8a77-2fe48e949742,Building 264 CHS,Majiwada-Manpada,Sector 2,1967,2022-07-10,Fair,C2B,Repair
+098734ca-ffe9-4b1e-b75f-19a8171f1e5c,Building 265 CHS,Diva,Sector 10,2001,2022-01-24,Fair,Safe,Monitor
+3359819b-cf18-44f4-9605-8e95ef546b86,Building 266 CHS,Vartak Nagar,Sector 20,1959,2024-03-02,Poor,C2A,Evacuate
+be7c6c21-9f0c-4641-a8d8-7b00157b4279,Building 267 CHS,Majiwada-Manpada,Sector 18,1965,2022-03-09,Poor,C1,Demolish
+dfc73fae-7f11-46d5-ae24-12cc49d95795,Building 268 CHS,Kalwa,Sector 17,1996,2023-09-17,Good,Safe,Monitor
+c539c7df-5972-4c16-baa0-d2cfcae3b8a9,Building 269 CHS,Mumbra,Sector 17,1955,2021-09-26,Poor,C1,Demolish
+ec5a9bc0-96a7-4183-93f6-d65f6c721a89,Building 270 CHS,Wagle Estate,Sector 11,2008,2023-10-13,Good,Safe,Monitor
+fd13ab63-f795-48fc-a428-000ed4f7c035,Building 271 CHS,Majiwada-Manpada,Sector 17,1990,2021-05-10,Fair,C2B,Repair
+47f4c33c-c337-43b9-81aa-cac5ec6a3e56,Building 272 CHS,Vartak Nagar,Sector 16,2015,2025-12-12,Good,Safe,Monitor
+a47075df-81e3-4286-a90d-5e8f3bc5444b,Building 273 CHS,Vartak Nagar,Sector 1,1952,2022-09-03,Poor,C2B,Repair
+7e795c5d-bde4-483d-a29b-e8f65500fbb6,Building 274 CHS,Lokmanya-Savarkar Nagar,Sector 2,2010,2025-05-09,Good,Safe,Monitor
+e00a1c2e-3b3d-49f5-abc3-148f38f5fb3a,Building 275 CHS,Kalwa,Sector 5,2024,2024-11-19,Good,Safe,Monitor
+f4a67437-d027-4eac-aba2-a3e969f5ed63,Building 276 CHS,Lokmanya-Savarkar Nagar,Sector 1,1981,2019-03-27,Poor,C3,Repair
+8769addc-b721-4358-bfb6-2891bea0970e,Building 277 CHS,Kalwa,Sector 7,2006,2019-09-13,Good,Safe,Monitor
+f6eff7f4-5ffe-4f78-b817-a9a91c312b59,Building 278 CHS,Naupada-Kopri,Sector 5,2002,2023-04-16,Fair,Safe,Monitor
+7fbfdfba-758d-4227-b8d0-3b62a865a516,Building 279 CHS,Mumbra,Sector 17,2016,2021-08-24,Good,Safe,Monitor
+ebd74089-7d01-480a-b762-8d84aa666a8c,Building 280 CHS,Majiwada-Manpada,Sector 18,1998,2023-12-24,Fair,Safe,Monitor
+49ff0d75-88ba-44f2-b08b-5bc7c5aafbb4,Building 281 CHS,Vartak Nagar,Sector 20,1995,2025-08-20,Good,C3,Repair
+8654a8e3-78f1-4350-8db1-3277846402a2,Building 282 CHS,Vartak Nagar,Sector 18,2011,2020-10-06,Good,Safe,Monitor
+3ac6ced6-ac74-49e9-be8c-c1a4128c1eb5,Building 283 CHS,Vartak Nagar,Sector 7,1988,2021-05-04,Fair,C2B,Repair
+c4b8330a-7650-4ef5-95ab-51e01a2fbac7,Building 284 CHS,Diva,Sector 9,2012,2021-11-29,Good,Safe,Monitor
+a5a75fc8-26a2-4630-9c67-ce4a6b7dbf0a,Building 285 CHS,Kalwa,Sector 12,1986,2022-04-05,Fair,Safe,Monitor
+53f0ea38-db89-403d-9fc4-3af5a4d9223d,Building 286 CHS,Uthalsar,Sector 12,1968,2026-01-04,Poor,C2A,Evacuate
+1aa323a6-6a79-4a8e-9931-1f793c4ee582,Building 287 CHS,Lokmanya-Savarkar Nagar,Sector 7,2006,2023-05-17,Good,Safe,Monitor
+a0ecb37a-9454-48cd-a43e-5569edd30d1f,Building 288 CHS,Vartak Nagar,Sector 5,2018,2024-04-21,Good,Safe,Monitor
+65f971be-7292-4b15-87d6-b79dfc78a875,Building 289 CHS,Naupada-Kopri,Sector 17,1963,2020-09-20,Dilapidated,C2B,Repair
+2263a488-4f42-4f8f-a551-749150e47e8b,Building 290 CHS,Majiwada-Manpada,Sector 16,1978,2022-08-20,Dilapidated,C1,Demolish
+db2b6d10-8827-4795-b589-feda40292245,Building 291 CHS,Wagle Estate,Sector 14,1962,2024-03-04,Dilapidated,C1,Demolish
+be299da9-46ee-4eb4-9e07-b12dec28cf58,Building 292 CHS,Vartak Nagar,Sector 11,2010,2020-03-27,Good,Safe,Monitor
+0ea55a81-0833-47af-8e0f-316510b63e09,Building 293 CHS,Lokmanya-Savarkar Nagar,Sector 18,1986,2019-01-02,Good,C2B,Repair
+ab959cc8-bd22-4243-bc76-7421d19777ac,Building 294 CHS,Naupada-Kopri,Sector 13,1954,2019-12-22,Fair,C1,Demolish
+f134924e-b9a4-4135-8780-bea7e9ba14d4,Building 295 CHS,Naupada-Kopri,Sector 1,2013,2021-03-31,Good,Safe,Monitor
+60da811e-76e4-4406-a4c6-bbaf7e220166,Building 296 CHS,Vartak Nagar,Sector 15,1988,2021-10-04,Fair,Safe,Monitor
+9baee61c-2348-4d64-a05d-68b3822da5e4,Building 297 CHS,Diva,Sector 15,2019,2019-07-04,Good,Safe,Monitor
+f762bdbd-270f-4e81-8c30-25d12d1e7bbf,Building 298 CHS,Mumbra,Sector 9,1984,2019-10-28,Poor,C1,Demolish
+5cd6e87b-87f6-4b8c-b220-810b76e90339,Building 299 CHS,Lokmanya-Savarkar Nagar,Sector 6,1973,2021-04-23,Poor,C2A,Evacuate
+1b5ba263-5b27-4727-a963-74dec209c6df,Building 300 CHS,Kalwa,Sector 4,2001,2018-12-22,Good,Safe,Monitor
+cd2ed2a9-cfb7-485f-9b71-096e97b6bc2c,Building 301 CHS,Naupada-Kopri,Sector 9,1973,2020-10-13,Fair,C2A,Evacuate
+8b34750e-1ef9-47e0-9813-9b2f83e4edce,Building 302 CHS,Vartak Nagar,Sector 19,1999,2021-09-12,Fair,C3,Repair
+a6488d3d-b694-46c9-bd58-c4f404974f32,Building 303 CHS,Majiwada-Manpada,Sector 8,2023,2025-05-01,Good,Safe,Monitor
+f9a60598-997c-4191-b945-9479f1c136ab,Building 304 CHS,Kalwa,Sector 17,1957,2019-10-17,Dilapidated,C2A,Evacuate
+6e5b5ac5-6ec8-4d5b-8ed5-9c9997063e1e,Building 305 CHS,Majiwada-Manpada,Sector 20,1989,2021-04-23,Good,Safe,Monitor
+41cc9c2b-97c6-4ad1-86d4-ab19e964577c,Building 306 CHS,Mumbra,Sector 20,1978,2019-09-20,Poor,C1,Demolish
+9174d144-eb05-4fcf-850e-c07712d1ef2f,Building 307 CHS,Diva,Sector 7,1997,2023-04-13,Fair,Safe,Monitor
+1822a440-6790-43b4-87fd-830ef9fcada3,Building 308 CHS,Diva,Sector 15,1981,2018-12-02,Dilapidated,C2B,Repair
+f7f4bfa2-13d5-407e-873e-9c52047810e9,Building 309 CHS,Uthalsar,Sector 2,2017,2018-11-16,Good,Safe,Monitor
+3ff31fce-0fe2-4596-bdaa-defe9c20d889,Building 310 CHS,Diva,Sector 5,2020,2020-04-08,Fair,Safe,Monitor
+1147466a-e1b6-42b3-8f77-b38c341bc77a,Building 311 CHS,Lokmanya-Savarkar Nagar,Sector 19,1971,2019-04-22,Poor,C2B,Repair
+403586b9-5cb8-4930-aba8-a78390607ebd,Building 312 CHS,Mumbra,Sector 2,2012,2023-09-22,Good,Safe,Monitor
+6ccdc7be-7424-4360-9bc1-d71c6f863770,Building 313 CHS,Mumbra,Sector 19,2008,2022-08-29,Good,Safe,Monitor
+6d14febd-ade3-4225-b82e-4c2e10476ba9,Building 314 CHS,Naupada-Kopri,Sector 13,1957,2021-06-16,Dilapidated,C2B,Repair
+d97e990b-3ae0-48e1-8df3-c878ae462fba,Building 315 CHS,Uthalsar,Sector 2,1982,2024-06-26,Fair,C2B,Repair
+5e227464-7f49-4736-a961-95b84acdf0ef,Building 316 CHS,Uthalsar,Sector 16,2004,2018-09-04,Fair,Safe,Monitor
+a7a114c4-9cd8-4cf8-8866-f21087b5e907,Building 317 CHS,Kalwa,Sector 12,1954,2019-07-09,Poor,C1,Demolish
+dd4dbfbe-aaa6-4d52-82d0-d6beb2e4ade1,Building 318 CHS,Kalwa,Sector 3,1998,2022-03-27,Fair,C2B,Repair
+35ad277c-e819-40e0-a320-8d3c96318d8b,Building 319 CHS,Uthalsar,Sector 6,2019,2021-11-25,Good,Safe,Monitor
+45dede37-3071-4457-837e-7eefb652d827,Building 320 CHS,Lokmanya-Savarkar Nagar,Sector 1,2018,2019-06-06,Good,Safe,Monitor
+ee469e92-0ab7-4876-87d0-d1c6572460ea,Building 321 CHS,Diva,Sector 14,1952,2026-01-24,Fair,C2A,Evacuate
+429c0e5a-849d-496b-91b1-7246b051d816,Building 322 CHS,Lokmanya-Savarkar Nagar,Sector 15,2018,2020-07-29,Good,Safe,Monitor
+ba16f53e-37fc-46f6-a011-b604f0bcd123,Building 323 CHS,Uthalsar,Sector 2,1994,2026-02-17,Fair,Safe,Monitor
+236e4282-f9e0-4639-b460-83a57e011b47,Building 324 CHS,Lokmanya-Savarkar Nagar,Sector 7,2003,2018-03-06,Good,C2B,Repair
+2b9d6158-54f9-41a8-97c7-2edd93f9a267,Building 325 CHS,Naupada-Kopri,Sector 8,1958,2024-09-14,Poor,C1,Demolish
+15842a36-c784-48da-b66d-ce6d58680cde,Building 326 CHS,Naupada-Kopri,Sector 5,1955,2020-06-08,Dilapidated,C2A,Evacuate
+c640058f-85a6-4936-8c99-aaa063345120,Building 327 CHS,Majiwada-Manpada,Sector 19,2014,2020-08-17,Fair,Safe,Monitor
+9d6cd6ba-b827-4838-a2c7-665e944d4c1f,Building 328 CHS,Diva,Sector 8,1991,2025-05-28,Fair,C3,Repair
+a81482c3-a4a8-4986-9497-bcbcb2381e43,Building 329 CHS,Wagle Estate,Sector 14,2002,2024-08-20,Fair,Safe,Monitor
+9a4695fe-5725-45c3-a2ed-6e46e76d0550,Building 330 CHS,Kalwa,Sector 17,2021,2021-11-11,Good,Safe,Monitor
+c97d8d7e-9e3b-4dd2-bbbe-23aba3c537f4,Building 331 CHS,Kalwa,Sector 6,1990,2021-05-13,Good,Safe,Monitor
+6315a481-2965-429c-83be-7a10e3291572,Building 332 CHS,Vartak Nagar,Sector 5,2018,2020-07-12,Good,Safe,Monitor
+0c638cd3-a621-452f-b508-352cb4eec75b,Building 333 CHS,Kalwa,Sector 14,2009,2024-04-22,Fair,Safe,Monitor
+bc5f8502-5ef3-4570-a66a-e9af70c23ce7,Building 334 CHS,Lokmanya-Savarkar Nagar,Sector 9,2021,2022-05-10,Good,Safe,Monitor
+8a30d9ce-25c3-4b9e-ab95-bb159fdd813a,Building 335 CHS,Majiwada-Manpada,Sector 3,1976,2023-01-17,Poor,C1,Demolish
+67226e09-98a8-432d-97ce-4b0255e6f793,Building 336 CHS,Naupada-Kopri,Sector 9,2018,2020-02-20,Good,Safe,Monitor
+e49bf059-00dd-4137-b96f-a814e21d96ef,Building 337 CHS,Lokmanya-Savarkar Nagar,Sector 19,1998,2018-10-26,Good,Safe,Monitor
+1c50d67f-f076-46a4-9c0a-728df76b2723,Building 338 CHS,Vartak Nagar,Sector 1,2021,2021-06-21,Good,Safe,Monitor
+4e13a347-06e5-416b-ba4c-3161ad64ddc8,Building 339 CHS,Mumbra,Sector 8,1977,2019-04-26,Fair,C3,Repair
+5463b0a8-a88c-4461-82fb-5720dc847d91,Building 340 CHS,Vartak Nagar,Sector 13,1976,2021-08-10,Poor,C2A,Evacuate
+89d0efbe-e850-4c29-ab8a-d4f306493781,Building 341 CHS,Vartak Nagar,Sector 9,2009,2022-01-11,Good,Safe,Monitor
+afd5ebdf-dfff-42f9-a4c0-7f96d336bf47,Building 342 CHS,Mumbra,Sector 11,1996,2019-02-08,Fair,Safe,Monitor
+a712db7a-0b29-4b7c-ad75-ae68d1d81fa8,Building 343 CHS,Lokmanya-Savarkar Nagar,Sector 5,1976,2024-04-23,Poor,C2A,Evacuate
+2aa69941-d807-44ea-90e5-1b4215725687,Building 344 CHS,Kalwa,Sector 10,1952,2024-06-30,Poor,C3,Repair
+146407aa-2733-4a91-aa01-5be3a3f9a608,Building 345 CHS,Lokmanya-Savarkar Nagar,Sector 16,1969,2024-05-22,Poor,C2A,Evacuate
+149725f6-31c0-4363-8b14-ddfb01177b6c,Building 346 CHS,Majiwada-Manpada,Sector 9,2020,2025-09-06,Good,Safe,Monitor
+603727ce-8bdb-48fa-9ea5-3c7e86244602,Building 347 CHS,Mumbra,Sector 15,2012,2025-03-13,Fair,Safe,Monitor
+a3b1eac6-2930-4401-b31e-56cad01befab,Building 348 CHS,Diva,Sector 16,1971,2019-07-28,Dilapidated,C2A,Evacuate
+e6181451-d28e-45de-a767-5df158b51e20,Building 349 CHS,Naupada-Kopri,Sector 17,1973,2025-03-13,Fair,C2B,Repair
+c5d307f7-01d7-439e-b3d1-4d1c2901ad5e,Building 350 CHS,Naupada-Kopri,Sector 1,1954,2025-06-30,Fair,C1,Demolish
+5243e0f1-4c83-49f5-ae6a-bc714fbba6c8,Building 351 CHS,Wagle Estate,Sector 1,2002,2018-10-06,Fair,Safe,Monitor
+f0b4d722-b748-41ae-8139-0dc99372c2b4,Building 352 CHS,Mumbra,Sector 16,1977,2024-12-05,Dilapidated,C2A,Evacuate
+da2455f3-2d91-486d-8f38-e5e0b2c2bce4,Building 353 CHS,Naupada-Kopri,Sector 17,1952,2018-02-18,Poor,C2B,Repair
+258204c2-1779-4bb0-94be-7d16f461c731,Building 354 CHS,Kalwa,Sector 6,1985,2023-08-20,Dilapidated,C2A,Evacuate
+e91ffc8d-432f-4dfd-af9b-8125370586e0,Building 355 CHS,Lokmanya-Savarkar Nagar,Sector 20,1963,2020-09-14,Fair,C2B,Repair
+8cc81003-2d15-44d9-841b-774d6d4fae76,Building 356 CHS,Vartak Nagar,Sector 13,2017,2021-12-22,Good,Safe,Monitor
+c0956be6-ca76-4d62-a48f-0423c5b0d019,Building 357 CHS,Lokmanya-Savarkar Nagar,Sector 8,1960,2024-05-03,Poor,C2A,Evacuate
+4e64e33e-3362-45ff-9bc2-2ba6b4530b41,Building 358 CHS,Naupada-Kopri,Sector 3,1988,2025-05-01,Good,C3,Repair
+6fe2bcb9-bb5f-4c95-b045-261cdb776007,Building 359 CHS,Naupada-Kopri,Sector 6,2001,2018-08-18,Fair,Safe,Monitor
+8ffb0e10-1864-40e1-b882-783a921ffa7e,Building 360 CHS,Uthalsar,Sector 17,1960,2021-09-18,Dilapidated,C2A,Evacuate
+77820c0c-abd8-42a6-b774-1b6edf9f4f3e,Building 361 CHS,Mumbra,Sector 9,1955,2025-10-06,Poor,C3,Repair
+a80bc116-1987-41e1-b497-5bba60803b6b,Building 362 CHS,Diva,Sector 19,1955,2021-02-22,Fair,C2B,Repair
+f6bd09c9-69b1-4a60-a482-7d4dac97db98,Building 363 CHS,Lokmanya-Savarkar Nagar,Sector 19,1954,2018-03-06,Poor,C3,Repair
+d4266506-a722-421f-bd56-f068e29563ba,Building 364 CHS,Uthalsar,Sector 10,1968,2022-06-20,Dilapidated,C2B,Repair
+b251e215-0962-487f-9fc4-6954c7fcd9de,Building 365 CHS,Diva,Sector 11,1970,2022-05-13,Dilapidated,C2B,Repair
+f81f1c53-f513-4bfb-8063-51875c23d9a5,Building 366 CHS,Uthalsar,Sector 17,1999,2025-09-24,Good,Safe,Monitor
+8cc620d4-c7aa-4de3-934b-50a4392031a7,Building 367 CHS,Majiwada-Manpada,Sector 20,1994,2018-11-08,Fair,Safe,Monitor
+163f501b-e214-4dde-a136-aacc5a2cf81b,Building 368 CHS,Vartak Nagar,Sector 15,2000,2025-02-10,Poor,Safe,Monitor
+1c6a33e9-2adf-4f22-abc1-602670fe7cc8,Building 369 CHS,Kalwa,Sector 14,2012,2024-03-15,Good,Safe,Monitor
+84b45fae-7469-49f3-b5c8-feaa1b100c03,Building 370 CHS,Vartak Nagar,Sector 8,1973,2018-12-18,Dilapidated,C2B,Repair
+e4c3290a-5856-4549-841a-9dabd7af94b1,Building 371 CHS,Wagle Estate,Sector 13,1959,2025-12-25,Poor,C1,Demolish
+1b1544b4-d37f-4b42-a319-8c70d8476794,Building 372 CHS,Mumbra,Sector 12,1990,2021-06-16,Fair,Safe,Monitor
+ebbf276b-2fb3-4077-80b4-f711edc5b4d4,Building 373 CHS,Mumbra,Sector 18,1984,2022-11-01,Poor,C1,Demolish
+4547deb1-e902-40a7-8d2d-b8daaf495eb4,Building 374 CHS,Uthalsar,Sector 12,2021,2021-01-15,Good,Safe,Monitor
+34516611-97cd-4069-a217-6a9e44456cb4,Building 375 CHS,Majiwada-Manpada,Sector 13,2020,2024-09-15,Good,Safe,Monitor
+74cfc575-c631-440e-8c18-547457ff0087,Building 376 CHS,Diva,Sector 8,1951,2018-12-13,Poor,C2A,Evacuate
+05dbd964-e6a1-4840-8b2c-bc7faed51659,Building 377 CHS,Kalwa,Sector 6,2023,2025-09-08,Good,Safe,Monitor
+7933bb45-58c8-40ab-a1b3-f3f6047cf24e,Building 378 CHS,Uthalsar,Sector 6,1967,2019-08-21,Poor,C2A,Evacuate
+8bfa17df-076f-4406-a4ee-8b51591c5d26,Building 379 CHS,Majiwada-Manpada,Sector 9,2005,2018-11-12,Fair,Safe,Monitor
+6a690a86-3ef5-473d-a4e0-b09c9cac8f09,Building 380 CHS,Lokmanya-Savarkar Nagar,Sector 15,1981,2024-11-30,Dilapidated,C2A,Evacuate
+d4af5b3f-a656-45a2-bd0f-c479a75309ae,Building 381 CHS,Majiwada-Manpada,Sector 20,1963,2022-06-09,Poor,C1,Demolish
+f03132b4-9dd0-49b2-b4b1-e88628c95554,Building 382 CHS,Kalwa,Sector 20,1998,2021-10-03,Good,Safe,Monitor
+e5ca03ad-5473-4ff6-88e5-86f36803b89b,Building 383 CHS,Lokmanya-Savarkar Nagar,Sector 16,1967,2025-10-18,Poor,C2B,Repair
+d610cd2c-9515-44dc-8ca1-ea6b3e300ffd,Building 384 CHS,Vartak Nagar,Sector 16,1990,2021-07-31,Fair,Safe,Monitor
+c9f08b44-8cc3-4105-884c-946d895b4b4a,Building 385 CHS,Vartak Nagar,Sector 13,2023,2023-07-13,Good,Safe,Monitor
+07a80ff8-2baa-47f4-b6dd-a4bbcd84fd94,Building 386 CHS,Diva,Sector 6,1996,2024-08-22,Fair,Safe,Monitor
+d875e874-b57a-4932-b93c-9c2b6dd2025b,Building 387 CHS,Mumbra,Sector 7,2020,2026-02-26,Good,Safe,Monitor
+6f336aae-d48f-432d-b995-d69f83823a79,Building 388 CHS,Uthalsar,Sector 14,2006,2025-10-08,Good,Safe,Monitor
+22ecfbd4-74e4-40d0-b919-160d662a0559,Building 389 CHS,Lokmanya-Savarkar Nagar,Sector 9,2013,2021-05-25,Good,Safe,Monitor
+20cbdf32-34e7-4b97-8fe9-9e63a70b9a75,Building 390 CHS,Mumbra,Sector 20,1969,2018-10-30,Dilapidated,C2B,Repair
+33e176e0-860e-4a98-a1e0-1ea816a655a7,Building 391 CHS,Diva,Sector 14,2011,2023-12-29,Good,Safe,Monitor
+124ebaf0-ab89-41e2-81bc-044ed5ba5c95,Building 392 CHS,Diva,Sector 20,2019,2022-01-12,Good,Safe,Monitor
+51910f13-eb82-45a3-a2aa-b5193b057604,Building 393 CHS,Majiwada-Manpada,Sector 6,1960,2025-06-15,Poor,C2A,Evacuate
+78f77afc-1300-4695-a587-3d29644e093b,Building 394 CHS,Kalwa,Sector 11,1955,2025-04-03,Dilapidated,C2B,Repair
+e5403834-c672-41cd-933f-2eb8a4e983fd,Building 395 CHS,Diva,Sector 17,2005,2020-06-28,Fair,Safe,Monitor
+332ec650-b4f1-4f87-8fa5-cc2cf61e452e,Building 396 CHS,Lokmanya-Savarkar Nagar,Sector 15,2021,2024-06-14,Good,Safe,Monitor
+41f45e78-1a26-4100-882a-c871ab1595b7,Building 397 CHS,Diva,Sector 5,1997,2024-08-07,Fair,C3,Repair
+70178bd3-1f1b-4739-b8cc-0585a7270760,Building 398 CHS,Kalwa,Sector 3,1994,2021-04-25,Poor,Safe,Monitor
+a5d0d88b-9ebe-45b7-a267-b943d51923b8,Building 399 CHS,Vartak Nagar,Sector 11,1964,2021-11-27,Fair,C2B,Repair
+e90928fe-2c14-4c60-89b5-fa5b6eadfe70,Building 400 CHS,Mumbra,Sector 12,2008,2023-11-05,Good,Safe,Monitor
+87edab61-1caf-43c2-a803-8f575e676b7d,Building 401 CHS,Mumbra,Sector 11,2010,2026-02-05,Good,Safe,Monitor
+8d22c87c-4f80-47ca-adfa-4970a414e5d0,Building 402 CHS,Naupada-Kopri,Sector 11,1958,2019-04-17,Poor,C3,Repair
+ef7848ac-e606-4323-a951-58919432120a,Building 403 CHS,Diva,Sector 6,1963,2020-09-26,Dilapidated,C1,Demolish
+fc0c80f9-8b29-404e-b90b-c28f391c5885,Building 404 CHS,Kalwa,Sector 15,2020,2024-04-12,Good,Safe,Monitor
+bd6ee89b-c804-485e-bd90-de456689f6fc,Building 405 CHS,Kalwa,Sector 13,1979,2020-02-03,Dilapidated,C2B,Repair
+8fc32b54-906a-4cc0-9e2a-5d660be873ce,Building 406 CHS,Kalwa,Sector 13,1953,2023-01-16,Dilapidated,C3,Repair
+393f3da8-b9ed-405a-9b95-3451371a3798,Building 407 CHS,Uthalsar,Sector 19,1950,2025-11-22,Dilapidated,C2A,Evacuate
+b9fdf4e5-3447-4926-92f4-cb14966ad418,Building 408 CHS,Majiwada-Manpada,Sector 7,1963,2022-02-07,Dilapidated,C2B,Repair
+8417d681-e883-46bd-b447-91349e63f5cb,Building 409 CHS,Mumbra,Sector 17,2008,2025-07-10,Good,Safe,Monitor
+d0c342e9-04c5-4e12-bfa3-1d9875bb6da5,Building 410 CHS,Uthalsar,Sector 12,1990,2024-08-01,Fair,Safe,Monitor
+3fb14ff4-ff5c-4754-9a9c-b5cca51e3847,Building 411 CHS,Vartak Nagar,Sector 20,1995,2025-07-22,Good,Safe,Monitor
+0e94d510-59cf-4c2d-bf6b-5a5674ddf4d7,Building 412 CHS,Uthalsar,Sector 8,2025,2025-06-11,Good,Safe,Monitor
+f31719cf-d16e-4744-9e0c-11b6807f19cc,Building 413 CHS,Diva,Sector 13,1989,2019-08-03,Fair,Safe,Monitor
+30a242e6-47f0-4541-8301-0c25e3635cb3,Building 414 CHS,Wagle Estate,Sector 16,2003,2022-09-29,Fair,Safe,Monitor
+b59a09c7-8f18-4a07-857c-ab104468a4ad,Building 415 CHS,Wagle Estate,Sector 18,2018,2025-03-27,Good,Safe,Monitor
+e6263902-9402-48df-b220-e6211405793a,Building 416 CHS,Mumbra,Sector 20,1971,2021-07-12,Dilapidated,C1,Demolish
+39bff3df-739e-4956-90d8-febd5c858a64,Building 417 CHS,Wagle Estate,Sector 7,1956,2023-06-08,Fair,C3,Repair
+aa5644fa-81fd-4928-ae53-a6f1d7b09148,Building 418 CHS,Kalwa,Sector 16,1999,2023-07-21,Poor,Safe,Monitor
+cb85249a-5002-42e4-8a1d-08ec98f30f66,Building 419 CHS,Uthalsar,Sector 19,2003,2019-11-17,Good,Safe,Monitor
+78f8f49b-32c7-4feb-9e9b-40b8e2686c1e,Building 420 CHS,Vartak Nagar,Sector 8,1953,2018-05-14,Dilapidated,C2A,Evacuate
+a4a9a56b-1dc2-4138-80b3-1d68cf54004d,Building 421 CHS,Mumbra,Sector 18,2018,2023-02-17,Good,Safe,Monitor
+cb5b5ade-187b-40f1-92f4-5908c6f156ae,Building 422 CHS,Vartak Nagar,Sector 18,2015,2019-04-13,Good,Safe,Monitor
+89b39231-4561-44c5-b77f-0d0d1d44060c,Building 423 CHS,Mumbra,Sector 18,1996,2026-01-23,Fair,C3,Repair
+843f2988-3f1d-4d73-b475-29f0144ee90e,Building 424 CHS,Lokmanya-Savarkar Nagar,Sector 10,1977,2025-05-01,Fair,C1,Demolish
+448756bd-f5cb-4ee1-bbf5-be5eaf800319,Building 425 CHS,Mumbra,Sector 4,1954,2018-12-23,Dilapidated,C2A,Evacuate
+a053ea4c-6dec-4361-9f9b-5076c87460b8,Building 426 CHS,Majiwada-Manpada,Sector 20,1980,2025-09-23,Poor,C2B,Repair
+c1e14057-a429-4705-8f10-e236eb82572c,Building 427 CHS,Lokmanya-Savarkar Nagar,Sector 2,2004,2020-04-26,Fair,Safe,Monitor
+ca604ae3-e080-43bc-bafb-427b310178b3,Building 428 CHS,Diva,Sector 6,2022,2022-11-03,Good,Safe,Monitor
+5112100e-fbc9-47b5-b7bb-047b5520fbc4,Building 429 CHS,Vartak Nagar,Sector 17,1991,2024-06-03,Poor,Safe,Monitor
+aef8534f-2cee-4cd5-9b9b-839f7e2a1328,Building 430 CHS,Naupada-Kopri,Sector 9,1962,2022-08-13,Poor,C2B,Repair
+06efbded-4892-4536-9591-f67d46627fa1,Building 431 CHS,Majiwada-Manpada,Sector 8,1966,2019-08-23,Dilapidated,C1,Demolish
+597e4bbd-15b4-40e3-b4d3-64d8290e310f,Building 432 CHS,Kalwa,Sector 13,2000,2021-01-05,Fair,Safe,Monitor
+8aaf22e0-635b-43f9-8b4f-4c1107b4b101,Building 433 CHS,Kalwa,Sector 17,2007,2019-01-17,Good,Safe,Monitor
+52d9c792-6e39-4aa4-a6a2-cacc9b64bcbb,Building 434 CHS,Mumbra,Sector 11,1985,2023-02-06,Dilapidated,C3,Repair
+5e55d57f-15b8-42bd-a97e-b5e23358c498,Building 435 CHS,Majiwada-Manpada,Sector 3,2024,2024-08-23,Good,Safe,Monitor
+b3f46f39-5083-42ce-b459-b69fffa11e7c,Building 436 CHS,Lokmanya-Savarkar Nagar,Sector 16,2018,2022-10-26,Good,Safe,Monitor
+69ebdca5-999f-4888-af73-bb145dcbe27c,Building 437 CHS,Wagle Estate,Sector 19,1984,2024-02-20,Poor,C2A,Evacuate
+ccfe7cc6-d9a5-4936-a42e-e733908a422d,Building 438 CHS,Naupada-Kopri,Sector 2,2012,2025-08-27,Good,Safe,Monitor
+b5da02a3-5b9e-4371-b658-1b3ee3da5b2b,Building 439 CHS,Uthalsar,Sector 6,1962,2018-03-08,Dilapidated,C3,Repair
+448c82a2-4fb6-4bcc-8686-7a6ea584ac67,Building 440 CHS,Lokmanya-Savarkar Nagar,Sector 5,2006,2022-10-19,Good,Safe,Monitor
+c80c49fa-5167-40c1-ab3c-b8b6b7438db9,Building 441 CHS,Uthalsar,Sector 12,1988,2021-01-27,Fair,C2B,Repair
+6d17900a-f7c1-4d2b-9a79-1476b3e78f2d,Building 442 CHS,Wagle Estate,Sector 2,1982,2025-04-11,Poor,C2B,Repair
+a533f5b6-4c1e-4a4f-8fa8-66decf66786a,Building 443 CHS,Kalwa,Sector 3,2000,2020-08-17,Good,C3,Repair
+daf30eb5-335d-4038-ba8b-4f11e880f6fa,Building 444 CHS,Lokmanya-Savarkar Nagar,Sector 17,1962,2019-06-28,Poor,C2A,Evacuate
+cf53dfbc-5f4e-4ada-b9ca-afbf686fb16a,Building 445 CHS,Majiwada-Manpada,Sector 4,2006,2025-10-20,Good,Safe,Monitor
+bff84628-8527-49e7-a36e-714c54e98f03,Building 446 CHS,Kalwa,Sector 3,2004,2020-07-26,Good,Safe,Monitor
+637e1fb0-9139-4b82-ab8f-3c6ccdffc10e,Building 447 CHS,Wagle Estate,Sector 13,1963,2021-05-10,Poor,C2A,Evacuate
+83807585-1706-443c-9b33-776ead52f99d,Building 448 CHS,Diva,Sector 19,1967,2018-10-08,Dilapidated,C2B,Repair
+83109949-f4f0-4666-bebc-ca49eda72cf1,Building 449 CHS,Lokmanya-Savarkar Nagar,Sector 5,1951,2021-12-09,Dilapidated,C1,Demolish
+e3dcda1e-c774-40b3-8d24-3efc9b907e69,Building 450 CHS,Uthalsar,Sector 4,2002,2020-06-08,Good,Safe,Monitor
+72617f1a-d0ff-457e-b84c-4b21950e2dfe,Building 451 CHS,Majiwada-Manpada,Sector 14,1967,2022-04-22,Dilapidated,C2B,Repair
+347ef1dc-554f-4714-970f-0810f975bc1c,Building 452 CHS,Uthalsar,Sector 8,1990,2025-03-25,Good,Safe,Monitor
+893f9270-f434-4ad5-89ca-35787ad2d334,Building 453 CHS,Vartak Nagar,Sector 1,2020,2026-02-01,Good,Safe,Monitor
+74b2f3dc-0e0e-408f-addd-55b83201ef7e,Building 454 CHS,Kalwa,Sector 10,1988,2020-02-12,Fair,Safe,Monitor
+036a33dc-56ec-4bb5-8b10-3bf70bfc61a9,Building 455 CHS,Mumbra,Sector 13,1956,2020-09-07,Dilapidated,C2B,Repair
+54615217-6277-4de7-8c79-a0cc1bac3ea6,Building 456 CHS,Diva,Sector 1,1964,2018-10-18,Poor,C2B,Repair
+63e42497-6f1e-47b5-ab68-d146cb27f811,Building 457 CHS,Kalwa,Sector 12,1996,2024-05-17,Poor,Safe,Monitor
+0331eca0-c0d6-4213-a99d-4aeda134c3ec,Building 458 CHS,Uthalsar,Sector 1,2019,2023-04-14,Good,Safe,Monitor
+1505858c-6e98-464f-a924-ed20eed41a7f,Building 459 CHS,Naupada-Kopri,Sector 2,2025,2025-04-22,Good,Safe,Monitor
+9868933d-64a7-404b-b9be-def8aa5a0cb7,Building 460 CHS,Kalwa,Sector 14,2000,2023-08-15,Fair,Safe,Monitor
+176cf0a4-b184-452b-94b0-b1aad1e4f9ef,Building 461 CHS,Wagle Estate,Sector 9,2001,2024-11-28,Fair,Safe,Monitor
+dc513114-e488-441c-aeba-648509fbee2f,Building 462 CHS,Wagle Estate,Sector 18,1960,2020-04-12,Poor,C2B,Repair
+4f09c13e-5cf0-46d2-8799-7361043a6373,Building 463 CHS,Uthalsar,Sector 10,1991,2025-04-15,Fair,Safe,Monitor
+9e233538-2a0e-49d1-8403-c72af0186ae2,Building 464 CHS,Lokmanya-Savarkar Nagar,Sector 3,2005,2018-08-26,Good,C3,Repair
+6411c2f9-3b35-4c6a-b202-a88adf811fe9,Building 465 CHS,Vartak Nagar,Sector 6,2005,2018-08-14,Fair,Safe,Monitor
+e40e6704-6c16-48ce-b6be-54aad35b58d8,Building 466 CHS,Wagle Estate,Sector 16,1965,2018-02-16,Poor,C1,Demolish
+f245cabc-d749-491a-ab29-7b30096f6a27,Building 467 CHS,Vartak Nagar,Sector 6,1994,2026-01-31,Fair,C3,Repair
+383fe3fd-1c62-452c-83eb-4290d3c234cc,Building 468 CHS,Uthalsar,Sector 1,1997,2021-01-05,Fair,C3,Repair
+58b43bd2-6e65-49e5-a45a-9b7ada984889,Building 469 CHS,Vartak Nagar,Sector 19,1992,2018-09-19,Good,Safe,Monitor
+2abd1fb5-073c-4af3-94ef-b1dfa34e28fa,Building 470 CHS,Mumbra,Sector 19,1959,2018-08-16,Dilapidated,C2B,Repair
+30cc2cd5-5f55-4554-b290-d4fba344b3c6,Building 471 CHS,Uthalsar,Sector 8,1971,2019-02-26,Poor,C2A,Evacuate
+0a997d10-73e8-4a54-b1ea-a6436afb5b97,Building 472 CHS,Lokmanya-Savarkar Nagar,Sector 2,2015,2018-02-20,Good,Safe,Monitor
+b4603a10-9ee7-4913-9100-e238a5efd4f8,Building 473 CHS,Wagle Estate,Sector 2,2010,2019-09-07,Good,Safe,Monitor
+64e818a1-43ea-495e-850f-d24a1e282c5e,Building 474 CHS,Kalwa,Sector 8,2020,2026-01-03,Good,Safe,Monitor
+252ff6b9-cf16-4fcb-8cda-ffcb5f835983,Building 475 CHS,Vartak Nagar,Sector 3,1991,2021-08-03,Fair,C2B,Repair
+d7c4c61d-bcd5-4d1a-b48f-ca37c3e2679d,Building 476 CHS,Naupada-Kopri,Sector 6,2023,2023-08-19,Good,Safe,Monitor
+22570fa4-58e7-43a6-a2b6-b2de0ca0350f,Building 477 CHS,Uthalsar,Sector 15,1978,2022-07-01,Fair,C3,Repair
+0446b75d-cfa4-4e6b-8892-66dac795ac9d,Building 478 CHS,Diva,Sector 15,1986,2018-12-20,Good,Safe,Monitor
+e8bcf43f-c8dc-4ded-961e-26ac115d8f13,Building 479 CHS,Lokmanya-Savarkar Nagar,Sector 15,1951,2021-05-29,Poor,C2A,Evacuate
+30d38055-e0d3-4456-a5f6-53311bb8f323,Building 480 CHS,Diva,Sector 8,1997,2020-03-11,Fair,Safe,Monitor
+1b5af826-c297-4bd1-bcf3-22ff61a8c04c,Building 481 CHS,Diva,Sector 12,1969,2020-08-12,Poor,C2A,Evacuate
+7c566121-4a6e-48c4-85ee-d1ad9ebb24c8,Building 482 CHS,Kalwa,Sector 10,1951,2025-05-16,Fair,C1,Demolish
+1812c5e9-ed29-48ae-947a-7e2056499e90,Building 483 CHS,Mumbra,Sector 2,1963,2022-09-16,Poor,C3,Repair
+d4d09e65-e719-45c4-8f34-986d8fb6651c,Building 484 CHS,Diva,Sector 14,1968,2020-08-06,Dilapidated,C1,Demolish
+88e6fac7-6a95-4cf5-8c3c-5a3c0f28fdcd,Building 485 CHS,Uthalsar,Sector 17,1997,2024-07-06,Fair,C3,Repair
+4b1e43d9-f919-498b-b8fb-5c2e97f8d11c,Building 486 CHS,Naupada-Kopri,Sector 14,1967,2024-08-21,Dilapidated,C2A,Evacuate
+b4c0c858-0adb-4ffb-972e-c7518c433d52,Building 487 CHS,Kalwa,Sector 11,1966,2021-07-14,Poor,C2A,Evacuate
+7cc64a25-7160-4159-b113-7f4c5bd6455b,Building 488 CHS,Wagle Estate,Sector 19,1990,2020-04-10,Fair,Safe,Monitor
+d3da8167-1753-4495-8002-139a52b6bc2f,Building 489 CHS,Majiwada-Manpada,Sector 14,1963,2023-03-24,Poor,C1,Demolish
+43a38caf-c86a-4484-a004-9c8417f3ccdd,Building 490 CHS,Mumbra,Sector 10,1965,2020-04-30,Dilapidated,C3,Repair
+9fd48983-74dc-4e3b-bec2-f56f05f889ce,Building 491 CHS,Uthalsar,Sector 6,2009,2019-05-07,Good,Safe,Monitor
+e778e9f7-251c-4081-9f9f-75f949a7266d,Building 492 CHS,Lokmanya-Savarkar Nagar,Sector 11,1988,2018-06-15,Good,Safe,Monitor
+73acceb8-01ea-4991-aaec-7b35c2cdc3c3,Building 493 CHS,Kalwa,Sector 17,1968,2021-12-28,Poor,C2A,Evacuate
+3ae63b9a-061d-46aa-9228-61676263a871,Building 494 CHS,Naupada-Kopri,Sector 13,1956,2019-12-14,Dilapidated,C2A,Evacuate
+704cd57e-a9da-4768-953f-7fe5142f8df7,Building 495 CHS,Lokmanya-Savarkar Nagar,Sector 4,2007,2024-03-03,Good,Safe,Monitor
+5c014074-6b02-4e2d-a195-d72ba0b952f3,Building 496 CHS,Uthalsar,Sector 1,2009,2019-07-27,Good,Safe,Monitor
+a1a78856-85fa-4a3a-aeb5-fa4adcd02bcf,Building 497 CHS,Lokmanya-Savarkar Nagar,Sector 13,1957,2019-06-20,Fair,C3,Repair
+93f52242-e43c-4d2b-8e14-362c27a05fa8,Building 498 CHS,Vartak Nagar,Sector 3,1997,2018-12-11,Good,C2B,Repair
+37e5ae8c-6154-4dd6-be5f-c51c421862d9,Building 499 CHS,Mumbra,Sector 5,1952,2025-03-30,Fair,C1,Demolish
+a9de5398-0674-47c5-b9c6-a57676a68010,Building 500 CHS,Uthalsar,Sector 2,1961,2021-09-20,Fair,C3,Repair
+1f22ba56-85e8-4d8c-92d2-01b3ffa9f8d5,Building 501 CHS,Kalwa,Sector 13,2009,2024-06-08,Good,Safe,Monitor
+cdee7d35-04e7-4c31-beee-29f561281c85,Building 502 CHS,Kalwa,Sector 6,2013,2025-08-30,Good,Safe,Monitor
+dd781b65-3ce2-455f-bab6-480e430255ed,Building 503 CHS,Mumbra,Sector 5,1995,2021-02-20,Fair,Safe,Monitor
+d1b4defb-3bd1-4e80-9a53-914c8e195830,Building 504 CHS,Vartak Nagar,Sector 16,1954,2025-04-05,Dilapidated,C2B,Repair
+aec58850-396b-497e-bc3c-06d30ff9ae52,Building 505 CHS,Vartak Nagar,Sector 13,2002,2018-12-26,Good,Safe,Monitor
+aa66cf92-6839-4a4c-b4b4-bb972deea60e,Building 506 CHS,Lokmanya-Savarkar Nagar,Sector 18,1967,2023-11-24,Dilapidated,C2B,Repair
+89cda7fd-5679-4923-a04d-67edb8f09610,Building 507 CHS,Mumbra,Sector 18,1952,2022-01-10,Fair,C2B,Repair
+a43527f3-277b-423e-94f5-ca88ec8e6412,Building 508 CHS,Diva,Sector 11,2012,2024-05-05,Good,Safe,Monitor
+db5a672e-f132-4d97-907e-c768c1275792,Building 509 CHS,Lokmanya-Savarkar Nagar,Sector 1,1999,2024-09-11,Fair,Safe,Monitor
+55a3fc81-ad93-4df1-bb3f-5fca65e80858,Building 510 CHS,Majiwada-Manpada,Sector 19,1985,2023-12-09,Poor,C3,Repair
+6125f255-6c0f-4941-a182-45f44fb384d0,Building 511 CHS,Lokmanya-Savarkar Nagar,Sector 9,1979,2025-05-14,Fair,C1,Demolish
+e568527e-bb6c-4d31-bf13-481e398a9147,Building 512 CHS,Lokmanya-Savarkar Nagar,Sector 19,2018,2018-08-18,Good,Safe,Monitor
+6fda330e-1736-4b50-aec6-48fa9087c352,Building 513 CHS,Wagle Estate,Sector 8,1999,2019-12-13,Fair,C3,Repair
+666ad945-2a86-4961-8940-1215aa5ce82c,Building 514 CHS,Majiwada-Manpada,Sector 19,2025,2025-10-28,Good,Safe,Monitor
+a53f3f36-cb99-4ad9-b000-cb569717d821,Building 515 CHS,Wagle Estate,Sector 19,1953,2024-05-14,Dilapidated,C2A,Evacuate
+f3425c0a-72f1-4a9f-9eaf-8f5173ffa854,Building 516 CHS,Diva,Sector 10,1974,2023-07-10,Fair,C3,Repair
+344b1fb9-5b85-4cab-859f-68a003702497,Building 517 CHS,Lokmanya-Savarkar Nagar,Sector 1,1972,2020-08-10,Dilapidated,C1,Demolish
+776a95bb-115a-44e1-81ae-3b82ff15011f,Building 518 CHS,Lokmanya-Savarkar Nagar,Sector 5,2017,2021-09-20,Good,Safe,Monitor
+d299eaa5-454e-4d3a-b705-49778b1a527f,Building 519 CHS,Naupada-Kopri,Sector 1,1993,2021-08-18,Good,C2B,Repair
+a83d15bc-2970-451a-a42e-a3c58dc22237,Building 520 CHS,Diva,Sector 12,1968,2019-03-31,Dilapidated,C3,Repair
+4085965a-a969-4981-b3a9-a707be34a306,Building 521 CHS,Uthalsar,Sector 11,1959,2022-06-09,Poor,C3,Repair
+b309a58d-23d3-42a6-81fe-9d71f3d01457,Building 522 CHS,Kalwa,Sector 16,1988,2026-03-19,Fair,C2B,Repair
+9862c432-3f24-41b2-9a1b-7b6155f591c3,Building 523 CHS,Majiwada-Manpada,Sector 8,1990,2025-10-11,Fair,C2B,Repair
+4b4b925b-fc37-4eca-b285-f9bf0104656a,Building 524 CHS,Vartak Nagar,Sector 5,2025,2025-06-08,Good,Safe,Monitor
+a0ca4e2a-2fae-46c0-b88d-e4f0ffd583b4,Building 525 CHS,Kalwa,Sector 19,1972,2024-06-04,Dilapidated,C3,Repair
+7d67434c-ffa6-46c9-adba-9fab8e611d88,Building 526 CHS,Lokmanya-Savarkar Nagar,Sector 19,1954,2024-11-09,Poor,C2A,Evacuate
+02dc3345-652d-452d-8777-fa7875c322b3,Building 527 CHS,Lokmanya-Savarkar Nagar,Sector 12,1963,2018-11-15,Fair,C1,Demolish
+bfa1b4f3-9e7f-4679-a083-62d392a610ec,Building 528 CHS,Majiwada-Manpada,Sector 15,1990,2018-12-30,Fair,C3,Repair
+f156d137-3ab2-4d7e-a1da-3c231c305c1e,Building 529 CHS,Majiwada-Manpada,Sector 9,1951,2018-10-05,Poor,C2A,Evacuate
+80c8916c-96c4-4529-bd17-45e67db431d9,Building 530 CHS,Kalwa,Sector 6,1963,2022-11-30,Dilapidated,C1,Demolish
+2fea2662-ed17-4655-be28-58f0d679461b,Building 531 CHS,Kalwa,Sector 4,2002,2024-02-15,Fair,Safe,Monitor
+4af7b7d0-835f-4f84-81f7-c2480f157c6b,Building 532 CHS,Lokmanya-Savarkar Nagar,Sector 6,2011,2024-06-25,Good,Safe,Monitor
+603d16ea-67e9-47a6-bdf2-899a8d92e772,Building 533 CHS,Vartak Nagar,Sector 1,2007,2018-05-17,Good,Safe,Monitor
+d846c076-b0b8-4047-8ed6-4a2946bb57ff,Building 534 CHS,Wagle Estate,Sector 13,1990,2021-11-01,Fair,Safe,Monitor
+37b8905f-d5c1-47f9-8bcb-ab0a7e0afeb2,Building 535 CHS,Majiwada-Manpada,Sector 20,1970,2019-01-17,Dilapidated,C2B,Repair
+1aac4e13-08ce-4b01-9443-abccf12ea2ed,Building 536 CHS,Wagle Estate,Sector 20,2011,2022-11-02,Good,Safe,Monitor
+f9118749-f5a6-401a-8f61-8929454b93b8,Building 537 CHS,Lokmanya-Savarkar Nagar,Sector 14,2005,2020-04-21,Fair,Safe,Monitor
+6ddfa0ec-52a7-435f-95ca-adec73c2655e,Building 538 CHS,Diva,Sector 9,2020,2026-03-09,Good,Safe,Monitor
+7893361b-4675-4f3c-8e2a-efa6da576743,Building 539 CHS,Diva,Sector 16,1986,2022-05-29,Fair,Safe,Monitor
+e53c5595-df32-44c1-92c2-9706922c38e1,Building 540 CHS,Vartak Nagar,Sector 20,1969,2018-12-25,Poor,C1,Demolish
+5048d868-495d-4b80-8761-9d5567a12abf,Building 541 CHS,Lokmanya-Savarkar Nagar,Sector 6,2011,2018-04-16,Good,Safe,Monitor
+b439299b-fa1d-41e6-baa5-ab6c1b7e7356,Building 542 CHS,Vartak Nagar,Sector 13,1987,2019-04-19,Poor,Safe,Monitor
+7d19dc1b-2f9a-41fe-910c-7b6d96e6a338,Building 543 CHS,Vartak Nagar,Sector 3,2010,2025-05-31,Good,Safe,Monitor
+c0f38ff2-df3f-4be6-9a43-fc2877e5b964,Building 544 CHS,Kalwa,Sector 12,2019,2022-02-28,Good,Safe,Monitor
+fbd5fa64-ff97-4377-9b94-97d33906888e,Building 545 CHS,Vartak Nagar,Sector 8,1973,2023-03-20,Dilapidated,C2A,Evacuate
+d734ded9-318c-4dff-88df-87bf4d2bb060,Building 546 CHS,Uthalsar,Sector 3,1984,2025-10-23,Dilapidated,C1,Demolish
+539f25fe-3b82-49d3-8e81-8b1acb3a7c3f,Building 547 CHS,Lokmanya-Savarkar Nagar,Sector 18,1994,2024-08-12,Good,Safe,Monitor
+42e2f5b2-526c-4950-af07-75b38d978e61,Building 548 CHS,Diva,Sector 16,1957,2022-09-11,Fair,C3,Repair
+546ec8eb-1902-491c-b143-b762dce67ac3,Building 549 CHS,Vartak Nagar,Sector 3,2023,2023-05-05,Good,Safe,Monitor
+3efb5ef3-712a-41a4-a4b6-fbf5aff28ea3,Building 550 CHS,Diva,Sector 19,2000,2023-08-19,Poor,C3,Repair
+9e03d0ce-f2b7-4a37-a33c-4b53d83ee998,Building 551 CHS,Wagle Estate,Sector 7,1968,2019-12-10,Poor,C2B,Repair
+111077a4-f697-4df9-99a8-9c9e9b540006,Building 552 CHS,Kalwa,Sector 7,1974,2025-08-30,Poor,C2A,Evacuate
+b1d214c1-43f4-466b-8488-782fdd32095a,Building 553 CHS,Uthalsar,Sector 3,1968,2026-02-26,Fair,C2A,Evacuate
+a9035a33-2ac9-44a1-a957-c167b60760cd,Building 554 CHS,Diva,Sector 15,1999,2021-02-05,Fair,Safe,Monitor
+37d551d1-188f-4e7d-918a-5fc98ea54cc7,Building 555 CHS,Kalwa,Sector 4,1951,2023-11-11,Dilapidated,C2B,Repair
+021a65a9-706e-4c81-a7a8-cfce7b258a7f,Building 556 CHS,Uthalsar,Sector 4,2003,2024-07-14,Fair,Safe,Monitor
+4816dc12-7a05-450d-b840-f40039e4b056,Building 557 CHS,Majiwada-Manpada,Sector 14,2022,2022-10-03,Good,Safe,Monitor
+0e3c832e-cd8f-45de-8ac7-e5622a35996a,Building 558 CHS,Mumbra,Sector 2,1983,2024-10-30,Poor,C2A,Evacuate
+38ae7aca-dec4-411e-bedd-bee826d7ee62,Building 559 CHS,Kalwa,Sector 2,1972,2024-10-29,Poor,C1,Demolish
+b5e31784-c579-4711-9c65-8b523fff292c,Building 560 CHS,Naupada-Kopri,Sector 16,2000,2020-08-31,Good,Safe,Monitor
+6b391ec1-c993-4837-a484-58bf410c0a66,Building 561 CHS,Vartak Nagar,Sector 9,1984,2021-05-26,Fair,C1,Demolish
+8521c464-5c4f-411a-aac9-ec3d06ac93ea,Building 562 CHS,Uthalsar,Sector 8,2012,2025-09-06,Good,Safe,Monitor
+fc55ac03-0f00-445c-b8d3-c47c480e2810,Building 563 CHS,Vartak Nagar,Sector 14,1967,2021-08-07,Poor,C2B,Repair
+aed450d2-4aa1-4a77-a683-7b55d523d626,Building 564 CHS,Mumbra,Sector 17,1961,2022-07-26,Poor,C2A,Evacuate
+e2ac5d1b-ce62-4acd-8fc8-f13c7e0d1966,Building 565 CHS,Uthalsar,Sector 10,1997,2019-10-14,Good,Safe,Monitor
+dbf96205-4f47-4464-823c-6ec514d47c2c,Building 566 CHS,Naupada-Kopri,Sector 6,2014,2023-11-18,Good,Safe,Monitor
+f0ce5f86-24b7-494d-843c-1686c61e46d1,Building 567 CHS,Lokmanya-Savarkar Nagar,Sector 2,1974,2018-08-25,Fair,C2A,Evacuate
+3fc4e1d4-3742-45b8-87c8-d0ba5f0823d0,Building 568 CHS,Lokmanya-Savarkar Nagar,Sector 9,2008,2022-01-16,Good,Safe,Monitor
+ff289086-3ccd-45ae-bf40-82bbb73e49e8,Building 569 CHS,Uthalsar,Sector 1,1997,2025-02-15,Good,Safe,Monitor
+207bc901-42bb-4858-bec1-3d0e6e7a8c11,Building 570 CHS,Mumbra,Sector 19,1980,2019-12-29,Poor,C2B,Repair
+dfc382bd-174e-4253-a7b5-9436ec91456c,Building 571 CHS,Uthalsar,Sector 10,2020,2020-05-13,Good,Safe,Monitor
+1f630619-5217-442c-afe5-c12735a32c6d,Building 572 CHS,Lokmanya-Savarkar Nagar,Sector 8,1953,2024-06-01,Poor,C1,Demolish
+f0474d61-cbc2-4b27-b66e-5b9eeda279fd,Building 573 CHS,Diva,Sector 1,1978,2022-08-05,Dilapidated,C2A,Evacuate
+4624b38f-e93b-4f7a-b745-b66a14cd60a3,Building 574 CHS,Naupada-Kopri,Sector 8,1951,2019-12-11,Dilapidated,C1,Demolish
+7c5c28ec-8cfa-4b1b-8d2c-27f2b4b2b8de,Building 575 CHS,Vartak Nagar,Sector 14,1982,2025-12-29,Dilapidated,C3,Repair
+f86c0a4f-0ffe-4d5f-9c59-09effcc0319a,Building 576 CHS,Mumbra,Sector 10,1998,2020-06-12,Good,Safe,Monitor
+6896795a-1e93-4fee-aee5-9969131d9a2a,Building 577 CHS,Uthalsar,Sector 1,2016,2022-06-15,Good,Safe,Monitor
+5c0fcfe0-da4d-4619-92c7-56f1a88ef7f1,Building 578 CHS,Diva,Sector 20,2015,2022-03-13,Fair,Safe,Monitor
+c1b322d6-b527-4395-9b91-b7ea733d6850,Building 579 CHS,Majiwada-Manpada,Sector 9,1986,2018-09-19,Fair,Safe,Monitor
+4d702f69-f1b6-4338-a37f-7b88c5b43dd1,Building 580 CHS,Vartak Nagar,Sector 7,1991,2025-12-22,Good,Safe,Monitor
+6a2f7c7f-f648-45a9-8402-64d00429b446,Building 581 CHS,Kalwa,Sector 11,1969,2018-08-21,Dilapidated,C2A,Evacuate
+802e2347-d14f-404e-b010-1b84fc623823,Building 582 CHS,Vartak Nagar,Sector 14,1967,2021-04-25,Dilapidated,C2B,Repair
+6870d33e-8187-490d-91db-c2551175ec79,Building 583 CHS,Lokmanya-Savarkar Nagar,Sector 11,2001,2025-12-10,Fair,Safe,Monitor
+ecfa0f1e-aa92-4500-a8be-bce7e229a02d,Building 584 CHS,Majiwada-Manpada,Sector 17,1978,2023-05-03,Dilapidated,C2B,Repair
+be335e6c-d75d-422d-80c9-b6d1de388b0f,Building 585 CHS,Wagle Estate,Sector 10,1988,2024-04-05,Good,C3,Repair
+3c9767f3-f2ad-4efd-abd7-d9b7719d9159,Building 586 CHS,Diva,Sector 6,1962,2026-02-18,Dilapidated,C2B,Repair
+bd5429c8-1d54-42ed-800b-f78bce025c98,Building 587 CHS,Vartak Nagar,Sector 14,1992,2020-07-03,Good,Safe,Monitor
+4bc9156b-96ad-4f78-a07a-0d9e03441d4d,Building 588 CHS,Uthalsar,Sector 16,1992,2023-03-15,Fair,Safe,Monitor
+863f7de7-6c40-455a-badf-9b0f54f73648,Building 589 CHS,Uthalsar,Sector 16,1956,2024-12-17,Fair,C2B,Repair
+fe0177c3-fcf1-4250-b109-93110b9b019e,Building 590 CHS,Diva,Sector 10,1974,2022-04-13,Dilapidated,C3,Repair
+43dfad1e-41ea-4af8-803b-968db28a1a90,Building 591 CHS,Lokmanya-Savarkar Nagar,Sector 11,2002,2019-07-17,Fair,C3,Repair
+8007215e-7191-4bce-b67e-4f2715e21080,Building 592 CHS,Wagle Estate,Sector 11,2002,2023-02-18,Poor,C3,Repair
+8bdd69e3-134d-4db3-9cea-5605df221557,Building 593 CHS,Wagle Estate,Sector 11,1973,2025-01-28,Dilapidated,C2A,Evacuate
+5b6034d4-4beb-46f6-9d09-971eaf365b5e,Building 594 CHS,Wagle Estate,Sector 16,1957,2019-11-22,Poor,C2A,Evacuate
+99386f1d-9b80-4708-b9d9-fffe71fae651,Building 595 CHS,Kalwa,Sector 14,1961,2022-10-25,Poor,C2A,Evacuate
+d4e784ec-82d6-4198-9365-3d781291431a,Building 596 CHS,Diva,Sector 7,2011,2018-06-04,Good,Safe,Monitor
+bcfa8c70-eb4e-4893-a73e-a6935248235a,Building 597 CHS,Lokmanya-Savarkar Nagar,Sector 1,1997,2023-12-16,Poor,C3,Repair
+7fa7faa7-bddd-46f0-9433-f5d0f9d8e2b0,Building 598 CHS,Majiwada-Manpada,Sector 10,1950,2025-10-11,Dilapidated,C2A,Evacuate
+1bc0b930-9285-4a4d-ae34-ff747c72047d,Building 599 CHS,Wagle Estate,Sector 3,1966,2021-06-07,Poor,C2B,Repair
+145db132-f119-4db8-90ed-10a8614549f9,Building 600 CHS,Diva,Sector 20,1955,2026-03-01,Poor,C2A,Evacuate
+f14ca519-1108-430d-b546-908c4c821f39,Building 601 CHS,Wagle Estate,Sector 11,2017,2025-09-14,Good,Safe,Monitor
+623f70f0-9f3a-4ba8-a994-5f15a0830778,Building 602 CHS,Wagle Estate,Sector 13,2012,2020-02-11,Good,Safe,Monitor
+a676b52c-667a-4841-83ec-b4a170a3d095,Building 603 CHS,Lokmanya-Savarkar Nagar,Sector 1,1952,2019-06-22,Poor,C2B,Repair
+5e1c8b5b-1092-4dc3-8136-38bb71c2ba28,Building 604 CHS,Naupada-Kopri,Sector 13,2025,2025-07-08,Good,Safe,Monitor
+7bcce356-1abf-44c5-90c7-c7f45b9529f2,Building 605 CHS,Naupada-Kopri,Sector 4,1982,2024-08-29,Dilapidated,C2B,Repair
+be381970-9622-413d-aa23-6386c7f2bc7e,Building 606 CHS,Kalwa,Sector 4,1952,2022-12-25,Poor,C1,Demolish
+e8bebb5d-7b80-46e5-8d70-e81d7d6a3440,Building 607 CHS,Wagle Estate,Sector 7,2020,2025-11-14,Good,Safe,Monitor
+a36a7cfc-9d00-4bf4-87f4-80bb807bdffd,Building 608 CHS,Diva,Sector 9,1951,2025-06-06,Poor,C2B,Repair
+dbb504c6-110a-4496-8c1e-68de1c58a927,Building 609 CHS,Uthalsar,Sector 10,1967,2023-09-27,Dilapidated,C3,Repair
+da68eeb3-cd6b-4623-b4eb-a1fee09c1808,Building 610 CHS,Lokmanya-Savarkar Nagar,Sector 9,1964,2024-10-30,Dilapidated,C2A,Evacuate
+16a42143-c8aa-4060-8234-21d3c9ae6816,Building 611 CHS,Kalwa,Sector 10,2016,2022-01-06,Fair,Safe,Monitor
+29e96c06-2c5d-43c9-bb0d-bf78fa4dd3aa,Building 612 CHS,Mumbra,Sector 11,1970,2020-04-30,Poor,C2A,Evacuate
+18fbbe9f-cf2e-4295-986a-870cfd6ce1b4,Building 613 CHS,Mumbra,Sector 5,1980,2019-03-29,Poor,C2B,Repair
+6549a292-6da5-44e6-ae37-6c30ff1cfd22,Building 614 CHS,Uthalsar,Sector 9,1961,2026-02-11,Dilapidated,C1,Demolish
+58d86f48-e318-4a43-9325-a4506073619c,Building 615 CHS,Mumbra,Sector 2,1979,2020-12-17,Dilapidated,C3,Repair
+6843713c-8f7f-47a5-9242-966cd484c315,Building 616 CHS,Majiwada-Manpada,Sector 11,1962,2021-04-05,Fair,C3,Repair
+87a409aa-06c1-4e35-abd6-37f1f907e339,Building 617 CHS,Naupada-Kopri,Sector 5,2004,2018-07-07,Good,Safe,Monitor
+9af72470-f933-470c-9c96-9be61b66b3eb,Building 618 CHS,Vartak Nagar,Sector 3,1971,2024-12-21,Poor,C3,Repair
+249438d3-f99f-4836-a36d-69e97f9cf149,Building 619 CHS,Kalwa,Sector 15,1997,2022-06-30,Good,Safe,Monitor
+9917366f-1fb5-4acf-b2a4-84523061fd1f,Building 620 CHS,Kalwa,Sector 6,1984,2023-05-13,Fair,C2B,Repair
+f58f0ce4-7df5-406a-9c21-394f53c7a035,Building 621 CHS,Uthalsar,Sector 14,1964,2019-10-15,Poor,C2B,Repair
+8d56643e-5ab8-42a0-bc57-972dbce918d2,Building 622 CHS,Mumbra,Sector 6,2025,2025-12-15,Good,Safe,Monitor
+491d05e0-9ee7-4d8d-b68c-b6a9b1f9f179,Building 623 CHS,Wagle Estate,Sector 16,1998,2025-09-04,Good,Safe,Monitor
+1b5f9c86-bde5-45db-b616-93e7e0a14ab8,Building 624 CHS,Mumbra,Sector 2,2012,2022-08-12,Good,Safe,Monitor
+157a0162-1acb-4ec0-9f09-04ab754b9625,Building 625 CHS,Diva,Sector 19,1958,2025-11-25,Poor,C2A,Evacuate
+a9b87232-f839-47a9-ac6e-0c683aa9a8ea,Building 626 CHS,Majiwada-Manpada,Sector 17,2022,2025-07-06,Good,Safe,Monitor
+549fa359-63a8-4a67-a7f5-2ef10213a847,Building 627 CHS,Uthalsar,Sector 14,2016,2024-12-07,Good,Safe,Monitor
+0bc25a0e-1a47-4d10-aa5f-6283f617ba23,Building 628 CHS,Kalwa,Sector 5,1981,2025-03-12,Dilapidated,C2B,Repair
+a418eb23-6a7d-430b-bde6-eb53fe445227,Building 629 CHS,Naupada-Kopri,Sector 1,2021,2024-11-15,Good,Safe,Monitor
+f71868e2-f7fe-425d-b625-fd397260e31c,Building 630 CHS,Wagle Estate,Sector 3,1970,2023-07-24,Dilapidated,C2A,Evacuate
+6f825605-cf5a-47b5-a569-329b8695d628,Building 631 CHS,Vartak Nagar,Sector 2,2012,2021-09-17,Good,Safe,Monitor
+0723c59f-5613-4e8d-9fcd-9266ddb4a84d,Building 632 CHS,Kalwa,Sector 13,2014,2025-03-20,Good,Safe,Monitor
+0ff19522-bb86-411b-8bbd-0c592f32de24,Building 633 CHS,Mumbra,Sector 3,1980,2024-06-05,Poor,C2A,Evacuate
+0e15ee21-e7ff-4396-bbea-62a81237ae81,Building 634 CHS,Mumbra,Sector 1,2013,2019-05-02,Good,Safe,Monitor
+dabc0633-e44b-4c16-b586-eb71688bd4c9,Building 635 CHS,Naupada-Kopri,Sector 3,1963,2024-02-28,Dilapidated,C1,Demolish
+047f3fb1-f903-4a73-9c9b-cc3d68768624,Building 636 CHS,Mumbra,Sector 11,1988,2025-05-05,Good,Safe,Monitor
+ac64f4e5-cea4-419a-8a21-17d0b26d6ede,Building 637 CHS,Majiwada-Manpada,Sector 18,1996,2023-02-05,Good,C3,Repair
+785217a0-62a4-4edb-800f-a68a8fd4b99d,Building 638 CHS,Mumbra,Sector 4,2010,2022-01-28,Good,Safe,Monitor
+26e51c86-f9ba-4797-a3ad-bbb1f4bea317,Building 639 CHS,Majiwada-Manpada,Sector 10,1962,2021-10-30,Dilapidated,C2A,Evacuate
+af7e2248-2e3f-4e61-9593-2d50da70054b,Building 640 CHS,Uthalsar,Sector 2,2020,2025-11-15,Good,Safe,Monitor
+9a10b6a2-11bf-4874-b7de-9df720213613,Building 641 CHS,Kalwa,Sector 4,1971,2026-02-03,Dilapidated,C3,Repair
+5a54b39a-09a8-456a-ad52-51b949fdb27f,Building 642 CHS,Lokmanya-Savarkar Nagar,Sector 15,1982,2022-05-29,Dilapidated,C1,Demolish
+b7333f20-4651-4d69-8ecc-712f2bb7d04a,Building 643 CHS,Naupada-Kopri,Sector 19,1974,2022-08-25,Dilapidated,C1,Demolish
+aa37f51c-8669-4677-876c-7dfa87da4530,Building 644 CHS,Diva,Sector 5,1965,2025-05-21,Dilapidated,C2A,Evacuate
+e7aa9d93-a5ae-4c50-8b2a-f0c04702a1bc,Building 645 CHS,Diva,Sector 14,2013,2018-07-18,Good,Safe,Monitor
+d80bb191-0ca2-4a1a-8c09-bc079d8b7c8e,Building 646 CHS,Wagle Estate,Sector 5,2024,2024-04-01,Good,Safe,Monitor
+e4ae1772-88b9-488e-bdd9-00f0fc03eea9,Building 647 CHS,Diva,Sector 13,1963,2021-08-11,Poor,C2B,Repair
+3d57ddc2-93ae-40dd-b3d1-ab86433e3616,Building 648 CHS,Vartak Nagar,Sector 13,2003,2020-10-13,Poor,C2B,Repair
+1d22c2b8-ceed-4dc9-8f9a-8e9ac7db1771,Building 649 CHS,Wagle Estate,Sector 14,1993,2019-07-01,Poor,Safe,Monitor
+a0effc31-2534-4831-b9d5-b022993c15a2,Building 650 CHS,Diva,Sector 11,2015,2025-11-13,Good,Safe,Monitor
+82083e8c-c56a-4674-978b-01b65f6bd885,Building 651 CHS,Lokmanya-Savarkar Nagar,Sector 20,2020,2020-04-02,Good,Safe,Monitor
+c88d740a-4598-4459-9175-31e01abcd0e4,Building 652 CHS,Wagle Estate,Sector 17,1987,2019-06-28,Good,C2B,Repair
+474fd4f0-5631-4051-a2e9-6ee869a7e425,Building 653 CHS,Uthalsar,Sector 12,2019,2021-08-13,Good,Safe,Monitor
+c13cedb2-1340-42e7-91e4-7962a21b98c6,Building 654 CHS,Kalwa,Sector 18,2021,2024-05-26,Good,Safe,Monitor
+a221af7a-2516-4cfe-bd3f-bf871e5afd4a,Building 655 CHS,Diva,Sector 4,1986,2018-02-22,Good,Safe,Monitor
+fc413c0c-86c3-4b72-bcff-d3abb53885b6,Building 656 CHS,Lokmanya-Savarkar Nagar,Sector 9,1953,2018-08-20,Poor,C1,Demolish
+fec85e5d-f330-43a9-80a8-bb76c9e09a5b,Building 657 CHS,Naupada-Kopri,Sector 10,1970,2019-08-23,Fair,C2B,Repair
+f5e0893f-2652-4e46-8c35-71d814d642d1,Building 658 CHS,Uthalsar,Sector 20,1976,2023-01-28,Dilapidated,C1,Demolish
+25ecad0e-7421-4e0d-9e5e-897358bab7de,Building 659 CHS,Diva,Sector 13,2021,2025-04-04,Good,Safe,Monitor
+0ebafa58-7c0d-4f86-a1a6-615fdcb227a9,Building 660 CHS,Vartak Nagar,Sector 2,1980,2025-10-22,Dilapidated,C2B,Repair
+59b9d7f2-415d-4831-96b1-61cd7206245c,Building 661 CHS,Majiwada-Manpada,Sector 18,1998,2025-09-07,Fair,C2B,Repair
+7350c3c2-0df1-4094-9aed-b1af1915d004,Building 662 CHS,Mumbra,Sector 8,1956,2024-12-16,Poor,C2A,Evacuate
+9e31929f-0401-4122-bed8-0fb1248fdacb,Building 663 CHS,Lokmanya-Savarkar Nagar,Sector 7,1997,2024-10-07,Good,Safe,Monitor
+258336e3-04b8-4f76-a0c2-0802f8f279d5,Building 664 CHS,Wagle Estate,Sector 6,1987,2018-11-02,Fair,C2B,Repair
+726ac588-120f-4c7f-bc7b-04afea5bd59c,Building 665 CHS,Kalwa,Sector 9,2015,2018-06-16,Good,Safe,Monitor
+e5deb1f1-f593-4d7f-b64c-4d4863e3bd0e,Building 666 CHS,Vartak Nagar,Sector 1,2021,2021-10-28,Good,Safe,Monitor
+d37a840d-50c3-40fb-b0a7-e39508c975ca,Building 667 CHS,Wagle Estate,Sector 11,1992,2018-06-13,Fair,C2B,Repair
+edcbae37-79db-4563-8409-335cef90773a,Building 668 CHS,Vartak Nagar,Sector 16,1956,2025-06-04,Dilapidated,C2B,Repair
+1f38f608-8311-4fbe-8b28-2c969304eae4,Building 669 CHS,Majiwada-Manpada,Sector 17,2023,2023-12-30,Good,Safe,Monitor
+89f5f96f-0eda-49b4-86b6-0dd3a9573bb6,Building 670 CHS,Wagle Estate,Sector 14,1978,2023-09-01,Fair,C2B,Repair
+fc350cb9-2cde-4fb8-bbd7-e58a4774fa64,Building 671 CHS,Majiwada-Manpada,Sector 8,2019,2019-01-12,Good,Safe,Monitor
+c9ff270d-3ec9-4d41-8e25-2fc9c27abb72,Building 672 CHS,Lokmanya-Savarkar Nagar,Sector 20,1977,2021-04-17,Dilapidated,C2A,Evacuate
+b70aaab2-c0d1-46b8-998c-b03acfc2fc0f,Building 673 CHS,Naupada-Kopri,Sector 4,2017,2024-04-18,Good,Safe,Monitor
+50d04856-3739-4140-80f7-1fbfb055b2db,Building 674 CHS,Lokmanya-Savarkar Nagar,Sector 2,1994,2024-11-18,Fair,C2B,Repair
+a6bab8bc-f4c1-482e-863e-1c0ec1e627cc,Building 675 CHS,Kalwa,Sector 9,1991,2019-04-10,Fair,C3,Repair
+ec876007-e74f-48ba-88ec-bc2b66c12b7c,Building 676 CHS,Majiwada-Manpada,Sector 17,2019,2019-09-23,Good,Safe,Monitor
+ebb9214a-76c1-4d73-aa2e-6c2b4232b45b,Building 677 CHS,Vartak Nagar,Sector 7,2015,2018-06-29,Good,Safe,Monitor
+6e65a6c0-5514-4e90-baa2-d4b0339b9e14,Building 678 CHS,Diva,Sector 18,1991,2019-11-17,Fair,C2B,Repair
+30dcb61b-8323-499e-85fb-622f61fd0ab1,Building 679 CHS,Lokmanya-Savarkar Nagar,Sector 14,1950,2025-01-22,Dilapidated,C2A,Evacuate
+de1b6ff0-75fa-48c4-aa46-e8b2889188cf,Building 680 CHS,Uthalsar,Sector 5,1963,2022-11-18,Poor,C3,Repair
+465fe475-7976-4837-90fb-99aecbd62a55,Building 681 CHS,Uthalsar,Sector 2,1953,2018-12-25,Dilapidated,C2A,Evacuate
+8b4b6b7e-a452-4f53-a1cf-bbb2162543fc,Building 682 CHS,Lokmanya-Savarkar Nagar,Sector 9,1972,2024-06-13,Dilapidated,C2B,Repair
+b9ee532f-985d-4488-a0e0-0143d0f3f1f6,Building 683 CHS,Majiwada-Manpada,Sector 1,2002,2022-11-09,Fair,Safe,Monitor
+558316d1-623f-448d-aa61-fde36a05f14e,Building 684 CHS,Uthalsar,Sector 19,1999,2025-03-12,Good,Safe,Monitor
+f7cf0430-dfed-49ec-a972-5714ceefcef1,Building 685 CHS,Uthalsar,Sector 10,1955,2023-08-22,Dilapidated,C1,Demolish
+3726f8f0-c06b-48c8-9217-a55891fd1450,Building 686 CHS,Kalwa,Sector 13,1988,2022-11-28,Good,Safe,Monitor
+eca328a1-8092-4cc8-be9f-4aca5690a74e,Building 687 CHS,Kalwa,Sector 18,1953,2019-07-13,Dilapidated,C2B,Repair
+3730132d-ffe6-45d2-93ee-55ccd05c7a73,Building 688 CHS,Majiwada-Manpada,Sector 1,1987,2025-08-06,Poor,Safe,Monitor
+5afe3be8-b71b-4038-a68c-bb34a3240aac,Building 689 CHS,Naupada-Kopri,Sector 1,2020,2020-03-05,Good,Safe,Monitor
+6fc758f2-b739-45e3-8e27-6b2c239199e1,Building 690 CHS,Diva,Sector 3,2023,2024-01-10,Good,Safe,Monitor
+6ab30f4f-931d-416d-b5e1-9f27670954cf,Building 691 CHS,Majiwada-Manpada,Sector 7,1989,2026-02-21,Fair,C3,Repair
+720c8295-c957-4593-8121-32f8fed56f4f,Building 692 CHS,Wagle Estate,Sector 6,2002,2019-08-07,Poor,C3,Repair
+877507f9-b5b6-4210-9605-70d6ff6ae288,Building 693 CHS,Wagle Estate,Sector 19,1978,2019-04-15,Dilapidated,C2A,Evacuate
+4ed4357b-16ba-4a0b-b131-4ae9ec0af26e,Building 694 CHS,Mumbra,Sector 18,1956,2024-02-27,Fair,C3,Repair
+130e8dd5-1223-47c3-bfaf-172892b235a9,Building 695 CHS,Lokmanya-Savarkar Nagar,Sector 19,1959,2019-02-07,Poor,C1,Demolish
+bafb1d4d-2e4c-448e-ab16-3dffac1162c1,Building 696 CHS,Wagle Estate,Sector 8,2012,2022-01-02,Fair,Safe,Monitor
+ffedffc4-494c-42cc-8cfe-b616328b88a6,Building 697 CHS,Majiwada-Manpada,Sector 16,1962,2020-03-03,Poor,C1,Demolish
+7cb0160d-6b4b-4d80-a6ed-5f13ed0ef15e,Building 698 CHS,Vartak Nagar,Sector 19,2007,2025-05-24,Good,Safe,Monitor
+1f9a4b71-5c41-494b-a8b6-1cfcaad1d2d0,Building 699 CHS,Kalwa,Sector 6,1969,2021-07-19,Dilapidated,C2A,Evacuate
+0e831aae-6c5f-4237-9e1b-5ff05d567120,Building 700 CHS,Kalwa,Sector 9,1950,2025-12-27,Poor,C2B,Repair
+35868442-7212-4f57-b370-e90ede589229,Building 701 CHS,Mumbra,Sector 15,1996,2023-05-20,Fair,C3,Repair
+3992ccf7-df36-4901-adde-44f12893a4d7,Building 702 CHS,Wagle Estate,Sector 20,1995,2019-03-22,Good,Safe,Monitor
+5112ffda-1f07-413f-aeca-b761e2f7d6c4,Building 703 CHS,Diva,Sector 7,1960,2019-07-28,Fair,C3,Repair
+84cd08ce-04a2-470a-9f62-fee08b3f99be,Building 704 CHS,Uthalsar,Sector 1,1983,2026-02-27,Dilapidated,C2B,Repair
+23c6bf31-836d-4dd9-85e5-491197655e1d,Building 705 CHS,Kalwa,Sector 19,2014,2024-07-11,Good,Safe,Monitor
+822edea7-2a91-48ec-ad72-085e19a6ddb3,Building 706 CHS,Diva,Sector 16,1977,2024-02-05,Fair,C2B,Repair
+cd327eb7-bb6b-4b3c-9cb1-42c4a26bd1d7,Building 707 CHS,Vartak Nagar,Sector 5,1969,2024-08-12,Poor,C2A,Evacuate
+a961b1b6-7331-4338-8115-23874204e613,Building 708 CHS,Kalwa,Sector 12,2009,2019-01-06,Good,Safe,Monitor
+cb3fff46-5c20-4379-9422-fb27a11e67ca,Building 709 CHS,Wagle Estate,Sector 17,2014,2020-09-05,Good,Safe,Monitor
+fe0fb482-eaa5-4dfc-9831-b6fba1ff2872,Building 710 CHS,Wagle Estate,Sector 16,1967,2024-05-06,Dilapidated,C1,Demolish
+03b1fd1d-d8c8-4251-aa00-2cc19321bed7,Building 711 CHS,Uthalsar,Sector 9,1995,2020-08-07,Fair,C3,Repair
+f9a9ea4f-81de-4bee-b1be-90d10652e30f,Building 712 CHS,Majiwada-Manpada,Sector 13,1997,2023-10-23,Fair,Safe,Monitor
+e689eccb-8456-4bd3-99cd-d93d290b6ee2,Building 713 CHS,Naupada-Kopri,Sector 11,2010,2018-07-10,Fair,Safe,Monitor
+6b7d035b-a2a0-4bcc-8d9a-de0421cf4ade,Building 714 CHS,Vartak Nagar,Sector 19,1963,2021-01-25,Dilapidated,C2B,Repair
+69d930ef-e2b3-4fcb-8f46-ad40ab5da715,Building 715 CHS,Kalwa,Sector 12,2019,2022-03-23,Good,Safe,Monitor
+803007c6-16b3-4bb7-aca2-e76d205ef32b,Building 716 CHS,Vartak Nagar,Sector 13,2025,2025-09-23,Good,Safe,Monitor
+481ba32a-92b5-427a-be98-245564da6f94,Building 717 CHS,Mumbra,Sector 16,1978,2021-11-14,Dilapidated,C2A,Evacuate
+4c27c334-9545-4fee-a862-219cbe378609,Building 718 CHS,Lokmanya-Savarkar Nagar,Sector 3,1950,2019-11-10,Dilapidated,C1,Demolish
+5d55b5a8-211e-437d-b84f-fdec13253d1e,Building 719 CHS,Wagle Estate,Sector 6,2015,2020-05-16,Good,Safe,Monitor
+228b7af8-9302-4d4e-92ad-a1593c8340e4,Building 720 CHS,Lokmanya-Savarkar Nagar,Sector 14,1970,2019-04-30,Poor,C2B,Repair
+e35472bf-dd13-4e92-9720-36b11ff286c2,Building 721 CHS,Mumbra,Sector 7,1992,2023-05-16,Good,Safe,Monitor
+4fe4254a-0471-4434-a5ad-846423b04b9e,Building 722 CHS,Lokmanya-Savarkar Nagar,Sector 2,2025,2025-01-13,Good,Safe,Monitor
+67236348-ee21-4884-beee-d490e5bf0286,Building 723 CHS,Diva,Sector 2,1966,2025-01-22,Dilapidated,C1,Demolish
+cde4d35f-a4a2-41e4-bd0c-f0d901477f93,Building 724 CHS,Wagle Estate,Sector 17,2023,2023-05-14,Good,Safe,Monitor
+b504e717-b7c7-4e2d-b2ec-9d7ed3250406,Building 725 CHS,Vartak Nagar,Sector 3,2001,2018-03-18,Fair,Safe,Monitor
+556b16d6-aa95-42d7-a2ea-b469d9ce7f7a,Building 726 CHS,Wagle Estate,Sector 8,1977,2023-05-27,Dilapidated,C3,Repair
+abbbe996-c3af-4d78-ac6c-6616795f11b9,Building 727 CHS,Diva,Sector 9,2002,2020-01-15,Good,C3,Repair
+0783201e-af7f-4477-9525-a9dfb045956e,Building 728 CHS,Uthalsar,Sector 8,1971,2023-02-01,Dilapidated,C2A,Evacuate
+8ebc9142-7cf1-440d-84af-c25bef4558f5,Building 729 CHS,Diva,Sector 17,1998,2020-04-08,Fair,Safe,Monitor
+5e0983fd-10bf-49d3-88ae-7c0aa690da33,Building 730 CHS,Mumbra,Sector 20,2003,2019-12-28,Good,Safe,Monitor
+6987cd11-1960-4b8b-9383-24398eb3f52b,Building 731 CHS,Uthalsar,Sector 16,1954,2019-04-27,Fair,C2B,Repair
+ca13eadb-a0b1-485b-96e2-ad6d2ece655f,Building 732 CHS,Kalwa,Sector 17,1966,2018-01-05,Fair,C2B,Repair
+230de41b-6bc3-435b-84d8-e53861aa5344,Building 733 CHS,Kalwa,Sector 8,2003,2023-12-11,Fair,Safe,Monitor
+80581504-7b91-4a57-b297-334222c70d08,Building 734 CHS,Majiwada-Manpada,Sector 19,2011,2022-04-11,Good,Safe,Monitor
+65a6ccef-d031-4c61-afc1-86e09a572a8f,Building 735 CHS,Mumbra,Sector 8,2023,2023-05-12,Good,Safe,Monitor
+df1e82fa-3666-4b2f-b78d-9cb4bff72a90,Building 736 CHS,Vartak Nagar,Sector 7,1960,2022-08-01,Poor,C3,Repair
+cd6e952f-2892-48ac-8990-706aca82af65,Building 737 CHS,Diva,Sector 4,1950,2024-06-25,Dilapidated,C2B,Repair
+7aeb9214-537f-4b41-9996-a72b741f12ed,Building 738 CHS,Lokmanya-Savarkar Nagar,Sector 11,2016,2025-05-05,Good,Safe,Monitor
+180dc4e4-31c7-4887-b3ff-00da742fc7ea,Building 739 CHS,Vartak Nagar,Sector 9,2002,2025-04-22,Fair,Safe,Monitor
+9740fa86-2dda-4506-8165-055cd8cc9d6d,Building 740 CHS,Vartak Nagar,Sector 13,2018,2022-02-06,Good,Safe,Monitor
+46b3363b-f5dc-41f0-922b-2c2d472c5c2a,Building 741 CHS,Wagle Estate,Sector 12,1976,2023-05-31,Dilapidated,C2B,Repair
+09750921-7852-4547-bc21-86b5ba830c95,Building 742 CHS,Majiwada-Manpada,Sector 13,2021,2021-06-08,Good,Safe,Monitor
+4bb59996-5dcd-4036-9a87-e8c86ed7595e,Building 743 CHS,Mumbra,Sector 6,1967,2020-07-30,Fair,C2B,Repair
+9bbdefe2-b777-44b1-aac3-8860e2aea395,Building 744 CHS,Diva,Sector 20,1962,2021-10-18,Poor,C2A,Evacuate
+2064c578-fb35-4f47-a998-2cd9290e61f3,Building 745 CHS,Uthalsar,Sector 5,1956,2018-01-22,Poor,C3,Repair
+d190e5a6-db92-442d-a709-d7247a26c74d,Building 746 CHS,Uthalsar,Sector 3,2010,2022-11-19,Fair,Safe,Monitor
+158c52e1-6311-4976-9e17-01331badaf4a,Building 747 CHS,Kalwa,Sector 13,1983,2018-06-04,Poor,C1,Demolish
+e6895019-cb8e-46c0-89c1-7ad4317bbfda,Building 748 CHS,Naupada-Kopri,Sector 6,2016,2024-09-13,Good,Safe,Monitor
+c9c3a2dd-d273-4d8d-b189-b029e4bece7c,Building 749 CHS,Diva,Sector 10,2013,2020-04-06,Good,Safe,Monitor
+62b67372-8993-4b21-ba95-91756126c664,Building 750 CHS,Lokmanya-Savarkar Nagar,Sector 20,1974,2023-10-14,Poor,C2B,Repair
+e4320163-b850-4870-80ac-f4d21a28c09a,Building 751 CHS,Naupada-Kopri,Sector 6,1971,2025-05-06,Dilapidated,C2A,Evacuate
+84097db0-28b9-4fd0-9d36-d3f5c6324f1c,Building 752 CHS,Kalwa,Sector 13,1961,2021-12-17,Fair,C2B,Repair
+a5c15224-718d-48f7-b94a-02e65596d263,Building 753 CHS,Uthalsar,Sector 3,2025,2025-12-28,Good,Safe,Monitor
+60a944e1-b1c1-48b2-97dd-5220aa1f4d58,Building 754 CHS,Majiwada-Manpada,Sector 12,2020,2024-04-09,Good,Safe,Monitor
+3b2e41bd-8b2a-4918-b1c7-1d8414ee174e,Building 755 CHS,Kalwa,Sector 19,1985,2023-02-06,Poor,C3,Repair
+d489b55a-de6e-4590-8606-43673a68d4a2,Building 756 CHS,Diva,Sector 3,1950,2019-03-13,Poor,C2A,Evacuate
+5a807dba-8cb7-435f-b139-39fb2e67c451,Building 757 CHS,Diva,Sector 9,2014,2019-04-25,Good,Safe,Monitor
+5749790d-01a9-488b-a279-9d2103c8ada8,Building 758 CHS,Vartak Nagar,Sector 15,2018,2024-06-12,Good,Safe,Monitor
+40ca996b-86d8-4e2c-9381-95093a5f4d07,Building 759 CHS,Mumbra,Sector 15,1998,2021-10-23,Fair,C3,Repair
+15956c0e-9815-4525-8d91-c665e1a6a1ff,Building 760 CHS,Vartak Nagar,Sector 3,2025,2025-03-02,Good,Safe,Monitor
+9c8fed9c-01c3-4795-9914-c88e3afe485c,Building 761 CHS,Lokmanya-Savarkar Nagar,Sector 11,1998,2025-08-04,Good,C2B,Repair
+10b9443a-6974-4287-b104-db1db678a6b8,Building 762 CHS,Vartak Nagar,Sector 8,2002,2018-02-09,Poor,Safe,Monitor
+42d89a62-5c11-43ab-9f31-f04033100a37,Building 763 CHS,Uthalsar,Sector 18,1986,2021-11-01,Fair,Safe,Monitor
+5730e6c3-5115-4e0e-93ad-cf91ad7e3dae,Building 764 CHS,Vartak Nagar,Sector 6,1972,2024-06-07,Dilapidated,C2A,Evacuate
+7b5ec0b8-cbd0-42f3-9103-ea780fe9aad3,Building 765 CHS,Vartak Nagar,Sector 7,1974,2020-09-18,Dilapidated,C1,Demolish
+61992f26-af66-4f87-8dcd-9908d553ac6d,Building 766 CHS,Majiwada-Manpada,Sector 5,1979,2024-12-08,Poor,C2A,Evacuate
+951cd4ee-b85b-4902-87e7-81a7e8cfbdbf,Building 767 CHS,Mumbra,Sector 20,1963,2025-06-10,Poor,C1,Demolish
+66564092-fb84-42c1-ad9b-a80e7f4aff05,Building 768 CHS,Mumbra,Sector 12,1950,2018-06-23,Dilapidated,C2B,Repair
+545c1253-2750-43c2-a865-5f084d09c4f7,Building 769 CHS,Vartak Nagar,Sector 16,1990,2024-06-11,Fair,C2B,Repair
+7708dd28-5c23-4b62-a00f-a4d977ead785,Building 770 CHS,Kalwa,Sector 8,1973,2021-02-21,Fair,C3,Repair
+14fa17d8-a930-4378-a13b-3236fab5c02e,Building 771 CHS,Kalwa,Sector 16,2023,2023-11-24,Good,Safe,Monitor
+59a8227c-390c-4b64-900d-487aff4f9cf4,Building 772 CHS,Kalwa,Sector 6,2019,2021-11-23,Good,Safe,Monitor
+5663bf6e-35b9-4069-b336-fcb983ec0948,Building 773 CHS,Diva,Sector 15,2008,2025-10-31,Fair,Safe,Monitor
+bb7b9524-3bdb-4053-8538-1b92b4ae4bb6,Building 774 CHS,Kalwa,Sector 19,1990,2020-05-13,Good,Safe,Monitor
+0f645711-1e8b-4b51-a6dc-56d19ebf9e4d,Building 775 CHS,Wagle Estate,Sector 18,1962,2020-11-29,Poor,C2B,Repair
+f92fb1d1-cfcd-43f3-90bf-c6299590c1d0,Building 776 CHS,Majiwada-Manpada,Sector 12,1983,2024-11-16,Poor,C2A,Evacuate
+e903c7c5-5695-4b12-b2b8-6c0da0b02120,Building 777 CHS,Majiwada-Manpada,Sector 12,1973,2025-11-10,Dilapidated,C2A,Evacuate
+26a0bb80-7adc-49c7-aaba-d8554719fbcb,Building 778 CHS,Lokmanya-Savarkar Nagar,Sector 4,2001,2019-06-22,Fair,Safe,Monitor
+4ddaec24-8455-422d-8ee9-ddeb978ba118,Building 779 CHS,Lokmanya-Savarkar Nagar,Sector 5,1984,2022-04-10,Fair,C2B,Repair
+2fa6eb69-72f9-401d-96c4-8fdc4e8c4937,Building 780 CHS,Mumbra,Sector 5,1969,2022-09-23,Dilapidated,C1,Demolish
+c4d09be6-29e7-43d9-9b14-45ff672f8a3b,Building 781 CHS,Mumbra,Sector 10,2016,2021-07-17,Good,Safe,Monitor
+12706f47-2867-41ab-8d4e-6e5ab3965627,Building 782 CHS,Uthalsar,Sector 6,1982,2022-06-20,Dilapidated,C2B,Repair
+9142cac2-52ce-4825-8d12-15964729a733,Building 783 CHS,Uthalsar,Sector 15,1957,2025-01-23,Poor,C2A,Evacuate
+1da28f75-f5de-41ca-a719-0df4f68f1dd2,Building 784 CHS,Vartak Nagar,Sector 12,1992,2024-04-02,Fair,Safe,Monitor
+f3ead6a5-ed53-4631-8997-5dc72bdec3c0,Building 785 CHS,Lokmanya-Savarkar Nagar,Sector 19,1952,2025-08-15,Dilapidated,C2A,Evacuate
+c0771f6d-0745-4dc3-82c3-4afa343cabe0,Building 786 CHS,Wagle Estate,Sector 10,2023,2024-01-15,Good,Safe,Monitor
+5d95d1e2-cfe3-4e55-9d91-81e6844b1dc7,Building 787 CHS,Uthalsar,Sector 13,1995,2023-01-05,Fair,Safe,Monitor
+97b2e2b0-c747-4324-a318-9f2949fb9f25,Building 788 CHS,Majiwada-Manpada,Sector 14,1986,2019-11-18,Fair,C2B,Repair
+ed26d11f-86fe-4706-b74a-b3a9421da257,Building 789 CHS,Wagle Estate,Sector 11,2023,2023-02-11,Good,Safe,Monitor
+1cb2f582-d9a0-4a2e-b88a-50d2b8300181,Building 790 CHS,Vartak Nagar,Sector 20,1979,2025-12-19,Poor,C2B,Repair
+540fe5fc-7b71-4a90-b680-b4b6ae9f5a4d,Building 791 CHS,Diva,Sector 15,2000,2022-01-27,Fair,Safe,Monitor
+3bffec19-baf3-42d5-8c07-ef9230c9babe,Building 792 CHS,Lokmanya-Savarkar Nagar,Sector 9,2002,2019-05-28,Fair,C3,Repair
+4585323c-175b-41aa-92b0-171fa3573b3c,Building 793 CHS,Uthalsar,Sector 16,1960,2019-01-27,Poor,C2A,Evacuate
+c5076cda-7843-4ede-952c-a455f6c49bd7,Building 794 CHS,Diva,Sector 3,2020,2022-06-15,Good,Safe,Monitor
+c0e67fcf-0496-4f2d-a508-19763875100e,Building 795 CHS,Kalwa,Sector 10,1963,2025-05-06,Poor,C1,Demolish
+dd0314aa-606f-4d63-a308-12efdd09ba0b,Building 796 CHS,Wagle Estate,Sector 5,1979,2025-01-10,Poor,C2A,Evacuate
+96de4f84-984d-4226-860e-7ec2a65a4c9d,Building 797 CHS,Naupada-Kopri,Sector 12,2017,2018-04-28,Good,Safe,Monitor
+8242961b-38c2-4521-8402-53a3d3264554,Building 798 CHS,Vartak Nagar,Sector 18,1991,2024-01-24,Good,Safe,Monitor
+77155a9c-b63c-4cae-9080-c12c712b1ba3,Building 799 CHS,Diva,Sector 6,2006,2025-10-28,Good,Safe,Monitor
+76dd6f78-4fd9-4de6-8b21-e948c06cd2e1,Building 800 CHS,Kalwa,Sector 17,2025,2025-01-28,Good,Safe,Monitor
+3829f6fc-d9f4-4274-b38b-ebeed18f2c5b,Building 801 CHS,Mumbra,Sector 18,2018,2021-11-23,Good,Safe,Monitor
+387d5a52-3087-453b-b233-7425b11dfdf3,Building 802 CHS,Kalwa,Sector 9,1979,2022-02-07,Fair,C2A,Evacuate
+0c607b28-9733-4d24-9932-71699cdb1ce0,Building 803 CHS,Majiwada-Manpada,Sector 10,1969,2019-07-13,Poor,C1,Demolish
+6da3bce3-81c8-4bb5-a22a-c1f5b7f3de22,Building 804 CHS,Mumbra,Sector 16,2010,2025-09-18,Good,Safe,Monitor
+0986bb5e-60ca-45c2-9d7f-baeb9dc602cf,Building 805 CHS,Lokmanya-Savarkar Nagar,Sector 1,1988,2021-04-14,Fair,Safe,Monitor
+c08bb5ac-49c9-4224-a89f-61d8109aabe1,Building 806 CHS,Diva,Sector 14,2020,2022-08-14,Good,Safe,Monitor
+9b8b5afa-a56d-47d0-83dc-d2337a5d0c86,Building 807 CHS,Kalwa,Sector 13,2000,2025-03-30,Fair,C3,Repair
+0c2dee08-2a31-4f5d-85ff-54dfdad53e6c,Building 808 CHS,Diva,Sector 20,1978,2020-09-08,Poor,C2A,Evacuate
+3e800216-331e-4125-b06f-497e4590d20d,Building 809 CHS,Kalwa,Sector 7,1984,2021-01-06,Poor,C2B,Repair
+90d0d80d-8564-4ef4-8f8b-edebf33ac07e,Building 810 CHS,Mumbra,Sector 20,1958,2025-02-21,Poor,C2A,Evacuate
+5468149c-da1f-426e-8aa6-4fd7a954d91b,Building 811 CHS,Mumbra,Sector 7,2007,2024-12-25,Good,Safe,Monitor
+4c111d20-9105-46a9-b37d-3066ba7b864e,Building 812 CHS,Naupada-Kopri,Sector 6,1991,2024-01-01,Fair,Safe,Monitor
+384f2f7c-cc27-411e-9f83-24fe67d879ad,Building 813 CHS,Naupada-Kopri,Sector 8,1963,2022-12-01,Poor,C1,Demolish
+a0b99d80-771d-408d-8741-0883b3ccd31c,Building 814 CHS,Kalwa,Sector 10,1961,2021-11-01,Poor,C2A,Evacuate
+45580a1f-72e6-4905-98f9-affbce3e152c,Building 815 CHS,Naupada-Kopri,Sector 11,2013,2023-03-15,Fair,Safe,Monitor
+7d9152aa-c137-4604-b43d-48a2e9d39d19,Building 816 CHS,Vartak Nagar,Sector 13,1960,2018-08-18,Fair,C3,Repair
+de13cb2d-bbfb-441a-a36b-41244ff8dbe3,Building 817 CHS,Kalwa,Sector 1,1959,2020-10-21,Dilapidated,C1,Demolish
+7c3982c7-e605-4558-8048-23d21e8732fd,Building 818 CHS,Mumbra,Sector 8,1965,2022-04-26,Fair,C2B,Repair
+ed37499e-1738-46a8-b358-4b28a7f0c86a,Building 819 CHS,Diva,Sector 7,1954,2019-01-20,Poor,C2B,Repair
+cf3573b9-ed4b-43c0-aba8-7bdd1d632e1d,Building 820 CHS,Majiwada-Manpada,Sector 6,2010,2021-07-02,Good,Safe,Monitor
+cbb5197a-ce21-4185-8ed1-d151b79c0357,Building 821 CHS,Vartak Nagar,Sector 16,1955,2019-05-16,Dilapidated,C2B,Repair
+a5a21741-ea01-4fa6-a120-afb1c6f6f43c,Building 822 CHS,Lokmanya-Savarkar Nagar,Sector 4,1988,2025-06-23,Fair,C3,Repair
+107b230a-44f3-4ebd-b214-6d1dc09fda78,Building 823 CHS,Vartak Nagar,Sector 19,1980,2019-11-17,Dilapidated,C2A,Evacuate
+32c337dc-01c3-46af-9375-6997cff29b68,Building 824 CHS,Mumbra,Sector 20,1965,2018-06-22,Poor,C2A,Evacuate
+7c52a4fb-564f-4996-ab3c-c307328e5282,Building 825 CHS,Mumbra,Sector 3,1969,2019-10-08,Poor,C1,Demolish
+2f323081-ba5e-4566-bec7-7dd2fa95749f,Building 826 CHS,Naupada-Kopri,Sector 2,1993,2025-01-04,Poor,C2B,Repair
+d5b14756-1586-442a-b112-bb7f7ecb094e,Building 827 CHS,Wagle Estate,Sector 16,1995,2019-03-16,Good,C3,Repair
+78d6cbb5-f47e-4c8d-9925-f55c7c6bcde3,Building 828 CHS,Majiwada-Manpada,Sector 15,1979,2025-03-25,Poor,C2B,Repair
+662cd7a7-97e8-4f16-941c-2aa5e016d760,Building 829 CHS,Wagle Estate,Sector 9,1974,2026-02-15,Poor,C2A,Evacuate
+2d2061b2-0f6a-45d5-b97a-f2b639495db4,Building 830 CHS,Diva,Sector 16,1955,2021-04-22,Dilapidated,C2A,Evacuate
+a8de93db-58b2-4425-a35d-7830347925e1,Building 831 CHS,Mumbra,Sector 9,1974,2021-08-18,Dilapidated,C2B,Repair
+25fc5d2b-bd8e-424d-82ee-313a4b50858e,Building 832 CHS,Wagle Estate,Sector 15,2020,2023-12-16,Good,Safe,Monitor
+da8f2931-667f-49a3-97a9-4d5e6102dc17,Building 833 CHS,Naupada-Kopri,Sector 17,1987,2023-02-03,Good,Safe,Monitor
+0a8f016e-b001-4824-bb35-66417f6828a6,Building 834 CHS,Majiwada-Manpada,Sector 20,1998,2024-12-13,Good,C3,Repair
+3ceae54a-5acc-4e74-a3e8-fc701e726227,Building 835 CHS,Kalwa,Sector 7,1980,2024-01-17,Poor,C1,Demolish
+2b5ba1c9-5074-44ba-b160-6f5d7a0f9ee4,Building 836 CHS,Wagle Estate,Sector 20,2017,2024-03-08,Good,Safe,Monitor
+2f946a2b-d6bb-44c9-ab76-b622710fa4c6,Building 837 CHS,Uthalsar,Sector 17,1986,2019-03-29,Fair,Safe,Monitor
+ba0ea498-54c8-43ca-aa18-128d04dc477b,Building 838 CHS,Naupada-Kopri,Sector 7,1958,2020-01-02,Poor,C3,Repair
+6f4f32ff-68d7-41bb-a8f6-d65db87f0f56,Building 839 CHS,Kalwa,Sector 16,1963,2024-05-27,Dilapidated,C1,Demolish
+e829715d-0fc5-46ba-9f98-cdd6ed847f07,Building 840 CHS,Vartak Nagar,Sector 2,2017,2024-08-14,Good,Safe,Monitor
+7a25a92b-bc43-40e9-927e-97b6e5245d6c,Building 841 CHS,Lokmanya-Savarkar Nagar,Sector 16,1996,2018-02-23,Fair,C3,Repair
+7e489d04-038c-4218-a86f-a96c1fa147ef,Building 842 CHS,Diva,Sector 14,1960,2022-01-18,Dilapidated,C2B,Repair
+fa202990-e873-42b7-97a7-ef3061749229,Building 843 CHS,Vartak Nagar,Sector 17,1997,2024-12-01,Good,Safe,Monitor
+ecbff601-c1a4-46c5-acad-55a08270f379,Building 844 CHS,Lokmanya-Savarkar Nagar,Sector 17,1955,2018-11-16,Dilapidated,C3,Repair
+4d5c9e01-5a72-49fe-8750-0ef5ab6eab27,Building 845 CHS,Lokmanya-Savarkar Nagar,Sector 7,1962,2022-04-28,Poor,C2A,Evacuate
+2c2b17c9-c7b3-4630-943a-0fdd087dbb85,Building 846 CHS,Wagle Estate,Sector 18,2017,2024-05-23,Good,Safe,Monitor
+2c4f9396-b0dc-43af-bae0-f588a8d01957,Building 847 CHS,Majiwada-Manpada,Sector 15,2021,2021-11-24,Good,Safe,Monitor
+b8da4079-9f63-4ce8-8214-403ff7b95852,Building 848 CHS,Diva,Sector 13,2004,2020-01-09,Good,Safe,Monitor
+49cc8533-6773-41c2-8179-90620e5fa166,Building 849 CHS,Diva,Sector 20,2014,2019-10-10,Good,Safe,Monitor
+c7efd058-553b-4058-95b0-de1b3141c18f,Building 850 CHS,Diva,Sector 11,2006,2021-07-14,Fair,Safe,Monitor
+a189af5b-5dd0-4f11-807a-b2acdfeb11c4,Building 851 CHS,Majiwada-Manpada,Sector 20,1997,2026-02-21,Fair,Safe,Monitor
+5b40d0a6-91a5-4893-b671-a65bcc3501ec,Building 852 CHS,Vartak Nagar,Sector 12,1980,2024-03-03,Dilapidated,C2A,Evacuate
+6eaac064-ec88-499c-a7ae-22079cfe946c,Building 853 CHS,Naupada-Kopri,Sector 2,2007,2022-06-15,Good,Safe,Monitor
+6c070a65-44ee-4587-a020-19d4587a3b1e,Building 854 CHS,Naupada-Kopri,Sector 10,1986,2021-05-21,Fair,Safe,Monitor
+5b3c33a1-80df-47f3-a631-59dfe14e6f84,Building 855 CHS,Vartak Nagar,Sector 18,1978,2025-09-26,Poor,C2A,Evacuate
+033050ad-9fc1-4b39-962f-df113b30cfd5,Building 856 CHS,Wagle Estate,Sector 4,2015,2024-05-30,Good,Safe,Monitor
+edc67561-2d7d-4a9e-98c3-67c01a2e9aad,Building 857 CHS,Majiwada-Manpada,Sector 19,1954,2020-12-21,Dilapidated,C1,Demolish
+5f4e2c67-1b5b-46b6-8c60-4f505b32c18a,Building 858 CHS,Kalwa,Sector 19,1981,2019-01-12,Poor,C3,Repair
+e80d34fa-80f2-4d22-b5d4-90872c103291,Building 859 CHS,Wagle Estate,Sector 16,1977,2023-05-31,Dilapidated,C2B,Repair
+cd740ebe-c776-4133-9349-53f7ea4568dc,Building 860 CHS,Vartak Nagar,Sector 2,2023,2023-11-02,Good,Safe,Monitor
+716fd00e-07ed-4272-bb61-fb87be1834b4,Building 861 CHS,Majiwada-Manpada,Sector 14,2023,2023-06-22,Good,Safe,Monitor
+903c0050-4f25-4dfb-9a46-c9afb5533c77,Building 862 CHS,Naupada-Kopri,Sector 13,2003,2020-07-17,Poor,Safe,Monitor
+26bbd163-7122-40c7-9e72-f1c3b8aefb27,Building 863 CHS,Wagle Estate,Sector 11,1956,2024-01-21,Poor,C1,Demolish
+dd2f5303-b6c3-4426-b01c-d426505098d7,Building 864 CHS,Naupada-Kopri,Sector 13,2014,2019-09-20,Good,Safe,Monitor
+352af658-53d2-4bfc-bf78-edbaa260c907,Building 865 CHS,Diva,Sector 3,2007,2024-06-14,Good,Safe,Monitor
+2f949b62-2b7b-458d-8d00-840b3ebb28b6,Building 866 CHS,Wagle Estate,Sector 11,1978,2019-08-30,Dilapidated,C2B,Repair
+66b80a7d-f01c-404f-a4ef-b431b3262d44,Building 867 CHS,Kalwa,Sector 9,1960,2024-02-24,Dilapidated,C2B,Repair
+8903400f-9d6f-45d1-bea6-a43f6e328cc7,Building 868 CHS,Wagle Estate,Sector 5,1960,2025-10-29,Poor,C2A,Evacuate
+8e828cf8-04e1-4b63-9ba2-b5f5a7df03df,Building 869 CHS,Kalwa,Sector 19,2011,2023-06-22,Good,Safe,Monitor
+30e1f8d5-b941-4dbb-8969-4fe0dc8cfb45,Building 870 CHS,Lokmanya-Savarkar Nagar,Sector 8,1975,2023-11-18,Dilapidated,C3,Repair
+88eb2659-0907-44e3-b5c1-620118dc635b,Building 871 CHS,Uthalsar,Sector 4,1959,2025-09-05,Poor,C2A,Evacuate
+74b215d0-583f-4d51-9738-4281fa431685,Building 872 CHS,Majiwada-Manpada,Sector 20,2002,2021-08-06,Fair,Safe,Monitor
+fe1aa7ac-5ac4-414f-b438-40d39b9c5d89,Building 873 CHS,Mumbra,Sector 20,1953,2021-12-03,Dilapidated,C1,Demolish
+0db187e5-10af-4026-bc92-df3ddc430f66,Building 874 CHS,Lokmanya-Savarkar Nagar,Sector 12,1968,2020-08-14,Dilapidated,C3,Repair
+e2035e63-7031-414f-bdbd-15adb26c0ae6,Building 875 CHS,Naupada-Kopri,Sector 8,1969,2019-04-06,Dilapidated,C3,Repair
+a3d22565-9b94-45e7-95b7-2965e41e1112,Building 876 CHS,Majiwada-Manpada,Sector 4,1968,2018-02-26,Fair,C3,Repair
+07515e46-48b1-4b98-a0f1-0de3ce4ab6e9,Building 877 CHS,Diva,Sector 7,1989,2020-05-06,Fair,Safe,Monitor
+c9fa24c5-a723-40ae-98e5-55ff0218f6c7,Building 878 CHS,Mumbra,Sector 20,1976,2024-02-26,Dilapidated,C2B,Repair
+ec3d2d4e-c70e-47cc-950e-34c8e8d23c2f,Building 879 CHS,Diva,Sector 2,1968,2022-03-23,Dilapidated,C2B,Repair
+841a71a0-7ad4-4021-9347-dc79a4c90200,Building 880 CHS,Vartak Nagar,Sector 2,1982,2025-10-23,Poor,C2A,Evacuate
+e821bada-88cd-4fbf-8ba8-9054be50012f,Building 881 CHS,Uthalsar,Sector 13,2009,2018-02-04,Good,Safe,Monitor
+14a4b598-ba27-401c-b70e-c2e02be2e8da,Building 882 CHS,Uthalsar,Sector 1,1984,2022-01-15,Dilapidated,C3,Repair
+2693af0c-4aa6-4770-9166-88b6d32720bd,Building 883 CHS,Kalwa,Sector 17,1987,2020-08-04,Good,Safe,Monitor
+243cb4ba-f93b-4e65-98a8-78a94dd106db,Building 884 CHS,Diva,Sector 3,1962,2024-09-11,Fair,C2A,Evacuate
+46249e75-b13a-43b5-ae7d-37d6ea881b2a,Building 885 CHS,Naupada-Kopri,Sector 2,1973,2024-04-15,Poor,C3,Repair
+91db052d-8bf7-4cbd-b165-7ad997844db5,Building 886 CHS,Kalwa,Sector 6,1981,2023-06-30,Fair,C2A,Evacuate
+d665bc12-ed34-4777-a9c9-2120a36acda9,Building 887 CHS,Vartak Nagar,Sector 8,1952,2025-01-04,Poor,C2A,Evacuate
+bedd6701-0532-4d08-b951-6240b66f5f2c,Building 888 CHS,Vartak Nagar,Sector 13,2014,2018-09-11,Good,Safe,Monitor
+443f1b6b-ead1-42b8-96d0-559c3bf0b51b,Building 889 CHS,Wagle Estate,Sector 11,1953,2020-07-12,Fair,C3,Repair
+92b8b690-de1c-48c2-9c5d-e4b05bbd7467,Building 890 CHS,Diva,Sector 20,2000,2022-04-15,Good,Safe,Monitor
+8cdacd7e-7dcc-414c-acf1-330ed2527b98,Building 891 CHS,Vartak Nagar,Sector 20,1979,2022-10-13,Dilapidated,C2B,Repair
+1f0676e1-e1e3-4a5f-983f-5ef97ad52c9c,Building 892 CHS,Wagle Estate,Sector 19,1992,2025-04-26,Fair,Safe,Monitor
+55114bc6-8f92-4d3a-b425-b6ba3b3b618f,Building 893 CHS,Wagle Estate,Sector 10,2019,2020-04-08,Good,Safe,Monitor
+86d0c819-b739-4ede-a328-b3340db88de5,Building 894 CHS,Wagle Estate,Sector 19,2017,2022-10-28,Fair,Safe,Monitor
+5700a7eb-e8cc-46b2-91c1-97061a8fd330,Building 895 CHS,Uthalsar,Sector 6,1970,2026-01-25,Poor,C2B,Repair
+407c5c7b-632e-4e2d-a87f-bee108aabeb3,Building 896 CHS,Majiwada-Manpada,Sector 14,1990,2018-05-01,Good,Safe,Monitor
+cb2114ab-4f0f-4c43-a3f7-cd99283dec60,Building 897 CHS,Vartak Nagar,Sector 5,2002,2025-02-21,Fair,C3,Repair
+cc4ce8ab-befb-4178-81da-88a173c50d50,Building 898 CHS,Vartak Nagar,Sector 20,1974,2024-11-11,Poor,C1,Demolish
+b980d75f-7ee5-42a8-a580-d2e6b36136e3,Building 899 CHS,Lokmanya-Savarkar Nagar,Sector 8,2022,2024-09-08,Good,Safe,Monitor
+db8f3a70-c229-4a90-a46c-48bb9b9c7e27,Building 900 CHS,Wagle Estate,Sector 17,1953,2023-05-07,Poor,C2B,Repair
+3ab2c8fa-ae31-4204-840f-0b6e9926a91c,Building 901 CHS,Wagle Estate,Sector 13,2010,2022-03-12,Good,Safe,Monitor
+4d7aaab2-302b-42f6-9f60-f53753b3cc4b,Building 902 CHS,Lokmanya-Savarkar Nagar,Sector 8,2012,2019-11-02,Good,Safe,Monitor
+ddbd5948-74fb-4257-b06b-784e7c58669c,Building 903 CHS,Kalwa,Sector 8,1954,2021-01-10,Dilapidated,C3,Repair
+8c9d3ada-5847-4627-9fce-13051808db9b,Building 904 CHS,Mumbra,Sector 11,1975,2022-12-05,Dilapidated,C1,Demolish
+46e04589-bd5a-4c78-bf4b-a438a60507e7,Building 905 CHS,Kalwa,Sector 2,2008,2022-10-18,Good,Safe,Monitor
+0be250e0-fcdf-46e3-b34e-03938d72cdaa,Building 906 CHS,Diva,Sector 17,1998,2024-05-31,Good,Safe,Monitor
+2abe127f-4679-4f9c-8f53-04aa2caa7c1b,Building 907 CHS,Lokmanya-Savarkar Nagar,Sector 17,1954,2018-06-23,Dilapidated,C2A,Evacuate
+bc67f4b8-24c7-43a9-9a53-d14e6beae2f5,Building 908 CHS,Diva,Sector 13,2018,2018-06-10,Good,Safe,Monitor
+0e954f1b-9bd0-4006-bb90-8fc9f283fb69,Building 909 CHS,Lokmanya-Savarkar Nagar,Sector 10,2016,2018-07-21,Good,Safe,Monitor
+dcb7d402-7eb5-4438-85af-99ad1c35f51c,Building 910 CHS,Vartak Nagar,Sector 15,2006,2021-06-01,Good,Safe,Monitor
+8b199e19-579d-44ec-a652-db40bca240fc,Building 911 CHS,Diva,Sector 5,1971,2018-08-12,Dilapidated,C2B,Repair
+afa16683-6734-4726-9414-72c845bb14a3,Building 912 CHS,Uthalsar,Sector 17,2009,2023-01-25,Good,Safe,Monitor
+8532ec12-69a3-49bd-872f-911f4f52ad00,Building 913 CHS,Diva,Sector 5,1964,2025-10-22,Poor,C2B,Repair
+80f56e3f-3441-4317-abc8-54c2203f0583,Building 914 CHS,Mumbra,Sector 19,2000,2020-01-03,Fair,Safe,Monitor
+09491355-5481-4b5b-9fef-2fcaa325885e,Building 915 CHS,Wagle Estate,Sector 4,1975,2021-08-20,Fair,C1,Demolish
+f4f4ad83-cf41-46f3-8c5a-123e8d547990,Building 916 CHS,Uthalsar,Sector 17,1961,2022-01-26,Poor,C2A,Evacuate
+ae0a8b32-1782-486a-9565-e7b7d96aab2b,Building 917 CHS,Wagle Estate,Sector 13,1999,2024-11-12,Good,C2B,Repair
+0b40c5bd-aefa-4ab2-8fde-f0f25b702214,Building 918 CHS,Wagle Estate,Sector 6,2020,2020-06-21,Good,Safe,Monitor
+5bf4c979-cfc4-450a-957b-ea89a2d1aef2,Building 919 CHS,Vartak Nagar,Sector 10,1968,2022-09-15,Poor,C2B,Repair
+d9a4501a-9789-4cff-b2c4-4f626eb31a47,Building 920 CHS,Uthalsar,Sector 5,2007,2020-01-11,Good,Safe,Monitor
+7c1de863-e448-4736-8283-7ab1218a9d4d,Building 921 CHS,Mumbra,Sector 16,1975,2018-02-20,Poor,C2B,Repair
+f9c19d3a-c151-4261-892f-e85eefa9c0c3,Building 922 CHS,Mumbra,Sector 8,2013,2018-01-24,Good,Safe,Monitor
+184579eb-41f0-480d-b161-1b58fb81f556,Building 923 CHS,Mumbra,Sector 3,1977,2022-08-07,Dilapidated,C2A,Evacuate
+4f5a5b09-bc2a-471e-b2b9-db66ade31b6a,Building 924 CHS,Diva,Sector 7,1950,2024-12-13,Poor,C2B,Repair
+025fd86f-5c76-434d-9dc9-42dca9422a24,Building 925 CHS,Naupada-Kopri,Sector 5,1956,2021-11-30,Poor,C1,Demolish
+aead1272-060a-4f65-8cb0-b6ae72e21f08,Building 926 CHS,Majiwada-Manpada,Sector 3,1954,2021-05-07,Dilapidated,C3,Repair
+69d096de-45e9-4dac-8ddb-feda6d9bc118,Building 927 CHS,Vartak Nagar,Sector 20,1956,2019-10-23,Poor,C3,Repair
+158bfa51-0d9b-49aa-bb88-7db656ed48b6,Building 928 CHS,Majiwada-Manpada,Sector 2,2023,2023-08-23,Good,Safe,Monitor
+7951a0c5-33a4-4b80-af86-ea9ca3a431af,Building 929 CHS,Uthalsar,Sector 14,1961,2022-04-02,Dilapidated,C2A,Evacuate
+81ea28f7-4537-4a54-93c7-31769d00929d,Building 930 CHS,Wagle Estate,Sector 4,2020,2023-04-13,Good,Safe,Monitor
+be021630-5f98-4306-857a-94fff8b7c352,Building 931 CHS,Lokmanya-Savarkar Nagar,Sector 20,1985,2020-05-09,Poor,C2A,Evacuate
+fbeab8df-f771-42b4-8db1-8378fa99832c,Building 932 CHS,Diva,Sector 3,1957,2025-01-20,Poor,C2B,Repair
+b3af1f56-2946-4555-b649-fa8a33b9891a,Building 933 CHS,Vartak Nagar,Sector 14,2011,2024-10-13,Good,Safe,Monitor
+43540dcd-531f-4c7b-a5ee-b57d0e750a82,Building 934 CHS,Majiwada-Manpada,Sector 5,1990,2024-12-27,Fair,Safe,Monitor
+946932ff-1a62-4617-83d9-bd27e87bf799,Building 935 CHS,Mumbra,Sector 16,2022,2026-03-06,Good,Safe,Monitor
+eb478efa-74d4-4698-81c4-486175a2160c,Building 936 CHS,Lokmanya-Savarkar Nagar,Sector 1,1973,2021-04-04,Fair,C2A,Evacuate
+0b09b791-9bb2-4480-a58e-0ca136d20700,Building 937 CHS,Lokmanya-Savarkar Nagar,Sector 20,1965,2019-04-29,Poor,C2B,Repair
+90c01292-c1be-4bfd-b2dd-f1414464e983,Building 938 CHS,Lokmanya-Savarkar Nagar,Sector 1,2003,2024-04-14,Fair,Safe,Monitor
+ce408ed1-4f6f-4cc6-95b5-c79850fecd7d,Building 939 CHS,Vartak Nagar,Sector 10,1975,2018-10-05,Dilapidated,C2A,Evacuate
+687490b2-2b35-45c9-bb76-5f0eda268c68,Building 940 CHS,Uthalsar,Sector 11,2014,2018-01-26,Good,Safe,Monitor
+f6237ce8-8026-48cb-ac0d-4dca96cf6896,Building 941 CHS,Wagle Estate,Sector 7,1993,2018-04-30,Fair,Safe,Monitor
+d2a1be41-ee31-4a62-861c-edbd2eb66b29,Building 942 CHS,Mumbra,Sector 2,1992,2023-05-17,Good,C2B,Repair
+dd8f3c69-5ff9-4b7d-b9c7-6e524a18e9ee,Building 943 CHS,Majiwada-Manpada,Sector 15,1967,2024-01-09,Dilapidated,C2B,Repair
+3062966f-edc3-4fe5-8119-60ba068e5056,Building 944 CHS,Vartak Nagar,Sector 19,2002,2023-11-05,Poor,Safe,Monitor
+7776e970-a774-472c-9512-8bf5b4b2d2ff,Building 945 CHS,Majiwada-Manpada,Sector 12,1990,2024-06-23,Fair,Safe,Monitor
+09b09cc9-69d2-4459-acae-2154ade6ddd9,Building 946 CHS,Majiwada-Manpada,Sector 13,1958,2018-05-08,Fair,C2A,Evacuate
+52cb2390-cf2c-497b-bd4e-01d983227757,Building 947 CHS,Kalwa,Sector 6,2018,2024-05-27,Good,Safe,Monitor
+3db2bbfc-1037-4a8e-85ee-45c62da5ed76,Building 948 CHS,Majiwada-Manpada,Sector 2,1964,2025-11-28,Fair,C2B,Repair
+b0ea3d9e-d381-4107-a7e3-800ddb4d8f1b,Building 949 CHS,Majiwada-Manpada,Sector 15,1984,2020-08-31,Dilapidated,C2A,Evacuate
+ef8feba8-bb26-4f67-ba95-7be3aeb11de2,Building 950 CHS,Majiwada-Manpada,Sector 2,1988,2019-04-05,Fair,Safe,Monitor
+d75417b4-c105-4c86-8c2b-4313251ca08e,Building 951 CHS,Mumbra,Sector 17,1975,2018-04-13,Fair,C2A,Evacuate
+376fb4b7-d647-4620-8a83-1471022d7fed,Building 952 CHS,Diva,Sector 10,1969,2026-03-20,Poor,C3,Repair
+0e6fa451-ad40-4d16-a129-181f5e333063,Building 953 CHS,Wagle Estate,Sector 7,1991,2023-10-16,Fair,C3,Repair
+deec7fc6-4a19-46f0-a4a1-83ea1df043fc,Building 954 CHS,Uthalsar,Sector 1,1954,2023-11-10,Dilapidated,C2B,Repair
+9c2b11ae-039d-4540-93ba-53e4b16a44ef,Building 955 CHS,Uthalsar,Sector 11,1989,2024-08-31,Poor,Safe,Monitor
+bb1e4edc-c76d-4d1a-9188-9e610f24daf3,Building 956 CHS,Diva,Sector 10,2009,2019-02-27,Good,Safe,Monitor
+3f984668-b7f1-4ac1-ba3a-b5dee4e7a5f3,Building 957 CHS,Majiwada-Manpada,Sector 7,1952,2020-05-09,Dilapidated,C2A,Evacuate
+2a1c8332-f5dc-4d11-9db0-5d395a20465c,Building 958 CHS,Uthalsar,Sector 9,1974,2022-12-12,Poor,C2B,Repair
+30dd3eb2-9689-40f1-9360-c652d8592623,Building 959 CHS,Diva,Sector 17,1969,2024-12-26,Poor,C1,Demolish
+5388e9cc-d110-44d1-bc9d-f8833d27273a,Building 960 CHS,Vartak Nagar,Sector 5,1963,2021-07-28,Poor,C2A,Evacuate
+1fbddb2f-6681-4fad-a4a4-1fb847973c54,Building 961 CHS,Majiwada-Manpada,Sector 18,1986,2021-06-29,Fair,Safe,Monitor
+15025a8a-ed87-4d85-9793-5be34c2f9000,Building 962 CHS,Mumbra,Sector 2,2006,2018-04-29,Good,Safe,Monitor
+2483147f-6612-4696-98c1-8f73eeed622c,Building 963 CHS,Wagle Estate,Sector 20,1963,2022-05-25,Poor,C1,Demolish
+0c796736-2af1-4b82-a0c1-e18ff344396b,Building 964 CHS,Mumbra,Sector 20,2025,2025-09-27,Good,Safe,Monitor
+e497625b-634e-4843-99ec-b0a342cc2690,Building 965 CHS,Diva,Sector 3,1995,2025-12-30,Fair,C3,Repair
+2eba17b9-481c-4c64-ad3a-48e6e37ee985,Building 966 CHS,Mumbra,Sector 4,2009,2019-01-16,Good,Safe,Monitor
+c15135d7-c735-4c88-9ad7-46f9df9f5819,Building 967 CHS,Mumbra,Sector 16,2008,2025-03-24,Good,Safe,Monitor
+2f9d4550-1bec-4f14-9446-13b3b9232ff5,Building 968 CHS,Vartak Nagar,Sector 12,1979,2024-12-01,Fair,C1,Demolish
+2741d09b-172b-45fc-9bf1-153255efbbad,Building 969 CHS,Majiwada-Manpada,Sector 15,2000,2021-09-15,Fair,C2B,Repair
+b8e2f3b6-f437-4d61-b664-7c0a2bc4d006,Building 970 CHS,Uthalsar,Sector 12,2012,2023-05-01,Good,Safe,Monitor
+64f2a04a-68c7-4d50-b8f6-d31ab407fcf3,Building 971 CHS,Vartak Nagar,Sector 12,2011,2019-12-01,Good,Safe,Monitor
+be86dc37-debc-4914-a718-806a8bc16318,Building 972 CHS,Uthalsar,Sector 11,2023,2023-07-28,Good,Safe,Monitor
+6930a402-c9d8-41e5-a7c5-b79854b646aa,Building 973 CHS,Diva,Sector 15,2021,2021-05-22,Good,Safe,Monitor
+0f275a01-30ce-480d-88db-149d54aa40c6,Building 974 CHS,Diva,Sector 6,2001,2020-09-25,Fair,Safe,Monitor
+fa80aef9-85ea-4433-843a-60e44507ae42,Building 975 CHS,Lokmanya-Savarkar Nagar,Sector 19,2011,2021-10-27,Good,Safe,Monitor
+a7e015f5-b14d-4cc8-b1ef-aa5bdd255571,Building 976 CHS,Diva,Sector 8,2005,2021-11-02,Good,Safe,Monitor
+8d018f48-1ca1-467c-a27f-69fdfb82b344,Building 977 CHS,Mumbra,Sector 4,1972,2025-12-25,Dilapidated,C1,Demolish
+43274d24-52e9-4407-bc91-82f96fb61c5d,Building 978 CHS,Uthalsar,Sector 15,2025,2025-10-13,Good,Safe,Monitor
+2185ef4c-1337-4431-bc52-68938f1911ef,Building 979 CHS,Uthalsar,Sector 20,1972,2024-09-16,Poor,C2A,Evacuate
+58ab2c11-5a60-458a-943c-b031ceba452a,Building 980 CHS,Uthalsar,Sector 7,1998,2018-09-09,Fair,Safe,Monitor
+0e6e1507-1518-45b1-96b7-c58c111d9bc8,Building 981 CHS,Naupada-Kopri,Sector 5,1967,2025-02-18,Fair,C3,Repair
+03760f7f-e8fc-49bd-8f40-c48edf32a6b9,Building 982 CHS,Mumbra,Sector 7,1969,2024-11-26,Dilapidated,C2A,Evacuate
+1c3976d0-9815-402a-9cd5-a152f5e6b393,Building 983 CHS,Vartak Nagar,Sector 14,1976,2024-05-24,Dilapidated,C2A,Evacuate
+249b1fbc-5cd3-4ea1-b23e-9ccfa008ec32,Building 984 CHS,Diva,Sector 13,1994,2024-11-09,Poor,Safe,Monitor
+55919736-e6ae-42f1-9ef4-bc34c6173986,Building 985 CHS,Naupada-Kopri,Sector 1,1966,2024-02-27,Fair,C1,Demolish
+73b443af-e012-4db1-b5ad-b9f5a690ac7f,Building 986 CHS,Uthalsar,Sector 10,2021,2022-01-11,Good,Safe,Monitor
+00cb4838-876e-48b4-8a75-0ebdbaeaacd5,Building 987 CHS,Majiwada-Manpada,Sector 13,1953,2022-06-03,Poor,C2B,Repair
+8948f23f-013c-45c4-bbf1-d2f553bc07c7,Building 988 CHS,Wagle Estate,Sector 16,2001,2025-06-06,Fair,Safe,Monitor
+f5b8c228-fea7-4dd3-96ed-68823b4f3e50,Building 989 CHS,Kalwa,Sector 5,1967,2022-01-15,Poor,C2A,Evacuate
+6ccc94cc-b488-404b-a124-69ad2995a6aa,Building 990 CHS,Naupada-Kopri,Sector 3,1986,2019-07-05,Poor,Safe,Monitor
+214c632d-7624-4857-8151-75e319e55b83,Building 991 CHS,Kalwa,Sector 5,1952,2025-05-18,Poor,C3,Repair
+4094bfa6-c766-46a6-9f90-46f155b29291,Building 992 CHS,Kalwa,Sector 20,1960,2023-02-11,Poor,C3,Repair
+03607621-94f0-4c10-a369-8115251c86fd,Building 993 CHS,Kalwa,Sector 12,1973,2023-01-18,Dilapidated,C2A,Evacuate
+a7a6be80-bb29-4f72-b020-79c25b0c2a98,Building 994 CHS,Mumbra,Sector 8,1978,2024-06-25,Poor,C2B,Repair
+02028a57-cc7c-4bdf-bc2e-1304c9deb1c2,Building 995 CHS,Majiwada-Manpada,Sector 2,2014,2024-02-16,Good,Safe,Monitor
+16c8b536-ad94-4e1f-bd55-e22e9cae8298,Building 996 CHS,Mumbra,Sector 3,1954,2019-04-09,Dilapidated,C2B,Repair
+ef90506f-65ff-4ea0-8555-4f50ab9bc04b,Building 997 CHS,Mumbra,Sector 17,1968,2021-02-18,Dilapidated,C2B,Repair
+134c037c-f8ad-4f59-b3ad-0cb31892e30e,Building 998 CHS,Mumbra,Sector 3,1960,2020-10-01,Dilapidated,C2B,Repair
+1eb78f4b-f11b-460a-93c2-c5d11ad95021,Building 999 CHS,Naupada-Kopri,Sector 11,2019,2021-07-03,Good,Safe,Monitor
+13cbba26-dab4-4689-a330-65b6606613ed,Building 1000 CHS,Mumbra,Sector 17,2018,2023-04-05,Good,Safe,Monitor
