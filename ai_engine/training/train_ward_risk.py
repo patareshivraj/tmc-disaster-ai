@@ -82,7 +82,17 @@ def train_and_save_hybrid_model():
     os.makedirs('ai_engine/saved_models', exist_ok=True)
     joblib.dump(hybrid_model, 'ai_engine/saved_models/ward_risk_model.pkl')
     
-    print("Hybrid Ward Risk Model computed and serialized successfully!")
+    # Generate and save metrics
+    metrics = {
+        "engine_type": "Hybrid Risk Scoring",
+        "total_wards_analyzed": len(wards),
+        "scaling_parameters": scalers,
+        "weight_distribution": hybrid_model["weights"]
+    }
+    with open('ai_engine/saved_models/ward_risk_metrics.json', 'w') as f:
+        json.dump(metrics, f, indent=4)
+    
+    print("Hybrid Ward Risk Model and metrics computed and serialized successfully!")
 
 if __name__ == "__main__":
-    train_and_save_model = train_and_save_hybrid_model()
+    train_and_save_hybrid_model()

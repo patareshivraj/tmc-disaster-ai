@@ -1,0 +1,33 @@
+{
+    "engine_type": "Hybrid Risk Scoring",
+    "total_wards_analyzed": 9,
+    "scaling_parameters": {
+        "incident_count": {
+            "min": 238,
+            "max": 308
+        },
+        "flood_count": {
+            "min": 77,
+            "max": 109
+        },
+        "building_risk_score": {
+            "min": 48,
+            "max": 81
+        },
+        "preparedness_score": {
+            "min": 72.0,
+            "max": 103.5
+        },
+        "avg_response_time": {
+            "min": 31.264705882352942,
+            "max": 33.50367647058823
+        }
+    },
+    "weight_distribution": {
+        "flood_risk": 0.35,
+        "incident_frequency": 0.2,
+        "building_risk": 0.2,
+        "preparedness_penalty": -0.1,
+        "response_efficiency": 0.15
+    }
+}

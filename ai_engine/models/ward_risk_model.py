@@ -62,15 +62,16 @@ class WardRiskEngine:
         # Determine Explainability (Top Risk Factors)
         factors = []
         if flood_factor > 0.6: factors.append("Frequent Flooding")
-        if building_factor > 0.6: factors.append("Poor Building Conditions")
+        if building_factor > 0.6: factors.append("High Building Risk")
         if response_factor > 0.6: factors.append("Slow Historical Response Time")
         if incident_factor > 0.6: factors.append("High Historical Incident Density")
+        if prep_factor < 0.4: factors.append("Low Preparedness Score")
         if not factors: factors.append("General Vulnerability Threshold Reached")
             
         return {
             "ward": ward,
             "risk_score": float(round(risk_score, 2)),
             "risk_level": risk_level,
-            "confidence": 95.0, # Hybrid models have high algorithmic confidence
-            "top_risk_factors": factors
+            "confidence": 91.0, # Fixed confidence for hybrid rules
+            "risk_factors": factors
         }
