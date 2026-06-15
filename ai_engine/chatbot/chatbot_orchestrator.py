@@ -58,7 +58,11 @@ class ChatbotOrchestrator:
         results = {}
         
         try:
-            if intent == "City-Wide" or (intent in ["Emergency", "Recommendation"] and not ward):
+            if intent == "Unknown":
+                results["error"] = "Query is outside the scope of disaster management intelligence."
+                results["modules_used"] = []
+                
+            elif intent == "City-Wide" or (intent in ["Emergency", "Recommendation"] and not ward):
                 # Run full city evaluation
                 payloads = [self._get_ward_payload(w) for w in self.wards]
                 city_eval = self.rec_ai.evaluate_city(payloads)
@@ -71,14 +75,17 @@ class ChatbotOrchestrator:
                 results["city_summary"] = city_eval
                 results["top_ward_details"] = top_rec
                 results["forecast"] = self.forecast_ai.forecast_incidents(7)
+                results["modules_used"] = ["Flood Prediction AI", "Ward Risk AI", "Resource AI", "Forecast AI", "Recommendation AI"]
                 
             elif intent in ["Emergency", "Recommendation", "Ward Risk"]:
                 if not ward: ward = "Diva" # Fallback
                 payload = self._get_ward_payload(ward)
                 results["recommendation"] = self.rec_ai.generate_recommendations(payload)
+                results["modules_used"] = ["Flood Prediction AI", "Ward Risk AI", "Forecast AI", "Recommendation AI"]
                 
             elif intent == "Forecast":
                 results["forecast"] = self.forecast_ai.forecast_incidents(30)
+                results["modules_used"] = ["Forecast AI"]
                 
             elif intent == "Resource":
                 if not ward: ward = "Diva"
@@ -86,6 +93,7 @@ class ChatbotOrchestrator:
                 r_res = self.resource_ai.recommend_resources(ward, payload["flood_probability"], payload["ward_risk_score"], [])
                 results["resource"] = r_res
                 results["recommendation"] = self.rec_ai.generate_recommendations(payload)
+                results["modules_used"] = ["Resource AI", "Recommendation AI"]
                 
             elif intent == "Building":
                 import pandas as pd
@@ -93,18 +101,23 @@ class ChatbotOrchestrator:
                 b_id = b_df.iloc[0]['building_id']
                 b_res = self.building_ai.predict_building_risk(b_id)
                 results["building"] = b_res
+                results["modules_used"] = ["Building Advisor AI"]
                 
             elif intent == "Flood":
                 if not ward: ward = "Diva"
                 f_res = self.flood_ai.predict_flood_risk(ward, 120, 85, 3.2, 28, 2, 1)
                 results["flood"] = f_res
+                results["modules_used"] = ["Flood Prediction AI"]
                 
             else:
                 # General fallback
                 payloads = [self._get_ward_payload(w) for w in self.wards[:3]]
                 results["city_summary"] = self.rec_ai.evaluate_city(payloads)
+                results["modules_used"] = ["Recommendation AI", "Ward Risk AI"]
 
         except Exception as e:
             results["error"] = str(e)
+            if "modules_used" not in results:
+                results["modules_used"] = []
             
         return results

@@ -4,11 +4,13 @@ class ResponseBuilder:
     """
     def compose(self, original_query, intent_data, orchestrator_results):
         if "error" in orchestrator_results:
+            answer = orchestrator_results["error"] if "scope" in orchestrator_results["error"] else "I'm currently unable to access the underlying AI systems due to an internal error."
             return {
                 "question": original_query,
-                "answer": "I'm currently unable to access the underlying AI systems due to an internal error.",
-                "reasoning": [orchestrator_results["error"]],
+                "answer": answer,
+                "reasoning": [orchestrator_results["error"]] if "scope" not in orchestrator_results["error"] else [],
                 "recommended_actions": [],
+                "modules_used": [],
                 "confidence": 0
             }
             
@@ -85,5 +87,6 @@ class ResponseBuilder:
             "answer": answer,
             "reasoning": list(dict.fromkeys(reasons)), # Remove duplicates
             "recommended_actions": list(dict.fromkeys(actions)),
+            "modules_used": orchestrator_results.get("modules_used", []),
             "confidence": confidence
         }

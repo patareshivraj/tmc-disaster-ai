@@ -28,15 +28,36 @@ class IntentEngine:
     def detect_intent(self, query):
         q_lower = query.lower()
         
+        # Out-of-Domain / Hallucination check
+        disaster_vocab = ["ward", "flood", "rain", "water", "pump", "boat", "resource", "building", "forecast", "risk", "attention", "emergency", "city", "action", "officer", "evacuation", "deploy", "vulnerable", "focus", "need", "immediately"]
+        if not any(word in q_lower for word in disaster_vocab):
+            return {
+                "primary_intent": "Unknown",
+                "all_intents": ["Unknown"],
+                "target_ward": None
+            }
+        
         extracted_ward = self.extract_ward(query)
         detected_intents = []
         
-        for intent, patterns in self.intent_patterns.items():
-            for p in patterns:
-                if re.search(p, q_lower):
-                    detected_intents.append(intent)
-                    break
-                    
+        # Enhanced semantic equivalents
+        if any(w in q_lower for w in ["immediate attention", "most vulnerable", "urgent action", "what should we do immediately", "emergency"]):
+            detected_intents.append("Emergency")
+        if any(w in q_lower for w in ["city summary", "city-wide", "overall", "all wards"]):
+            detected_intents.append("City-Wide")
+        if any(w in q_lower for w in ["what should officers do", "where should officers focus", "recommend", "actions", "focus today"]):
+            detected_intents.append("Recommendation")
+        if any(w in q_lower for w in ["forecast", "expected", "next days", "how many incidents"]):
+            detected_intents.append("Forecast")
+        if any(w in q_lower for w in ["pump", "boat", "resource", "shortage", "deploy", "send more"]):
+            detected_intents.append("Resource")
+        if any(w in q_lower for w in ["building", "evacuation", "structural", "dangerous"]):
+            detected_intents.append("Building")
+        if any(w in q_lower for w in ["which ward", "highest risk", "ward risk", "area is most vulnerable"]):
+            detected_intents.append("Ward Risk")
+        if any(w in q_lower for w in ["flood", "water logging", "rain"]):
+            detected_intents.append("Flood")
+            
         # Primary intent resolution
         if "Emergency" in detected_intents:
             primary_intent = "Emergency"
@@ -44,14 +65,14 @@ class IntentEngine:
             primary_intent = "City-Wide"
         elif "Recommendation" in detected_intents:
             primary_intent = "Recommendation"
-        elif "Forecast" in detected_intents:
-            primary_intent = "Forecast"
-        elif "Resource" in detected_intents:
-            primary_intent = "Resource"
-        elif "Building" in detected_intents:
-            primary_intent = "Building"
         elif "Ward Risk" in detected_intents:
             primary_intent = "Ward Risk"
+        elif "Resource" in detected_intents:
+            primary_intent = "Resource"
+        elif "Forecast" in detected_intents:
+            primary_intent = "Forecast"
+        elif "Building" in detected_intents:
+            primary_intent = "Building"
         elif "Flood" in detected_intents:
             primary_intent = "Flood"
         else:
