@@ -41,12 +41,20 @@ def train_and_save_recommendation_model():
     
     # We map these historical percentile thresholds to our expected 0-100 combined AI risk score scale
     # This prevents hardcoding "if score > 80". Instead we use learned standard deviations.
+    max_stress = percentiles["p95"]
+    
     score_thresholds = {
-        "Moderate": 40.0, # Baseline mapping
-        "High": 55.0,     # Derived proportionally from p75 variance
-        "Critical": 75.0, # Derived proportionally from p90 variance
-        "Extreme": 90.0   # Derived proportionally from p95 variance
+        "Moderate": float((percentiles["p50"] / max_stress) * 100.0), # Maps to ~40-50 based on distribution
+        "High": float((percentiles["p75"] / max_stress) * 100.0),     
+        "Critical": float((percentiles["p90"] / max_stress) * 100.0), 
+        "Extreme": float((percentiles["p95"] / max_stress) * 100.0)   # Always 100.0 in normalization, but we can cap it or scale it.
     }
+    
+    # Ensure they map roughly to our 0-100 scale logically (scaling factor)
+    # The pure mathematical scaling guarantees they are dynamically learned.
+    scale_factor = 90.0 / score_thresholds["Extreme"]
+    for k in score_thresholds:
+        score_thresholds[k] = round(score_thresholds[k] * scale_factor, 1)
     
     # Action Confidence Coefficients
     # These represent the mathematical correlation weight of a given Sub-AI score triggering a specific action.
@@ -59,16 +67,19 @@ def train_and_save_recommendation_model():
         "Increase Monitoring": {"ward_risk": 0.5, "forecast": 0.5}
     }
 
+    # Derive escalation bounds directly from the data-driven score thresholds
+    escalation_bounds = {
+        "Control Room Escalation": score_thresholds["Critical"],
+        "Emergency Action": score_thresholds["High"],
+        "Department Action": score_thresholds["Moderate"],
+        "Monitor": score_thresholds["Moderate"] * 0.6
+    }
+
     model_data = {
         "historical_percentiles": percentiles,
         "score_thresholds": score_thresholds,
         "action_coefficients": action_coefficients,
-        "escalation_bounds": {
-            "Control Room Escalation": 75.0, # Derived from historical extreme events
-            "Emergency Action": 60.0,
-            "Department Action": 40.0,
-            "Monitor": 25.0
-        }
+        "escalation_bounds": escalation_bounds
     }
     
     os.makedirs('ai_engine/saved_models', exist_ok=True)
