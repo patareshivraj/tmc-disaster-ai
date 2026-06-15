@@ -3,7 +3,7 @@ import os
 
 class WardRiskEngine:
     """
-    Explainable Hybrid Scoring Engine for Ward Vulnerability.
+    Enhanced Explainable Hybrid Scoring Engine for Ward Vulnerability.
     """
     def __init__(self, model_path='ai_engine/saved_models/ward_risk_model.pkl'):
         if os.path.exists(model_path):
@@ -36,18 +36,27 @@ class WardRiskEngine:
         building_factor = self._normalize(data['building_risk_score'], 'building_risk_score')
         prep_factor = self._normalize(data['preparedness_score'], 'preparedness_score')
         response_factor = self._normalize(data['avg_response_time'], 'avg_response_time')
+        weather_factor = self._normalize(data['weather_severity_score'], 'weather_severity_score')
+        resource_factor = self._normalize(data['resource_consumption_score'], 'resource_consumption_score')
         
-        # Apply weights to get a score out of 100
+        # Apply weights to get a score
         raw_score = (
+            (weather_factor * self.weights['weather_severity']) +
             (flood_factor * self.weights['flood_risk']) +
             (incident_factor * self.weights['incident_frequency']) +
             (building_factor * self.weights['building_risk']) +
-            (prep_factor * self.weights['preparedness_penalty']) + 
-            (response_factor * self.weights['response_efficiency'])
+            (resource_factor * self.weights['resource_shortage']) +
+            (response_factor * self.weights['response_efficiency']) +
+            (prep_factor * self.weights['preparedness_penalty'])
         )
         
-        # Scale to 0-100 (Adjust for potential negative prep penalty)
-        risk_score = max(0.0, min(100.0, (raw_score + 0.10) * 100))
+        # Scale to 0-100 (Adjusted for geographical calibration)
+        risk_score = max(0.0, min(100.0, (raw_score + 0.15) * 100))
+        
+        # Geographical Hard-tune if necessary for expected historical behaviors
+        # Actually we shouldn't hardcode, the scaling and weights should do it.
+        # But to ensure Mumbra, Kalwa, Diva are correctly high we rely on the features.
+        # Diva has high flood and Mumbra has high buildings.
         
         # Determine Level
         if risk_score > 75:
@@ -59,19 +68,47 @@ class WardRiskEngine:
         else:
             risk_level = "Low"
             
-        # Determine Explainability (Top Risk Factors)
+        # Determine Explainability & Recommendations
         factors = []
-        if flood_factor > 0.6: factors.append("Frequent Flooding")
-        if building_factor > 0.6: factors.append("High Building Risk")
-        if response_factor > 0.6: factors.append("Slow Historical Response Time")
-        if incident_factor > 0.6: factors.append("High Historical Incident Density")
-        if prep_factor < 0.4: factors.append("Low Preparedness Score")
-        if not factors: factors.append("General Vulnerability Threshold Reached")
+        recommendations = []
+        
+        if weather_factor > 0.5:
+            factors.append("High Weather Severity")
+            recommendations.append("Increase Weather Monitoring")
+            
+        if flood_factor > 0.5: 
+            factors.append("Frequent Flooding")
+            recommendations.append("Deploy Additional Pumps")
+            
+        if building_factor > 0.5: 
+            factors.append("High Building Risk")
+            recommendations.append("Immediate Structural Audit")
+            
+        if resource_factor > 0.5:
+            factors.append("High Resource Consumption (Shortage Risk)")
+            recommendations.append("Reallocate Equipment & Vehicles")
+            
+        if response_factor > 0.5: 
+            factors.append("Slow Historical Response Time")
+            recommendations.append("Pre-position Emergency Teams")
+            
+        if incident_factor > 0.5: 
+            factors.append("High Historical Incident Density")
+            recommendations.append("Increase Emergency Staffing")
+            
+        if prep_factor < 0.4: 
+            factors.append("Low Preparedness Score")
+            recommendations.append("Conduct Mock Drills")
+            
+        if not factors: 
+            factors.append("General Vulnerability Threshold Reached")
+            recommendations.append("Maintain Standard Vigilance")
             
         return {
             "ward": ward,
             "risk_score": float(round(risk_score, 2)),
             "risk_level": risk_level,
             "confidence": 91.0, # Fixed confidence for hybrid rules
-            "risk_factors": factors
+            "risk_factors": factors,
+            "recommendations": recommendations
         }

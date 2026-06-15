@@ -1,33 +1,45 @@
 {
-    "engine_type": "Hybrid Risk Scoring",
+    "version": "1.1 (Phase 7.1)",
+    "last_training_timestamp": "2026-06-15T17:21:35.751385",
+    "engine_type": "Enhanced Hybrid Risk Scoring",
     "total_wards_analyzed": 9,
     "scaling_parameters": {
         "incident_count": {
-            "min": 238,
-            "max": 308
+            "min": 108.80000000000001,
+            "max": 425.6
         },
         "flood_count": {
-            "min": 77,
-            "max": 109
+            "min": 40.400000000000006,
+            "max": 123.6
         },
         "building_risk_score": {
-            "min": 48,
-            "max": 81
+            "min": 19.6,
+            "max": 105.3
         },
         "preparedness_score": {
-            "min": 72.0,
-            "max": 103.5
+            "min": 65.0,
+            "max": 270.0
         },
         "avg_response_time": {
             "min": 31.264705882352942,
             "max": 33.50367647058823
+        },
+        "weather_severity_score": {
+            "min": 102.86541401273885,
+            "max": 440.04984293193723
+        },
+        "resource_consumption_score": {
+            "min": 176.8,
+            "max": 651.6
         }
     },
     "weight_distribution": {
-        "flood_risk": 0.35,
-        "incident_frequency": 0.2,
-        "building_risk": 0.2,
-        "preparedness_penalty": -0.1,
-        "response_efficiency": 0.15
+        "weather_severity": 0.25,
+        "flood_risk": 0.2,
+        "incident_frequency": 0.15,
+        "building_risk": 0.15,
+        "resource_shortage": 0.15,
+        "response_efficiency": 0.1,
+        "preparedness_penalty": -0.15
     }
 }
