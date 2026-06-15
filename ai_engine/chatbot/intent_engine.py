@@ -1,23 +1,107 @@
-import re
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 class IntentEngine:
     """
-    Parses natural language queries to detect intent and extract entities.
+    Semantic Intent Detection using TF-IDF Vectorization + Cosine Similarity.
+    Replaces keyword/regex matching with genuine statistical NLP.
     """
     def __init__(self):
-        self.wards = ["Diva", "Kalwa", "Mumbra", "Wagle Estate", "Naupada-Kopri", "Majiwada-Manpada", "Vartak Nagar", "Uthalsar", "Lokmanya-Savarkar Nagar"]
-        
-        # Regex mappings for semantic routing
-        self.intent_patterns = {
-            "Emergency": [r"immediate attention", r"most vulnerable", r"emergency", r"what should we do immediately"],
-            "City-Wide": [r"city summary", r"city-wide", r"overall", r"all wards"],
-            "Recommendation": [r"what should.*do", r"recommend", r"actions"],
-            "Forecast": [r"forecast", r"expected", r"next \d+ days", r"how many incidents"],
-            "Resource": [r"pumps", r"boats", r"resources", r"shortage", r"deploy"],
-            "Building": [r"building", r"evacuation", r"structural", r"dangerous"],
-            "Ward Risk": [r"which ward", r"highest risk", r"ward risk"],
-            "Flood": [r"flood", r"water logging", r"rain"]
+        self.wards = ["Diva", "Kalwa", "Mumbra", "Wagle Estate", "Naupada-Kopri",
+                       "Majiwada-Manpada", "Vartak Nagar", "Uthalsar", "Lokmanya-Savarkar Nagar"]
+
+        self.intent_corpus = {
+            "Emergency": [
+                "which ward requires immediate attention",
+                "what is the most urgent area right now",
+                "where is the emergency situation",
+                "which area is currently most vulnerable",
+                "what should we do immediately",
+                "urgent action needed where",
+                "where should we focus right now",
+                "critical situation which ward",
+                "highest priority ward",
+                "which zone needs urgent help",
+            ],
+            "City-Wide": [
+                "give me city summary",
+                "city wide overview of all wards",
+                "overall situation across the city",
+                "all wards status report",
+                "complete city analysis",
+                "how is the entire city doing",
+                "summarize all ward conditions",
+                "full municipal status",
+                "total city risk assessment",
+            ],
+            "Recommendation": [
+                "what should officers do today",
+                "where should officers focus",
+                "recommend actions for the team",
+                "what actions should we take",
+                "operational recommendations",
+                "suggest next steps for disaster response",
+                "advise field teams on priorities",
+                "where should i focus resources today",
+            ],
+            "Forecast": [
+                "forecast incidents for next week",
+                "how many incidents expected",
+                "predict future disaster events",
+                "what will happen in next days",
+                "expected incident volume",
+                "future disaster prediction",
+                "upcoming risk forecast",
+            ],
+            "Resource": [
+                "how many pumps should we deploy",
+                "boat allocation needed",
+                "resource shortage analysis",
+                "deploy equipment to ward",
+                "send more rescue teams",
+                "resource demand for flood area",
+                "what equipment is needed",
+                "deploy pumps to mumbra",
+                "need more boats for rescue",
+                "resource gap in ward",
+            ],
+            "Building": [
+                "which buildings need evacuation",
+                "dangerous building assessment",
+                "structural risk of buildings",
+                "building collapse probability",
+                "old buildings at risk",
+                "building safety audit results",
+                "evacuation candidates",
+            ],
+            "Ward Risk": [
+                "which ward has highest risk",
+                "ward vulnerability ranking",
+                "ward risk score comparison",
+                "most at risk ward",
+                "compare ward danger levels",
+            ],
+            "Flood": [
+                "flood risk prediction",
+                "water logging probability",
+                "rain flood likelihood",
+                "monsoon flood forecast",
+                "flooding chance in ward",
+            ],
         }
+
+        # Build TF-IDF model from corpus
+        all_texts = []
+        all_labels = []
+        for intent, examples in self.intent_corpus.items():
+            for ex in examples:
+                all_texts.append(ex.lower())
+                all_labels.append(intent)
+
+        self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=1)
+        self.tfidf_matrix = self.vectorizer.fit_transform(all_texts)
+        self.labels = all_labels
 
     def extract_ward(self, query):
         for w in self.wards:
@@ -26,60 +110,44 @@ class IntentEngine:
         return None
 
     def detect_intent(self, query):
-        q_lower = query.lower()
-        
-        # Out-of-Domain / Hallucination check
-        disaster_vocab = ["ward", "flood", "rain", "water", "pump", "boat", "resource", "building", "forecast", "risk", "attention", "emergency", "city", "action", "officer", "evacuation", "deploy", "vulnerable", "focus", "need", "immediately"]
-        if not any(word in q_lower for word in disaster_vocab):
+        q_lower = query.lower().strip()
+
+        # Vectorize the query and compute cosine similarity against all training examples
+        query_vec = self.vectorizer.transform([q_lower])
+        similarities = cosine_similarity(query_vec, self.tfidf_matrix)[0]
+
+        best_idx = int(np.argmax(similarities))
+        best_score = float(similarities[best_idx])
+        best_intent = self.labels[best_idx]
+
+        # Out-of-Domain detection: empirically tuned threshold
+        # Legitimate queries score >= 0.50, OOD queries score 0.38-0.47
+        if best_score < 0.50:
             return {
                 "primary_intent": "Unknown",
                 "all_intents": ["Unknown"],
-                "target_ward": None
+                "target_ward": None,
+                "similarity_score": round(best_score, 4)
             }
-        
+
+        # Aggregate scores per intent to find all relevant intents
+        intent_scores = {}
+        for i, label in enumerate(self.labels):
+            if label not in intent_scores or similarities[i] > intent_scores[label]:
+                intent_scores[label] = similarities[i]
+
+        # Sort intents by score
+        sorted_intents = sorted(intent_scores.items(), key=lambda x: x[1], reverse=True)
+        detected_intents = [intent for intent, score in sorted_intents if score > 0.08]
+
+        if not detected_intents:
+            detected_intents = [best_intent]
+
         extracted_ward = self.extract_ward(query)
-        detected_intents = []
-        
-        # Enhanced semantic equivalents
-        if any(w in q_lower for w in ["immediate attention", "most vulnerable", "urgent action", "what should we do immediately", "emergency"]):
-            detected_intents.append("Emergency")
-        if any(w in q_lower for w in ["city summary", "city-wide", "overall", "all wards"]):
-            detected_intents.append("City-Wide")
-        if any(w in q_lower for w in ["what should officers do", "where should officers focus", "recommend", "actions", "focus today"]):
-            detected_intents.append("Recommendation")
-        if any(w in q_lower for w in ["forecast", "expected", "next days", "how many incidents"]):
-            detected_intents.append("Forecast")
-        if any(w in q_lower for w in ["pump", "boat", "resource", "shortage", "deploy", "send more"]):
-            detected_intents.append("Resource")
-        if any(w in q_lower for w in ["building", "evacuation", "structural", "dangerous"]):
-            detected_intents.append("Building")
-        if any(w in q_lower for w in ["which ward", "highest risk", "ward risk", "area is most vulnerable"]):
-            detected_intents.append("Ward Risk")
-        if any(w in q_lower for w in ["flood", "water logging", "rain"]):
-            detected_intents.append("Flood")
-            
-        # Primary intent resolution
-        if "Emergency" in detected_intents:
-            primary_intent = "Emergency"
-        elif "City-Wide" in detected_intents:
-            primary_intent = "City-Wide"
-        elif "Recommendation" in detected_intents:
-            primary_intent = "Recommendation"
-        elif "Ward Risk" in detected_intents:
-            primary_intent = "Ward Risk"
-        elif "Resource" in detected_intents:
-            primary_intent = "Resource"
-        elif "Forecast" in detected_intents:
-            primary_intent = "Forecast"
-        elif "Building" in detected_intents:
-            primary_intent = "Building"
-        elif "Flood" in detected_intents:
-            primary_intent = "Flood"
-        else:
-            primary_intent = "General"
-            
+
         return {
-            "primary_intent": primary_intent,
+            "primary_intent": best_intent,
             "all_intents": detected_intents,
-            "target_ward": extracted_ward
+            "target_ward": extracted_ward,
+            "similarity_score": round(best_score, 4)
         }

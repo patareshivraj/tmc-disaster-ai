@@ -1,16 +1,45 @@
 {
-    "accuracy": 79.45,
-    "precision": 9.21,
-    "recall": 70.97,
-    "f1_score": 16.3,
-    "confusion_matrix": [
-        [
-            852,
-            217
-        ],
-        [
-            9,
-            22
+    "version": "2.0 (Phase 15.1 Hardened)",
+    "last_training_timestamp": "2026-06-15T20:44:26.758063",
+    "engine_type": "Random Forest Classifier with SMOTE",
+    "cross_validation": {
+        "accuracy": {
+            "mean": 82.04,
+            "std": 1.04
+        },
+        "precision": {
+            "mean": 8.35,
+            "std": 1.68
+        },
+        "recall": {
+            "mean": 53.55,
+            "std": 9.7
+        },
+        "f1_score": {
+            "mean": 14.44,
+            "std": 2.87
+        },
+        "roc_auc": {
+            "mean": 83.28,
+            "std": 2.15
+        }
+    },
+    "holdout_evaluation": {
+        "accuracy": 79.45,
+        "precision": 9.21,
+        "recall": 70.97,
+        "f1_score": 16.3,
+        "roc_auc": 85.11,
+        "confusion_matrix": [
+            [
+                852,
+                217
+            ],
+            [
+                9,
+                22
+            ]
         ]
-    ]
+    },
+    "validation_method": "5-Fold Stratified Cross Validation + 80/20 Holdout"
 }

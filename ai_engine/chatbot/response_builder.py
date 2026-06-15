@@ -1,6 +1,7 @@
 class ResponseBuilder:
     """
     Transforms JSON outputs from the AI Orchestrator into natural, officer-friendly responses.
+    Phase 15.1: Confidence is now derived from intent similarity score, not hardcoded.
     """
     def compose(self, original_query, intent_data, orchestrator_results):
         if "error" in orchestrator_results:
@@ -13,38 +14,41 @@ class ResponseBuilder:
                 "modules_used": [],
                 "confidence": 0
             }
-            
+
         intent = intent_data["primary_intent"]
-        
+
+        # Dynamic confidence from TF-IDF similarity score (Phase 15.1)
+        similarity_score = intent_data.get("similarity_score", 0.5)
+        confidence = round(min(99, max(10, similarity_score * 100)), 1)
+
         answer = ""
         reasons = []
         actions = []
-        confidence = 94
-        
+
         if intent == "City-Wide" and "city_summary" in orchestrator_results:
             summary = orchestrator_results["city_summary"]
             answer = "Here is the city-wide summary based on current AI metrics:"
             for w, p in summary.items():
                 reasons.append(f"{w} -> {p}")
             actions.append("Review Command Center Dashboard for details.")
-            
+
         elif "top_ward_details" in orchestrator_results:
             top_rec = orchestrator_results["top_ward_details"]
             answer = f"{top_rec['ward']} requires immediate attention."
             reasons.append(f"Combined Risk Score: {top_rec['combined_risk_score']}")
             reasons.append(f"Priority Level: {top_rec['priority_level']}")
-            
+
             for rec in top_rec['recommendations'][:3]:
                 actions.append(rec["action"])
                 if rec["reason"] not in reasons:
                     reasons.append(rec["reason"])
-                    
+
         elif "forecast" in orchestrator_results and intent == "Forecast":
             f_res = orchestrator_results["forecast"]
             answer = f"Expected incident volume is {f_res['expected_incidents']} over the next {f_res['forecast_period']}."
             reasons.extend(f_res["explanations"])
             actions.append(f"Monitor Hotspots: {', '.join(f_res['hotspots'][:3])}")
-            
+
         elif "resource" in orchestrator_results and intent == "Resource":
             r_res = orchestrator_results["resource"]
             answer = f"Resource allocation plan generated for {intent_data['target_ward'] or 'the requested ward'}."
@@ -52,7 +56,7 @@ class ResponseBuilder:
                 if alloc["shortage"] > 0:
                     reasons.append(f"Shortage of {alloc['shortage']} {alloc['resource']}.")
                     actions.append(f"Deploy {alloc['required']} {alloc['resource']}")
-                    
+
         elif "building" in orchestrator_results and intent == "Building":
             b_res = orchestrator_results["building"]
             answer = f"Building {b_res['building_name']} is classified as {b_res['classification']}."
@@ -64,7 +68,7 @@ class ResponseBuilder:
             rec = orchestrator_results["recommendation"]
             answer = f"{rec['ward']} is currently marked as {rec['priority_level']} priority."
             reasons.append(f"Combined Risk Score: {rec['combined_risk_score']}")
-            
+
             for r in rec['recommendations'][:3]:
                 actions.append(r["action"])
                 if r["reason"] not in reasons:
@@ -76,7 +80,7 @@ class ResponseBuilder:
             for w, p in summary.items():
                 reasons.append(f"{w} -> {p}")
             actions.append("Review Command Center Dashboard for details.")
-            
+
         else:
             answer = "I have analyzed the current data but could not find a specific operational anomaly."
             reasons.append("All signals within standard operational baselines.")
@@ -85,7 +89,7 @@ class ResponseBuilder:
         return {
             "question": original_query,
             "answer": answer,
-            "reasoning": list(dict.fromkeys(reasons)), # Remove duplicates
+            "reasoning": list(dict.fromkeys(reasons)),
             "recommended_actions": list(dict.fromkeys(actions)),
             "modules_used": orchestrator_results.get("modules_used", []),
             "confidence": confidence

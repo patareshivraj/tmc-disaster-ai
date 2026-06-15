@@ -98,13 +98,21 @@ class BuildingAdvisorEngine:
         else:
             recommendations.append("Safe")
 
+        # Dynamic confidence: certainty of each risk dimension
+        # Coefficients near 0.0 or 1.0 = high certainty, near 0.5 = uncertain
+        age_certainty = abs(age_prob - 0.5) * 2.0
+        cond_certainty = abs(cond_prob - 0.5) * 2.0
+        insp_certainty = abs(insp_prob - 0.5) * 2.0
+        raw_confidence = (age_certainty + cond_certainty + insp_certainty) / 3.0
+        confidence = round(50.0 + (raw_confidence * 49.0), 1)
+
         return {
             "risk_score": float(round(risk_score, 2)),
             "collapse_probability": float(round(collapse_prob, 2)),
             "classification": classification,
             "learned_risk_factors": risk_factors,
             "recommendations": recommendations,
-            "confidence": 94.0
+            "confidence": confidence
         }
 
     def predict_building_risk(self, building_id):
