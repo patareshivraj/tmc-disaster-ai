@@ -73,6 +73,10 @@ class ChatbotOrchestrator:
 
     def _get_ward_payload(self, ward):
         """Synthesizes the unified data contract using per-ward historical data."""
+        if not self.ward_ai or not self.flood_ai or not self.resource_ai or not self.forecast_ai:
+            from ai_engine.exceptions import AIUnavailableException
+            raise AIUnavailableException("AI model unavailable")
+            
         w_res = self.ward_ai.predict_ward_risk(ward)
 
         # Use per-ward historical weather averages instead of hardcoded mock values
@@ -145,6 +149,9 @@ class ChatbotOrchestrator:
                 results["modules_used"] = ["Resource AI", "Recommendation AI"]
 
             elif intent == "Building":
+                if not self.building_ai:
+                    from ai_engine.exceptions import AIUnavailableException
+                    raise AIUnavailableException("AI model unavailable")
                 b_df = DataSourceFactory.get_dataframe("buildings")
                 b_id = b_df.iloc[0]['building_id']
                 b_res = self.building_ai.predict_building_risk(b_id)
@@ -164,6 +171,9 @@ class ChatbotOrchestrator:
                 results["modules_used"] = ["Recommendation AI", "Ward Risk AI"]
 
         except Exception as e:
+            from ai_engine.exceptions import AIUnavailableException
+            if isinstance(e, AIUnavailableException):
+                raise
             results["error"] = str(e)
             if "modules_used" not in results:
                 results["modules_used"] = []

@@ -7,7 +7,11 @@ class FloodPredictionEngine:
     """
     Consumes raw inference data, formats it into ML features, and runs Random Forest prediction.
     """
-    def __init__(self, model_path='ai_engine/saved_models/flood_prediction.pkl'):
+    def __init__(self, model_path=None):
+        if model_path is None:
+            import os
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            model_path = os.path.join(base_dir, 'saved_models', 'flood_prediction.pkl')
         if os.path.exists(model_path):
             try:
                 self.model = joblib.load(model_path)

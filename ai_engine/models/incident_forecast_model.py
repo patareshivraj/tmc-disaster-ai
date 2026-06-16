@@ -9,7 +9,11 @@ class IncidentForecastEngine:
     """
     Data-Driven Time-Series Forecaster for Municipal Disasters.
     """
-    def __init__(self, model_path='ai_engine/saved_models/incident_forecast.pkl'):
+    def __init__(self, model_path=None):
+        if model_path is None:
+            import os
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            model_path = os.path.join(base_dir, 'saved_models', 'incident_forecast.pkl')
         if os.path.exists(model_path):
             try:
                 self.model_data = joblib.load(model_path)

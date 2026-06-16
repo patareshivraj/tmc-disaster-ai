@@ -7,7 +7,11 @@ class RecommendationEngine:
     """
     Data-Driven Apex Engine converting sub-AI matrices into operational actions.
     """
-    def __init__(self, model_path='ai_engine/saved_models/recommendation_engine.pkl'):
+    def __init__(self, model_path=None):
+        if model_path is None:
+            import os
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            model_path = os.path.join(base_dir, 'saved_models', 'recommendation_engine.pkl')
         if os.path.exists(model_path):
             try:
                 self.model_data = joblib.load(model_path)

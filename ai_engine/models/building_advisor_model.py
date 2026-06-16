@@ -9,7 +9,11 @@ class BuildingAdvisorEngine:
     """
     Data-Driven AI Engine for Building Safety and Structural Risk.
     """
-    def __init__(self, model_path='ai_engine/saved_models/building_advisor.pkl', data_path='generated_data/buildings.csv'):
+    def __init__(self, model_path=None):
+        if model_path is None:
+            import os
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            model_path = os.path.join(base_dir, 'saved_models', 'buildings.csv')
         if os.path.exists(model_path):
             try:
                 self.model_data = joblib.load(model_path)
