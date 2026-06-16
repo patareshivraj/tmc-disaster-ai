@@ -1,4 +1,5 @@
 import sys
+from ai_engine.repositories.factory import DataSourceFactory
 import os
 import pandas as pd
 
@@ -38,7 +39,7 @@ class ChatbotOrchestrator:
         # compute per-ward historical averages from weather.csv
         self.ward_weather = {}
         try:
-            weather_df = pd.read_csv('generated_data/weather.csv')
+            weather_df = DataSourceFactory.get_dataframe("weather")
             for ward in self.wards:
                 w_data = weather_df[weather_df['ward'] == ward]
                 if not w_data.empty:
@@ -57,7 +58,7 @@ class ChatbotOrchestrator:
         # DATA-DERIVED BUILDING RISK PER WARD (Phase 15.1 Mock Elimination)
         self.ward_building_risk = {}
         try:
-            buildings_df = pd.read_csv('generated_data/buildings.csv')
+            buildings_df = DataSourceFactory.get_dataframe("buildings")
             condition_map = {'Dilapidated': 90, 'Poor': 70, 'Fair': 40, 'Good': 10}
             buildings_df['risk_num'] = buildings_df['condition'].map(condition_map).fillna(50)
             for ward in self.wards:
@@ -144,7 +145,7 @@ class ChatbotOrchestrator:
                 results["modules_used"] = ["Resource AI", "Recommendation AI"]
 
             elif intent == "Building":
-                b_df = pd.read_csv("generated_data/buildings.csv")
+                b_df = DataSourceFactory.get_dataframe("buildings")
                 b_id = b_df.iloc[0]['building_id']
                 b_res = self.building_ai.predict_building_risk(b_id)
                 results["building"] = b_res

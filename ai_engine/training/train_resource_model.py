@@ -1,4 +1,5 @@
 import os
+from ai_engine.repositories.factory import DataSourceFactory
 import json
 import joblib
 import pandas as pd
@@ -8,8 +9,8 @@ def train_and_save_resource_model():
     print("Computing data-driven usage coefficients from historical data (Phase 8.1 Rework)...")
     
     # Load historical datasets
-    incidents = pd.read_csv("generated_data/incidents.csv")
-    resources = pd.read_csv("generated_data/resources.csv")
+    incidents = DataSourceFactory.get_dataframe("incidents")
+    resources = DataSourceFactory.get_dataframe("resources")
     
     # Merge resources with incidents
     resource_incidents = pd.merge(resources, incidents[['incident_id', 'ward', 'incident_type', 'severity']], on='incident_id', how='left')

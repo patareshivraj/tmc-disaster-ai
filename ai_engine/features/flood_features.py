@@ -1,4 +1,5 @@
 import pandas as pd
+from ai_engine.repositories.factory import DataSourceFactory
 import numpy as np
 
 def create_flood_features(weather_csv="generated_data/weather.csv", incidents_csv="generated_data/incidents.csv"):
@@ -6,11 +7,11 @@ def create_flood_features(weather_csv="generated_data/weather.csv", incidents_cs
     Consumes raw weather and incident data to produce ML-ready flood features.
     """
     # 1. Load Data
-    weather_df = pd.read_csv(weather_csv)
+    weather_df = DataSourceFactory.get_dataframe("weather")
     weather_df['date'] = pd.to_datetime(weather_df['date'])
     weather_df = weather_df.sort_values(by=['ward', 'date']).reset_index(drop=True)
     
-    incidents_df = pd.read_csv(incidents_csv)
+    incidents_df = DataSourceFactory.get_dataframe("incidents")
     incidents_df['incident_date'] = pd.to_datetime(incidents_df['incident_date'])
     
     # Filter for floods

@@ -1,4 +1,5 @@
 import os
+from ai_engine.repositories.factory import DataSourceFactory
 import json
 import joblib
 import pandas as pd
@@ -8,7 +9,7 @@ def train_and_save_forecast_model():
     print("Computing data-driven time-series baselines (Phase 10)...")
     
     # 1. Load historical datasets
-    incidents = pd.read_csv("generated_data/incidents.csv")
+    incidents = DataSourceFactory.get_dataframe("incidents")
     
     # Convert dates
     incidents['incident_date'] = pd.to_datetime(incidents['incident_date'], errors='coerce')

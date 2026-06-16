@@ -1,4 +1,5 @@
 import os
+from ai_engine.repositories.factory import DataSourceFactory
 import json
 import joblib
 import pandas as pd
@@ -9,11 +10,11 @@ def train_and_save_hybrid_model():
     print("Computing baseline risk factors from historical data (Phase 15.1 Reengineered)...")
 
     # Load historical datasets
-    incidents = pd.read_csv("generated_data/incidents.csv")
-    buildings = pd.read_csv("generated_data/buildings.csv")
-    preparedness = pd.read_csv("generated_data/preparedness.csv")
-    weather = pd.read_csv("generated_data/weather.csv")
-    resources = pd.read_csv("generated_data/resources.csv")
+    incidents = DataSourceFactory.get_dataframe("incidents")
+    buildings = DataSourceFactory.get_dataframe("buildings")
+    preparedness = DataSourceFactory.get_dataframe("preparedness")
+    weather = DataSourceFactory.get_dataframe("weather")
+    resources = DataSourceFactory.get_dataframe("resources")
 
     resource_incidents = pd.merge(resources, incidents[['incident_id', 'ward']], on='incident_id', how='left')
 

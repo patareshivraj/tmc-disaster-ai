@@ -1,4 +1,5 @@
 import os
+from ai_engine.repositories.factory import DataSourceFactory
 import json
 import joblib
 import pandas as pd
@@ -9,8 +10,8 @@ def train_and_save_recommendation_model():
     print("Computing data-driven decision thresholds for Recommendation Engine (Phase 11)...")
     
     # Load historical datasets to generate baseline empirical stress percentiles
-    incidents = pd.read_csv("generated_data/incidents.csv")
-    resources = pd.read_csv("generated_data/resources.csv")
+    incidents = DataSourceFactory.get_dataframe("incidents")
+    resources = DataSourceFactory.get_dataframe("resources")
     
     # Extract "Operational Stress" proxy from historical data
     # We define historical stress as incident density + severity + resource usage

@@ -1,4 +1,5 @@
 import os
+from ai_engine.repositories.factory import DataSourceFactory
 import json
 import joblib
 import pandas as pd
@@ -8,9 +9,9 @@ def train_and_save_building_model():
     print("Computing data-driven building risk baselines (Phase 9.1 Rework)...")
     
     # 1. Load historical datasets
-    buildings = pd.read_csv("generated_data/buildings.csv")
-    incidents = pd.read_csv("generated_data/incidents.csv")
-    weather = pd.read_csv("generated_data/weather.csv")
+    buildings = DataSourceFactory.get_dataframe("buildings")
+    incidents = DataSourceFactory.get_dataframe("incidents")
+    weather = DataSourceFactory.get_dataframe("weather")
     
     current_year = datetime.now().year
     

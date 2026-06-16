@@ -1,4 +1,5 @@
 import joblib
+from ai_engine.repositories.factory import DataSourceFactory
 import os
 import pandas as pd
 from datetime import datetime
@@ -19,7 +20,7 @@ class BuildingAdvisorEngine:
             self.model_data = None
             
         if os.path.exists(data_path):
-            self.buildings_df = pd.read_csv(data_path)
+            self.buildings_df = DataSourceFactory.get_dataframe("buildings")
         else:
             self.buildings_df = None
 
