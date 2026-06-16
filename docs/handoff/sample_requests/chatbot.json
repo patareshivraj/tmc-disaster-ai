@@ -1,0 +1,25 @@
+{
+  "request": {
+    "question": "What is the building risk for building ID 1?"
+  },
+  "success_response_200": {
+    "question": "What is the building risk for building ID 1?",
+    "answer": "Building 1 (Sai Darshan) in Diva is currently rated as Evacuation / Demolition Candidate with a collapse probability of 58.65%.",
+    "reasoning": [
+      "Age 41-60 Years (Risk: 51.3%)"
+    ],
+    "recommended_actions": [
+      "Immediate Evacuation",
+      "Demolition Assessment"
+    ],
+    "modules_used": [
+      "Building Advisor"
+    ],
+    "confidence": 98.5
+  },
+  "error_response_400": {
+    "question": [
+      "Ensure this field has no more than 500 characters."
+    ]
+  }
+}

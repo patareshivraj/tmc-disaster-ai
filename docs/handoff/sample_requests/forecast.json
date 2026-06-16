@@ -1,0 +1,30 @@
+{
+  "request": {
+    "days": 7
+  },
+  "success_response_200": {
+    "forecast_period": "7_days",
+    "expected_incidents": 10,
+    "hotspots": [
+      "Mumbra",
+      "Kalwa",
+      "Diva"
+    ],
+    "category_forecast": {
+      "Flood": 5,
+      "Tree Fall": 3
+    },
+    "severity_distribution": {
+      "Minor": 40.4,
+      "Critical": 10.0
+    },
+    "explanations": [
+      "Base historical volume calculated at 0.76 daily incidents."
+    ]
+  },
+  "error_response_400": {
+    "days": [
+      "Ensure this value is greater than or equal to 1."
+    ]
+  }
+}

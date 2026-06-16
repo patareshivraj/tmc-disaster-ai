@@ -1,0 +1,26 @@
+{
+  "request": {
+    "ward": "Diva",
+    "flood_probability": 43.43,
+    "ward_risk_score": 68.32,
+    "resource_shortage_score": 65.0,
+    "building_risk_score": 93.0,
+    "forecast_incidents": 10.0,
+    "forecast_severity_critical_pct": 10.0
+  },
+  "success_response_200": {
+    "ward": "Diva",
+    "final_priority_score": 77.29,
+    "escalation_level": "Level 4 (Critical Emergency)",
+    "actionable_directives": [
+      "Declare Ward-level Emergency",
+      "Mobilize All Available Resources",
+      "Coordinate with State Disaster Forces (SDRF)"
+    ]
+  },
+  "error_response_400": {
+    "building_risk_score": [
+      "This field is required."
+    ]
+  }
+}
