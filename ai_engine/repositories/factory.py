@@ -2,6 +2,13 @@ import pandas as pd
 from django.db import connection
 from django.conf import settings
 
+def _execute_sql_to_df(sql, conn):
+    """Executes raw SQL safely returning a Pandas DataFrame without SQLAlchemy warnings."""
+    with conn.cursor() as cursor:
+        cursor.execute(sql)
+        columns = [col[0] for col in cursor.description]
+        return pd.DataFrame(cursor.fetchall(), columns=columns)
+
 class BaseRepository:
     def __init__(self, csv_path):
         # Default to False if not defined in settings to prevent breakage
@@ -41,7 +48,7 @@ class IncidentRepository(BaseRepository):
         JOIN dmd_area a ON i.area_id = a.id
         JOIN dmd_disaster_category c ON i.disaster_category_id = c.id
         """
-        df = pd.read_sql(sql, connection)
+        df = _execute_sql_to_df(sql, connection)
         # Handle UUID cast if needed by AI modules (some expect string UUIDs)
         # The AI expects string, so we'll cast id to string.
         df['incident_id'] = df['incident_id'].astype(str)
@@ -67,7 +74,7 @@ class WeatherRepository(BaseRepository):
         FROM dmd_weather_history w
         JOIN dmd_ward wd ON w.ward_id = wd.id
         """
-        return pd.read_sql(sql, connection)
+        return _execute_sql_to_df(sql, connection)
 
 class BuildingRepository(BaseRepository):
     def __init__(self):
@@ -89,7 +96,7 @@ class BuildingRepository(BaseRepository):
         JOIN dmd_ward w ON b.ward_id = w.id
         JOIN dmd_area a ON b.area_id = a.id
         """
-        df = pd.read_sql(sql, connection)
+        df = _execute_sql_to_df(sql, connection)
         df['building_id'] = df['building_id'].astype(str)
         # Provide default inspection date if missing
         df['inspection_date'] = df['inspection_date'].fillna('2023-01-01')
@@ -114,7 +121,7 @@ class ResourceRepository(BaseRepository):
         LEFT JOIN dmd_vehicle v ON ru.vehicle_id = v.id
         GROUP BY ru.incident_id
         """
-        df = pd.read_sql(sql, connection)
+        df = _execute_sql_to_df(sql, connection)
         df['incident_id'] = df['incident_id'].astype(str)
         df['resource_id'] = df['resource_id'].astype(str)
         df['boats_used'] = df['boats_used'].fillna(0).astype(int)
@@ -138,7 +145,7 @@ class PreparednessRepository(BaseRepository):
         FROM dmd_mock_drill md
         JOIN dmd_ward w ON md.ward_id = w.id
         """
-        df = pd.read_sql(sql, connection)
+        df = _execute_sql_to_df(sql, connection)
         df['program_id'] = df['program_id'].astype(str)
         return df
 

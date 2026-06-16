@@ -1,3 +1,4 @@
+import pickle
 import joblib
 import os
 import pandas as pd
@@ -10,7 +11,23 @@ class IncidentForecastEngine:
     """
     def __init__(self, model_path='ai_engine/saved_models/incident_forecast.pkl'):
         if os.path.exists(model_path):
-            self.model_data = joblib.load(model_path)
+            try:
+                self.model_data = joblib.load(model_path)
+            except (FileNotFoundError, EOFError, pickle.UnpicklingError, Exception) as e:
+                from ai_monitoring.services import LoggingService
+                LoggingService.log_prediction(
+                    module_name=self.__class__.__name__,
+                    request_source='SYSTEM',
+                    input_payload={},
+                    output_payload=None,
+                    confidence=0,
+                    response_time=0,
+                    status='ERROR',
+                    error_message=f"Model loading failed: {str(e)}",
+                    endpoint='STARTUP'
+                )
+                from ai_engine.exceptions import AIUnavailableException
+                raise AIUnavailableException("AI model unavailable")
             self.base_daily_rate = self.model_data['base_daily_rate']
             self.seasonality = self.model_data['seasonality_multipliers']
             self.cat_dist = self.model_data['category_distributions']

@@ -1,3 +1,4 @@
+import pickle
 import joblib
 from ai_engine.repositories.factory import DataSourceFactory
 import os
@@ -10,7 +11,23 @@ class BuildingAdvisorEngine:
     """
     def __init__(self, model_path='ai_engine/saved_models/building_advisor.pkl', data_path='generated_data/buildings.csv'):
         if os.path.exists(model_path):
-            self.model_data = joblib.load(model_path)
+            try:
+                self.model_data = joblib.load(model_path)
+            except (FileNotFoundError, EOFError, pickle.UnpicklingError, Exception) as e:
+                from ai_monitoring.services import LoggingService
+                LoggingService.log_prediction(
+                    module_name=self.__class__.__name__,
+                    request_source='SYSTEM',
+                    input_payload={},
+                    output_payload=None,
+                    confidence=0,
+                    response_time=0,
+                    status='ERROR',
+                    error_message=f"Model loading failed: {str(e)}",
+                    endpoint='STARTUP'
+                )
+                from ai_engine.exceptions import AIUnavailableException
+                raise AIUnavailableException("AI model unavailable")
             self.ward_exposure_baselines = self.model_data['ward_exposure_baselines']
             self.age_risk_coefficients = self.model_data['age_risk_coefficients']
             self.condition_risk_coefficients = self.model_data['condition_risk_coefficients']

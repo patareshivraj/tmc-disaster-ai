@@ -1,3 +1,4 @@
+import pickle
 import joblib
 import os
 import math
@@ -9,7 +10,23 @@ class ResourceRecommendationEngine:
     """
     def __init__(self, model_path='ai_engine/saved_models/resource_recommendation.pkl'):
         if os.path.exists(model_path):
-            self.model_data = joblib.load(model_path)
+            try:
+                self.model_data = joblib.load(model_path)
+            except (FileNotFoundError, EOFError, pickle.UnpicklingError, Exception) as e:
+                from ai_monitoring.services import LoggingService
+                LoggingService.log_prediction(
+                    module_name=self.__class__.__name__,
+                    request_source='SYSTEM',
+                    input_payload={},
+                    output_payload=None,
+                    confidence=0,
+                    response_time=0,
+                    status='ERROR',
+                    error_message=f"Model loading failed: {str(e)}",
+                    endpoint='STARTUP'
+                )
+                from ai_engine.exceptions import AIUnavailableException
+                raise AIUnavailableException("AI model unavailable")
             self.baselines = self.model_data['ward_baselines']
             self.usage_coefficients = self.model_data['usage_coefficients']
             self.weights = self.model_data['weights']
