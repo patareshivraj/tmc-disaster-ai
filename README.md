@@ -578,4 +578,4 @@ Based on the [Phase 15.1 Independent Audit](docs/audits/INDEPENDENT_AUDIT_REMEDI
 
 ## 26. License
 
-This project was developed as part of a Master's dissertation for the Thane Municipal Corporation Disaster Management Division.
+Developed with ❤️ for the Thane Municipal Corporation Disaster Management Division to support efficient disaster monitoring, analysis, and response operations.
