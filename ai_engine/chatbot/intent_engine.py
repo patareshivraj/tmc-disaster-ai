@@ -74,6 +74,9 @@ class IntentEngine:
                 "old buildings at risk",
                 "building safety audit results",
                 "evacuation candidates",
+                "risky building",
+                "buildings at risk",
+                "unsafe building"
             ],
             "Ward Risk": [
                 "which ward has highest risk",
