@@ -56,7 +56,7 @@ class ToolRouter:
                         "type": "object",
                         "properties": {
                             "days": {
-                                "type": "integer",
+                                "type": "string",
                                 "description": "Number of days to forecast for."
                             }
                         },
