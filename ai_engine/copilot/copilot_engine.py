@@ -112,7 +112,8 @@ class CopilotEngine:
                     token_usage=0,
                     response_time=(time.time() - start_time) * 1000,
                     model_name="fallback_chatbot",
-                    status="SUCCESS_FALLBACK"
+                    status="SUCCESS_FALLBACK",
+                    error_message=error_message
                 )
                 
                 fallback_res["session_id"] = session_id
