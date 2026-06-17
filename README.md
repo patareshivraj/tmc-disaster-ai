@@ -45,9 +45,9 @@ The core business purpose of this system is to eliminate human bias in disaster 
 
 The TMC Disaster Management AI Platform is structured as a decoupled microservice architecture running within a Django monolith. Information flows sequentially through six defined layers:
 
-1. **Synthetic Data Layer:** `generated_data/` stores the historical baselines (incidents, weather, resources, buildings) acting as the empirical ground truth for all downstream models.
+1. **Live Database Layer:** The system reads directly from the operational `tmc2` MySQL tables (`dmd_incident`, `dmd_weather_history`, etc.) via `DataSourceFactory`, eliminating the need for static synthetic datasets. The legacy `generated_data/` CSVs are preserved merely as a fallback mock layer.
 2. **AI Engine Layer:** `ai_engine/` houses six specialized models. The foundation includes predictive models (Flood, Building) and data-derived scoring models (Ward Risk, Resource, Forecast). These feed into an apex Recommendation Engine.
-3. **Chatbot Layer:** An NLP orchestrator utilizing TF-IDF vectorization interprets unstructured natural language queries, maps them to intents, queries the underlying AI engines, and synthesizes officer-ready responses.
+3. **Generative Copilot Layer:** A fully autonomous Groq LLM (Llama 3) interprets unstructured natural language queries, maps them to intents via strict JSON tool schemas, queries the underlying AI engines, and synthesizes officer-ready responses.
 4. **API Layer:** `ai_api/` exposes all intelligence via RESTful endpoints. The `AIServiceLayer` utilizes a Singleton pattern, loading models into memory once at startup to ensure sub-40ms latency. Strict serializers validate all payloads.
 5. **Monitoring Layer:** `ai_monitoring/` acts as an asynchronous sidecar, intercepting every API request via decorators to log payloads, execution times, and UUIDs to the database (`AIPredictionLog` and `ChatbotLog`) without blocking inference.
 6. **Future Dashboard Layer:** The REST API is designed to be consumed by external React/Mobile clients (Not Yet Implemented).
