@@ -68,7 +68,20 @@ class ToolRouter:
                 "type": "function",
                 "function": {
                     "name": "get_building_risk",
-                    "description": "Get structural risk for an individual building ID or general building risk."
+                    "description": "Get structural risk for an individual building ID or get the most critical buildings in a specific ward.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "building_id": {
+                                "type": "string",
+                                "description": "The specific ID of the building, e.g. 'BLD_001'."
+                            },
+                            "ward": {
+                                "type": "string",
+                                "description": "The name of the ward to get critical buildings for, e.g. 'Diva'."
+                            }
+                        }
+                    }
                 }
             }
         ]
@@ -109,8 +122,28 @@ class ToolRouter:
                 return json.dumps(res)
                 
             elif name == "get_building_risk":
-                res = self.orchestrator.execute({"primary_intent": "Building", "target_ward": None})
-                return json.dumps(res)
+                building_id = arguments.get("building_id")
+                ward = arguments.get("ward")
+                if building_id:
+                    res = self.orchestrator.building_ai.predict_building_risk(building_id)
+                    return json.dumps(res)
+                elif ward:
+                    # Return top 5 most critical buildings in the ward
+                    df = self.orchestrator.building_ai.buildings_df
+                    ward_blds = df[df['ward'].str.lower() == ward.lower()]
+                    if ward_blds.empty:
+                        return json.dumps({"error": f"No buildings found in ward {ward}"})
+                    
+                    results = []
+                    for _, row in ward_blds.iterrows():
+                        risk = self.orchestrator.building_ai.predict_building_risk(row['building_id'])
+                        if risk['classification'] in ['Evacuation / Demolition Candidate', 'Structural Audit Required', 'Repair Recommended']:
+                            results.append(risk)
+                    
+                    results.sort(key=lambda x: x['risk_score'], reverse=True)
+                    return json.dumps({"ward": ward, "critical_buildings": results[:5]})
+                else:
+                    return json.dumps({"error": "Must provide building_id or ward."})
                 
             else:
                 return json.dumps({"error": f"Tool {name} not found."})

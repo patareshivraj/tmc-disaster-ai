@@ -35,35 +35,40 @@ class CopilotEngine:
         tools = self.router.get_tools()
 
         try:
-            # 1. Call OpenAI to see if it needs tools or can answer directly
-            response_data = self.llm.generate(messages, tools=tools)
-            
+            # 1. Loop for multi-tool reasoning
+            iterations = 0
+            max_iterations = 5
             tool_calls_made = []
-            final_content = response_data.get("content", "")
+            final_content = ""
+            total_tokens = 0
+            
+            while iterations < max_iterations:
+                response_data = self.llm.generate(messages, tools=tools)
+                final_content = response_data.get("content", "")
+                total_tokens += response_data.get("token_usage", 0)
 
-            # 2. If tools are requested, execute them and make a follow-up call
-            if response_data.get("tool_calls"):
-                messages.append({
-                    "role": "assistant",
-                    "content": final_content,
-                    "tool_calls": response_data["tool_calls"]
-                })
-                
-                for tool_call in response_data["tool_calls"]:
-                    tool_result = self.router.execute_tool(tool_call)
-                    tool_calls_made.append(tool_call.function.name)
-                    
+                # 2. If tools are requested, execute them and make a follow-up call
+                if response_data.get("tool_calls"):
                     messages.append({
-                        "role": "tool",
-                        "tool_call_id": tool_call.id,
-                        "name": tool_call.function.name,
-                        "content": tool_result
+                        "role": "assistant",
+                        "content": final_content,
+                        "tool_calls": response_data["tool_calls"]
                     })
-                
-                # Make the second call with the tool results
-                second_response = self.llm.generate(messages)
-                final_content = second_response.get("content", "")
-                response_data["token_usage"] += second_response.get("token_usage", 0)
+                    
+                    for tool_call in response_data["tool_calls"]:
+                        tool_result = self.router.execute_tool(tool_call)
+                        tool_calls_made.append(tool_call.function.name)
+                        
+                        messages.append({
+                            "role": "tool",
+                            "tool_call_id": tool_call.id,
+                            "name": tool_call.function.name,
+                            "content": tool_result
+                        })
+                    
+                    iterations += 1
+                else:
+                    break
 
             response_time = (time.time() - start_time) * 1000
 
@@ -76,7 +81,7 @@ class CopilotEngine:
                 question=question,
                 response=final_content,
                 tools_called=tool_calls_made,
-                token_usage=response_data.get("token_usage", 0),
+                token_usage=total_tokens,
                 response_time=response_time,
                 model_name=response_data.get("model_name", "unknown")
             )
@@ -85,7 +90,7 @@ class CopilotEngine:
                 "session_id": session_id,
                 "answer": final_content,
                 "tools_used": tool_calls_made,
-                "token_usage": response_data.get("token_usage", 0),
+                "token_usage": total_tokens,
                 "confidence": 99.0 # Verified by deterministic tools
             }
 
