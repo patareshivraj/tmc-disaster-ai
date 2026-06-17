@@ -18,16 +18,30 @@ class ChatbotOrchestrator:
     Phase 15.1: Replaced mock weather with data-derived ward averages.
     """
     def __init__(self):
-        try:
-            self.ward_ai = WardRiskEngine()
-            self.resource_ai = ResourceRecommendationEngine()
-            self.building_ai = BuildingAdvisorEngine()
-            self.forecast_ai = IncidentForecastEngine()
-            self.rec_ai = RecommendationEngine()
-            self.flood_ai = FloodPredictionEngine()
-        except Exception as e:
-            print(f"Warning: Model load failure in Orchestrator - {e}")
-            self.ward_ai = None
+        self.ward_ai = None
+        self.resource_ai = None
+        self.building_ai = None
+        self.forecast_ai = None
+        self.rec_ai = None
+        self.flood_ai = None
+        
+        try: self.ward_ai = WardRiskEngine()
+        except Exception as e: print(f"Warning: WardRiskEngine load failure - {e}")
+        
+        try: self.resource_ai = ResourceRecommendationEngine()
+        except Exception as e: print(f"Warning: ResourceRecommendationEngine load failure - {e}")
+        
+        try: self.building_ai = BuildingAdvisorEngine()
+        except Exception as e: print(f"Warning: BuildingAdvisorEngine load failure - {e}")
+        
+        try: self.forecast_ai = IncidentForecastEngine()
+        except Exception as e: print(f"Warning: IncidentForecastEngine load failure - {e}")
+        
+        try: self.rec_ai = RecommendationEngine()
+        except Exception as e: print(f"Warning: RecommendationEngine load failure - {e}")
+        
+        try: self.flood_ai = FloodPredictionEngine()
+        except Exception as e: print(f"Warning: FloodPredictionEngine load failure - {e}")
 
         self.wards = ["Diva", "Kalwa", "Mumbra", "Wagle Estate", "Naupada-Kopri",
                        "Majiwada-Manpada", "Vartak Nagar", "Uthalsar", "Lokmanya-Savarkar Nagar"]

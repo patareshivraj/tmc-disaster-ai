@@ -40,9 +40,10 @@ class BuildingAdvisorEngine:
         else:
             self.model_data = None
             
-        if os.path.exists(data_path):
+        # We don't need a hardcoded data_path. We use the DataSourceFactory directly.
+        try:
             self.buildings_df = DataSourceFactory.get_dataframe("buildings")
-        else:
+        except Exception:
             self.buildings_df = None
 
     def _get_classification(self, score):
