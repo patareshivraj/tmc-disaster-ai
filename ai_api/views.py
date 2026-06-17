@@ -142,3 +142,27 @@ class ChatbotView(APIView):
             result = ai_service.process_chat_query(serializer.validated_data)
             return Response(result, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class CopilotView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        from .serializers import CopilotSerializer
+        serializer = CopilotSerializer(data=request.data)
+        if serializer.is_valid():
+            question = serializer.validated_data["question"]
+            session_id = serializer.validated_data.get("session_id", "")
+            
+            try:
+                from ai_engine.copilot.copilot_engine import CopilotEngine
+                engine = CopilotEngine()
+                res = engine.process_query(session_id, question)
+                
+                if "error" in res and res.get("confidence") == 0:
+                    return Response(res, status=status.HTTP_503_SERVICE_UNAVAILABLE)
+                    
+                return Response(res, status=status.HTTP_200_OK)
+            except Exception as e:
+                return Response({"status": "error", "message": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

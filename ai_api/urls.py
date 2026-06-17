@@ -6,7 +6,8 @@ from .views import (
     BuildingAdvisorView,
     IncidentForecastView,
     RecommendationEngineView,
-    ChatbotView
+    ChatbotView,
+    CopilotView
 )
 
 urlpatterns = [
@@ -17,4 +18,5 @@ urlpatterns = [
     path('forecast/', IncidentForecastView.as_view(), name='api-forecast'),
     path('recommendations/', RecommendationEngineView.as_view(), name='api-recommendations'),
     path('chatbot/', ChatbotView.as_view(), name='api-chatbot'),
+    path('copilot/', CopilotView.as_view(), name='api-copilot'),
 ]

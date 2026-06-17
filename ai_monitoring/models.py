@@ -31,3 +31,19 @@ class ChatbotLog(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
+
+class LLMInteractionLog(models.Model):
+    log_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    session_id = models.CharField(max_length=100)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    question = models.TextField()
+    response = models.TextField()
+    tools_called = models.JSONField(default=list)
+    token_usage = models.IntegerField(default=0)
+    response_time = models.FloatField()
+    model_name = models.CharField(max_length=100)
+    status = models.CharField(max_length=50, default='SUCCESS')
+    error_message = models.TextField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['-timestamp']

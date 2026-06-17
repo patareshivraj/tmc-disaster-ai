@@ -32,3 +32,7 @@ class RecommendationEngineSerializer(serializers.Serializer):
 
 class ChatbotSerializer(serializers.Serializer):
     question = serializers.CharField(max_length=500)
+
+class CopilotSerializer(serializers.Serializer):
+    question = serializers.CharField(max_length=1000, required=True)
+    session_id = serializers.CharField(max_length=100, required=False, allow_blank=True)
