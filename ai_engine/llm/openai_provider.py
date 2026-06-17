@@ -6,10 +6,10 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 
 class OpenAIProvider(LLMProvider):
     def __init__(self):
-        # We assume OPENAI_API_KEY and OPENAI_MODEL are in the environment (loaded by settings)
+        # Using Groq via OpenAI client for validation due to quota issues
         self.api_key = os.environ.get("OPENAI_API_KEY", "")
-        self.model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
-        self.client = OpenAI(api_key=self.api_key)
+        self.model = os.environ.get("OPENAI_MODEL", "llama-3.3-70b-versatile")
+        self.client = OpenAI(api_key=self.api_key, base_url="https://api.groq.com/openai/v1")
 
     @retry(
         retry=retry_if_exception_type((APIError, RateLimitError, APITimeoutError)),
