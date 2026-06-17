@@ -1,9 +1,12 @@
 from ai_engine.llm.base import LLMProvider
-from ai_engine.llm.openai_provider import OpenAIProvider
 
 class LLMFactory:
     @staticmethod
     def get_provider() -> LLMProvider:
-        # In a real system, you could check an environment variable like LLM_PROVIDER
-        # and instantiate AnthropicProvider, GeminiProvider, etc.
-        return OpenAIProvider()
+        import os
+        provider = os.environ.get("LLM_PROVIDER", "openai").lower()
+        if provider == "openai":
+            from ai_engine.llm.openai_provider import OpenAIProvider
+            return OpenAIProvider()
+        else:
+            raise ValueError(f"Provider {provider} not supported.")
