@@ -1,12 +1,12 @@
 {
     "version": "1.1 (Phase 8.1)",
-    "last_training_timestamp": "2026-06-15T17:32:45.219815",
+    "last_training_timestamp": "2026-06-17T17:27:48.366642",
     "engine_type": "Hybrid AI + Data Driven Allocation",
     "total_wards_analyzed": 9,
     "usage_coefficients": {
-        "pump_coefficient": 2.4658018867924527,
-        "boat_coefficient": 1.2358490566037736,
-        "vehicle_coefficient": 2.5252,
+        "pump_coefficient": 42.96511627906977,
+        "boat_coefficient": 1.0232558139534884,
+        "vehicle_coefficient": 2.7922535211267605,
         "team_coefficient": 0.0,
         "structural_coefficient": 1.5
     },

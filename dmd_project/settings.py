@@ -149,4 +149,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
- 
+
+AI_USE_LIVE_DATABASE = os.getenv('AI_USE_LIVE_DATABASE', 'False').lower() in ('true', '1', 't')

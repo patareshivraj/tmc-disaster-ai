@@ -109,17 +109,15 @@ class ResourceRepository(BaseRepository):
     def _fetch_from_db(self) -> pd.DataFrame:
         sql = """
         SELECT 
-            ru.incident_id as incident_id,
-            MAX(ru.id) as resource_id,
-            SUM(CASE WHEN e.name LIKE '%Boat%' THEN ru.quantity_used ELSE 0 END) as boats_used,
-            SUM(CASE WHEN v.id IS NOT NULL THEN ru.quantity_used ELSE 0 END) as vehicles_used,
-            SUM(CASE WHEN e.name LIKE '%Pump%' THEN ru.quantity_used ELSE 0 END) as pumps_used,
+            ir.incident_id as incident_id,
+            MAX(ir.id) as resource_id,
+            SUM(ir.boats_used) as boats_used,
+            SUM(ir.vehicles_used) as vehicles_used,
+            SUM(ir.equipment_used) as pumps_used,
             '[]' as equipment_used,
             0.0 as fuel_consumed
-        FROM dmd_resource_usage ru
-        LEFT JOIN dmd_equipment e ON ru.equipment_id = e.id
-        LEFT JOIN dmd_vehicle v ON ru.vehicle_id = v.id
-        GROUP BY ru.incident_id
+        FROM dmd_incident_response ir
+        GROUP BY ir.incident_id
         """
         df = _execute_sql_to_df(sql, connection)
         df['incident_id'] = df['incident_id'].astype(str)

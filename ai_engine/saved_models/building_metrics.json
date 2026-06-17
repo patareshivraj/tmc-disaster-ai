@@ -1,26 +1,24 @@
 {
     "version": "1.1 (Phase 9.1 Rework)",
-    "last_training_timestamp": "2026-06-15T17:46:18.261447",
+    "last_training_timestamp": "2026-06-17T17:27:46.516889",
     "engine_type": "Data Driven AI",
-    "total_buildings_analyzed": 1000,
+    "total_buildings_analyzed": 80,
     "total_wards_mapped": 9,
     "age_coefficients": {
         "0-20": 0.0,
         "21-40": 0.0,
-        "41-60": 0.5127118644067796,
-        "60+": 0.5420560747663551
+        "41-60": 0.0,
+        "60+": 0.0
     },
     "condition_coefficients": {
-        "Dilapidated": 0.5217391304347826,
-        "Fair": 0.12601626016260162,
-        "Good": 0.0,
-        "Poor": 0.49327354260089684
+        "CRACKED": 0.0,
+        "DILAPIDATED": 0.0,
+        "FAIR": 0.0,
+        "GOOD": 0.0,
+        "POOR": 0.0
     },
     "inspection_coefficients": {
-        "0-1": 0.24175824175824176,
-        "2-3": 0.2540322580645161,
-        "4-5": 0.23694779116465864,
-        "5+": 0.22118380062305296
+        "0-1": 0.0
     },
     "accuracy_score": 98.2,
     "collapse_prediction_rate": 95.4

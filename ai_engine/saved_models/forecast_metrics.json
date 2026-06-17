@@ -1,9 +1,9 @@
 {
     "version": "1.0 (Phase 10)",
-    "last_training_timestamp": "2026-06-15T17:52:43.455507",
+    "last_training_timestamp": "2026-06-17T17:27:54.817106",
     "engine_type": "Data-Driven Time Series Forecaster",
-    "total_historical_incidents": 2500,
-    "base_daily_rate": 0.7624275693809088,
+    "total_historical_incidents": 1705,
+    "base_daily_rate": 0.5206106870229008,
     "seasonality_variance_extracted": true,
     "forecast_accuracy": 92.1
 }

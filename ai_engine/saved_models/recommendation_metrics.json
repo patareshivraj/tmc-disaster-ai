@@ -1,8 +1,8 @@
 {
     "version": "1.0 (Phase 11)",
-    "last_training_timestamp": "2026-06-15T19:37:44.564531",
+    "last_training_timestamp": "2026-06-17T17:27:50.861386",
     "engine_type": "Data-Driven Orchestration Matrix",
     "action_matrix_size": 6,
     "thresholds_learned_from_data": true,
-    "historical_events_analyzed": 2500
+    "historical_events_analyzed": 1705
 }

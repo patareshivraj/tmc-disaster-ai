@@ -1,55 +1,55 @@
 {
     "version": "2.0 (Phase 15.1 Reengineered)",
-    "last_training_timestamp": "2026-06-15T20:44:08.301219",
+    "last_training_timestamp": "2026-06-17T17:27:44.507243",
     "engine_type": "Data-Derived Hybrid Risk Scoring",
     "weight_derivation": "Coefficient of Variation across ward feature distributions",
     "total_wards_analyzed": 9,
     "derived_weights": {
-        "incident_frequency": 0.2025,
-        "flood_risk": 0.1755,
-        "building_risk": 0.2232,
-        "response_efficiency": 0.0141,
-        "weather_severity": 0.2047,
-        "resource_shortage": 0.18,
-        "preparedness_penalty": -0.2758
+        "incident_frequency": 0.1978,
+        "flood_risk": 0.397,
+        "building_risk": 0.0,
+        "response_efficiency": 0.0228,
+        "weather_severity": 0.1853,
+        "resource_shortage": 0.1971,
+        "preparedness_penalty": -0.2536
     },
     "feature_coefficients_of_variation": {
-        "incident_count": 0.3318,
-        "flood_count": 0.2875,
-        "building_risk_score": 0.3657,
-        "avg_response_time": 0.023,
-        "weather_severity_score": 0.3353,
-        "resource_consumption_score": 0.2949,
-        "preparedness_score": 0.4517
+        "incident_count": 0.3442,
+        "flood_count": 0.691,
+        "building_risk_score": 0.0,
+        "avg_response_time": 0.0397,
+        "weather_severity_score": 0.3225,
+        "resource_consumption_score": 0.3431,
+        "preparedness_score": 0.4414
     },
     "scaling_parameters": {
-        "preparedness_score": {
-            "min": 65.0,
-            "max": 270.0
+        "building_risk_score": {
+            "min": 0.0,
+            "max": 0.0
         },
         "avg_response_time": {
-            "min": 31.264705882352942,
-            "max": 33.50367647058823
-        },
-        "incident_count": {
-            "min": 108.80000000000001,
-            "max": 425.6
-        },
-        "flood_count": {
-            "min": 40.400000000000006,
-            "max": 123.6
-        },
-        "weather_severity_score": {
-            "min": 102.86541401273885,
-            "max": 440.04984293193723
-        },
-        "building_risk_score": {
-            "min": 19.6,
-            "max": 105.3
+            "min": 32.1588785046729,
+            "max": 36.49629629629629
         },
         "resource_consumption_score": {
-            "min": 176.8,
-            "max": 651.6
+            "min": 3393.2000000000003,
+            "max": 11616.0
+        },
+        "preparedness_score": {
+            "min": 56.25,
+            "max": 225.0
+        },
+        "flood_count": {
+            "min": 0.0,
+            "max": 98.8
+        },
+        "weather_severity_score": {
+            "min": 19.539490740740746,
+            "max": 81.00425925925926
+        },
+        "incident_count": {
+            "min": 85.60000000000001,
+            "max": 303.0
         }
     },
     "geographic_priors_applied": true,
