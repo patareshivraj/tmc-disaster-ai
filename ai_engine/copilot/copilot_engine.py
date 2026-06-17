@@ -97,46 +97,24 @@ class CopilotEngine:
         except Exception as e:
             error_message = str(e)
             
-            # Fallback to the deterministic ChatbotEngine if OpenAI is unreachable or fails
-            try:
-                from ai_engine.chatbot.chatbot_engine import ChatbotEngine
-                chatbot = ChatbotEngine()
-                fallback_res = chatbot.answer_question(question)
-                
-                # Log the fallback interaction
-                LLMInteractionLog.objects.create(
-                    session_id=session_id,
-                    question=question,
-                    response=fallback_res.get("answer", "Fallback used."),
-                    tools_called=["deterministic_fallback"],
-                    token_usage=0,
-                    response_time=(time.time() - start_time) * 1000,
-                    model_name="fallback_chatbot",
-                    status="SUCCESS_FALLBACK",
-                    error_message=error_message
-                )
-                
-                fallback_res["session_id"] = session_id
-                fallback_res["tools_used"] = ["deterministic_fallback"]
-                fallback_res["token_usage"] = 0
-                return fallback_res
-                
-            except Exception as fallback_e:
-                LLMInteractionLog.objects.create(
-                    session_id=session_id,
-                    question=question,
-                    response="Error processing request.",
-                    tools_called=[],
-                    token_usage=0,
-                    response_time=(time.time() - start_time) * 1000,
-                    model_name="unknown",
-                    status="ERROR",
-                    error_message=error_message + " | Fallback Error: " + str(fallback_e)
-                )
-                return {
-                    "session_id": session_id,
-                    "answer": "I do not have sufficient verified data to answer that. (Service Unavailable)",
-                    "error": error_message,
-                    "tools_used": [],
-                    "confidence": 0
-                }
+            # Log the error
+            LLMInteractionLog.objects.create(
+                session_id=session_id,
+                question=question,
+                response="Error processing request.",
+                tools_called=[],
+                token_usage=0,
+                response_time=(time.time() - start_time) * 1000,
+                model_name="unknown",
+                status="ERROR",
+                error_message=error_message
+            )
+            
+            return {
+                "session_id": session_id,
+                "answer": f"I apologize, but my AI inference engine is temporarily unavailable. Error: {error_message}",
+                "error": error_message,
+                "tools_used": [],
+                "confidence": 0,
+                "token_usage": 0
+            }

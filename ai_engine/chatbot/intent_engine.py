@@ -53,6 +53,7 @@ class IntentEngine:
                 "expected incident volume",
                 "future disaster prediction",
                 "upcoming risk forecast",
+                "total incidents",
             ],
             "Resource": [
                 "how many pumps should we deploy",

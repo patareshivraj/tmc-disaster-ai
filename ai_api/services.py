@@ -94,13 +94,23 @@ class AIServiceLayer:
         return self.rec_ai.generate_recommendations(data)
 
     def process_chat_query(self, data):
-        # Automatically upgrade the legacy /chatbot/ endpoint to use the new Copilot Engine
-        # This gives legacy API consumers the same semantic power without changing their code.
-        try:
-            from ai_engine.copilot.copilot_engine import CopilotEngine
-            engine = CopilotEngine()
-            return engine.process_query("legacy_chatbot_session", data['question'])
-        except Exception:
-            from ai_engine.exceptions import AIUnavailableException
-            if not self.chatbot_ai: raise AIUnavailableException("AI model unavailable")
-            return self.chatbot_ai.answer_question(data['question'])
+        # The user has explicitly requested that the Chatbot API be fully powered by the LLM (Groq)
+        # to prevent hardcoded TF-IDF limitations. We bypass the deterministic engine.
+        from ai_engine.copilot.copilot_engine import CopilotEngine
+        engine = CopilotEngine()
+        
+        # Process query through the generative engine
+        res = engine.process_query("legacy_chatbot_session", data['question'])
+        
+        # Format the output to match the legacy ChatbotView schema so frontend doesn't break
+        return {
+            "question": data['question'],
+            "answer": res.get("answer", ""),
+            "reasoning": res.get("tools_used", []),
+            "recommended_actions": [],
+            "modules_used": res.get("tools_used", []),
+            "confidence": res.get("confidence", 99.0),
+            "session_id": res.get("session_id", ""),
+            "tools_used": res.get("tools_used", []),
+            "token_usage": res.get("token_usage", 0)
+        }
