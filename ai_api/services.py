@@ -94,6 +94,13 @@ class AIServiceLayer:
         return self.rec_ai.generate_recommendations(data)
 
     def process_chat_query(self, data):
-        from ai_engine.exceptions import AIUnavailableException
-        if not self.chatbot_ai: raise AIUnavailableException("AI model unavailable")
-        return self.chatbot_ai.answer_question(data['question'])
+        # Automatically upgrade the legacy /chatbot/ endpoint to use the new Copilot Engine
+        # This gives legacy API consumers the same semantic power without changing their code.
+        try:
+            from ai_engine.copilot.copilot_engine import CopilotEngine
+            engine = CopilotEngine()
+            return engine.process_query("legacy_chatbot_session", data['question'])
+        except Exception:
+            from ai_engine.exceptions import AIUnavailableException
+            if not self.chatbot_ai: raise AIUnavailableException("AI model unavailable")
+            return self.chatbot_ai.answer_question(data['question'])
