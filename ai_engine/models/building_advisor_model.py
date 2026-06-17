@@ -13,7 +13,7 @@ class BuildingAdvisorEngine:
         if model_path is None:
             import os
             base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            model_path = os.path.join(base_dir, 'saved_models', 'buildings.csv')
+            model_path = os.path.join(base_dir, 'saved_models', 'building_advisor.pkl')
         if os.path.exists(model_path):
             try:
                 self.model_data = joblib.load(model_path)
