@@ -16,7 +16,7 @@ class ToolRouter:
                         "properties": {
                             "ward": {
                                 "type": "string",
-                                "description": "The name of the ward, e.g. 'Diva', 'Kalwa'."
+                                "description": "The exact name of the ward. MUST be one of: 'Diva', 'Kalwa', 'Mumbra', 'Wagle Estate', 'Naupada-Kopri', 'Majiwada-Manpada', 'Vartak Nagar', 'Uthalsar', 'Lokmanya-Savarkar Nagar'."
                             }
                         },
                         "required": ["ward"]
@@ -40,7 +40,7 @@ class ToolRouter:
                         "properties": {
                             "ward": {
                                 "type": "string",
-                                "description": "The name of the ward, e.g. 'Diva'."
+                                "description": "The exact name of the ward. MUST be one of: 'Diva', 'Kalwa', 'Mumbra', 'Wagle Estate', 'Naupada-Kopri', 'Majiwada-Manpada', 'Vartak Nagar', 'Uthalsar', 'Lokmanya-Savarkar Nagar'."
                             }
                         },
                         "required": ["ward"]
@@ -78,7 +78,7 @@ class ToolRouter:
                             },
                             "ward": {
                                 "type": "string",
-                                "description": "The name of the ward to get critical buildings for, e.g. 'Diva'."
+                                "description": "The exact name of the ward. MUST be one of: 'Diva', 'Kalwa', 'Mumbra', 'Wagle Estate', 'Naupada-Kopri', 'Majiwada-Manpada', 'Vartak Nagar', 'Uthalsar', 'Lokmanya-Savarkar Nagar'."
                             }
                         }
                     }

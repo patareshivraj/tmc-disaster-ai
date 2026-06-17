@@ -124,8 +124,8 @@ class IntentEngine:
         best_intent = self.labels[best_idx]
 
         # Out-of-Domain detection: empirically tuned threshold
-        # Legitimate queries score >= 0.50, OOD queries score 0.38-0.47
-        if best_score < 0.50:
+        # Legitimate queries score >= 0.35, OOD queries score 0.20-0.30
+        if best_score < 0.35:
             return {
                 "primary_intent": "Unknown",
                 "all_intents": ["Unknown"],
