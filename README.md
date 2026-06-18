@@ -46,10 +46,10 @@ The core business purpose of this system is to eliminate human bias in disaster 
 The TMC Disaster Management AI Platform is structured as a decoupled microservice architecture running within a Django monolith. Information flows sequentially through six defined layers:
 
 1. **Live Database Layer:** The system reads directly from the operational `tmc2` MySQL tables (`dmd_incident`, `dmd_weather_history`, etc.) via `DataSourceFactory`, eliminating the need for static synthetic datasets. The legacy `generated_data/` CSVs are preserved merely as a fallback mock layer.
-2. **AI Engine Layer:** `ai_engine/` houses six specialized models. The foundation includes predictive models (Flood, Building) and data-derived scoring models (Ward Risk, Resource, Forecast). These feed into an apex Recommendation Engine.
-3. **Generative Copilot Layer:** A fully autonomous Groq LLM (Llama 3) interprets unstructured natural language queries, maps them to intents via strict JSON tool schemas, queries the underlying AI engines, and synthesizes officer-ready responses.
+2. **AI Engine Layer:** `ai_engine/` houses comprehensive specialized models (Universal, Flood, Fire, Building, Ward Risk, Resource, Forecast). These dynamically feed into an apex Recommendation Engine.
+3. **Generative Copilot Layer:** A fully autonomous Google Gemini 2.5 Flash LLM interprets unstructured natural language queries, maps them to intents via strict JSON tool schemas, queries the underlying AI engines, and synthesizes officer-ready responses. The SDK integrates natively via OpenAI API compatibility layer.
 4. **API Layer:** `ai_api/` exposes all intelligence via RESTful endpoints. The `AIServiceLayer` utilizes a Singleton pattern, loading models into memory once at startup to ensure sub-40ms latency. Strict serializers validate all payloads.
-5. **Monitoring Layer:** `ai_monitoring/` acts as an asynchronous sidecar, intercepting every API request via decorators to log payloads, execution times, and UUIDs to the database (`AIPredictionLog` and `ChatbotLog`) without blocking inference.
+5. **Monitoring Layer:** `ai_monitoring/` acts as an asynchronous sidecar, intercepting every API request via decorators to log payloads, execution times, and UUIDs to the database (`AIPredictionLog`, `ChatbotLog`, and `LLMInteractionLog`) without blocking inference.
 6. **Future Dashboard Layer:** The REST API is designed to be consumed by external React/Mobile clients (Not Yet Implemented).
 
 ---
@@ -159,6 +159,7 @@ graph TD
 | Phase 15.1| Remediation | Audit Root Cause Fixes | Audit Findings | Hardened Source Code |
 | Phase 15.2| Production DB Alignment | Repository Layer Adapter | MySQL/CSV | Database DAOs |
 | Phase 15.3| DB Parity Validation | Live Model Parity Test | Real Database Data | `LIVE_DATABASE_VALIDATION_REPORT.md` |
+| Phase 15.4| Multi-Hazard AI Support | Universal 12-Disaster Routing | All DB Disasters | `UniversalPredictionEngine`, `FirePredictionEngine` |
 
 ---
 
@@ -166,13 +167,15 @@ graph TD
 
 | Module | File | Main Method | Model Type | Explainable | Uses ML |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| Universal Threat AI | `universal_model.py` | `predict_all_threats` | Dynamic SQL Heuristics | Yes | No (Heuristic/SQL) |
 | Flood Prediction AI | `flood_model.py` | `predict_flood_risk` | Random Forest (SMOTE) | Yes | **Yes** |
+| Fire Prediction AI | `fire_model.py` | `predict_fire_risk` | Weather + SQL Heuristics | Yes | No (Heuristic/SQL) |
 | Ward Risk AI | `ward_risk_model.py` | `predict_ward_risk` | CV-Derived Hybrid Scoring | Yes | No (Statistical) |
 | Resource Recommendation AI | `resource_recommendation_model.py` | `recommend_resources` | Data-Driven Allocation | Yes | No (Statistical) |
 | Building Advisor AI | `building_advisor_model.py` | `predict_building_risk` | Actuarial Probability Union | Yes | No (Actuarial) |
 | Incident Forecast AI | `incident_forecast_model.py` | `forecast_incidents` | Time-Series Extrapolation | Yes | No (Statistical) |
 | Recommendation Engine | `recommendation_engine.py` | `generate_recommendations` | Data-Driven Matrix | Yes | No (Rules/Matrix) |
-| Chatbot Intelligence Layer | `chatbot_engine.py` | `answer_question` | TF-IDF + Cosine Similarity | Yes | **Yes** (NLP) |
+| Generative Copilot Layer | `copilot_engine.py` | `process_query` | Gemini 2.5 Flash via OpenAI SDK | Yes | **Yes** (LLM) |
 | Monitoring Layer | `audit.py` | `retrieve_audit_trail` | Deterministic Ledger | Yes | No |
 
 ---
@@ -207,8 +210,10 @@ graph TD
 
 | Schema / Contract | File Location | Key Validated Fields |
 | :--- | :--- | :--- |
+| `UniversalPredictionSerializer`| `ai_api/serializers.py` | `ward`, `temperature`, `humidity`, `rainfall`, `water_level`, `is_monsoon` |
 | `FloodPredictionSerializer` | `ai_api/serializers.py` | `ward`, `rainfall`, `water_level`, `temperature`, `humidity` |
-| `ResourceRecommendationSerializer` | `ai_api/serializers.py` | `ward`, `flood_probability`, `risk_score`, `risk_factors` |
+| `FirePredictionSerializer`  | `ai_api/serializers.py` | `ward`, `temperature`, `humidity` |
+| `ResourceRecommendationSerializer` | `ai_api/serializers.py` | `ward`, `flood_probability`, `risk_score`, `risk_factors`, `disaster_type` |
 | `BuildingAdvisorSerializer` | `ai_api/serializers.py` | `building_id` (UUID) |
 | `IncidentForecastSerializer` | `ai_api/serializers.py` | `days` (Integer 1-90) |
 | `RecommendationEngineSerializer` | `ai_api/serializers.py` | `ward`, `flood_probability`, `ward_risk_score`, `forecast_incidents` |
@@ -373,45 +378,39 @@ python tests/audit_stress_test.py
 
 | Method | Endpoint | Purpose |
 | :--- | :--- | :--- |
+| `POST` | `/api/ai/universal-prediction/` | Generates a 360-degree threat matrix for all 12 disasters. |
 | `POST` | `/api/ai/flood-prediction/` | Predicts flood probability based on weather. |
+| `POST` | `/api/ai/fire-prediction/` | Predicts fire/electric hazard probability. |
 | `GET` | `/api/ai/ward-risk/{ward}/` | Calculates hybrid vulnerability score. |
-| `POST` | `/api/ai/resource-recommendation/`| Allocates resources and identifies shortages. |
+| `POST` | `/api/ai/resource-recommendation/`| Allocates resources and identifies shortages dynamically. |
 | `POST` | `/api/ai/building-advisor/` | Returns structural collapse probability. |
 | `POST` | `/api/ai/forecast/` | Forecasts incidents over N days. |
 | `POST` | `/api/ai/recommendations/` | Synthesizes all data into actionable priority. |
-| `POST` | `/api/ai/chatbot/` | Evaluates natural language queries. |
+| `POST` | `/api/ai/copilot/` | Generative Agent interface powered by Gemini 2.5. |
+| `POST` | `/api/ai/chatbot/` | Legacy NLP Interface. |
 
-### Example: Chatbot Endpoint
+### Example: Universal Prediction Endpoint
 **Request:**
 ```json
 {
-  "question": "Which ward requires immediate attention?"
+  "ward": "Mumbra",
+  "temperature": 41.5,
+  "humidity": 12.0,
+  "rainfall": 0.0,
+  "water_level": 0.0,
+  "is_monsoon": 0
 }
 ```
 **Response:**
 ```json
 {
-  "question": "Which ward requires immediate attention?",
-  "answer": "Diva requires immediate attention.",
-  "reasoning": [
-    "Combined Risk Score: 68.32",
-    "Priority Level: Critical",
-    "High Building Risk"
+  "ward": "Mumbra",
+  "active_weather_threats": [
+    {"disaster": "Heat Wave", "probability": 86.64, "severity_level": "Critical"}
   ],
-  "recommended_actions": [
-    "Initiate Control Room Escalation",
-    "Dispatch Emergency Response Teams",
-    "Immediate Structural Audit"
-  ],
-  "modules_used": [
-    "Flood Prediction AI",
-    "Ward Risk AI",
-    "Resource AI",
-    "Forecast AI",
-    "Recommendation AI"
-  ],
-  "confidence": 100.0,
-  "prediction_id": "713df839-a9a3-48b0-8b21-4f18db262df5"
+  "historical_baseline_risks": [
+    {"disaster": "Road Accident", "probability": 14.32, "severity_level": "Low"}
+  ]
 }
 ```
 
