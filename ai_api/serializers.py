@@ -13,6 +13,7 @@ class ResourceRecommendationSerializer(serializers.Serializer):
     ward = serializers.CharField(max_length=100)
     flood_probability = serializers.FloatField(min_value=0.0, max_value=100.0)
     risk_score = serializers.FloatField(min_value=0.0, max_value=100.0)
+    disaster_type = serializers.CharField(max_length=100, required=False, default="Flood")
     risk_factors = serializers.ListField(child=serializers.DictField(), required=False, default=list)
     current_inventory = serializers.DictField(child=serializers.IntegerField(), required=False, default=dict)
 

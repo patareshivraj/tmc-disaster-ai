@@ -57,7 +57,7 @@ class ResourceRecommendationEngine:
                 return rank + 1
         return 1
 
-    def recommend_resources(self, ward, flood_probability, risk_score, risk_factors, current_inventory=None):
+    def recommend_resources(self, ward, flood_probability, risk_score, risk_factors, current_inventory=None, disaster_type="Flood"):
         if not self.model_data:
             raise ValueError("Resource model not built. Run train_resource_model.py first.")
             
@@ -94,13 +94,54 @@ class ResourceRecommendationEngine:
         else:
             required_structural_teams = 0
 
-        target_allocations = {
-            "Water Pumps": required_pumps,
-            "Rescue Boats": required_boats,
-            "Rescue Teams": required_teams,
-            "Emergency Vehicles": required_vehicles,
-            "Structural Response Teams": required_structural_teams
+        # Dynamic Disaster Resource Mapping
+        disaster_allocations = {
+            "Flood": {
+                "Water Pumps": required_pumps,
+                "Rescue Boats": required_boats,
+                "Rescue Teams": required_teams,
+                "Emergency Vehicles": required_vehicles,
+                "Structural Response Teams": required_structural_teams
+            },
+            "Water Logging": {
+                "Water Pumps": required_pumps,
+                "Emergency Vehicles": required_vehicles
+            },
+            "Fire": {
+                "Fire Tender": max(1, math.ceil(severity * 4)),
+                "Ambulance": max(1, math.ceil(severity * 3)),
+                "Rescue Teams": required_teams,
+                "First Aid Kit": max(5, math.ceil(severity * 20))
+            },
+            "Tree Fall": {
+                "Chainsaw": max(1, math.ceil(severity * 6)),
+                "Earth Mover": max(1, math.ceil(severity * 2)),
+                "Emergency Vehicles": required_vehicles
+            },
+            "Building Collapse": {
+                "Earth Mover": max(2, math.ceil(severity * 4)),
+                "Structural Response Teams": required_structural_teams + 2,
+                "Ambulance": max(2, math.ceil(severity * 5)),
+                "Rescue Teams": required_teams + 1
+            },
+            "Gas Leakage": {
+                "Ambulance": max(3, math.ceil(severity * 6)),
+                "Emergency Vehicles": required_vehicles,
+                "First Aid Kit": max(10, math.ceil(severity * 30))
+            },
+            "Heat Wave": {
+                "Ambulance": max(4, math.ceil(severity * 8)),
+                "First Aid Kit": max(20, math.ceil(severity * 40))
+            },
+            "Chemical Leak": {
+                "Fire Tender": max(2, math.ceil(severity * 5)),
+                "Ambulance": max(4, math.ceil(severity * 8)),
+                "Emergency Vehicles": required_vehicles
+            }
         }
+
+        # Default to Flood if exact category isn't mapped
+        target_allocations = disaster_allocations.get(disaster_type, disaster_allocations["Flood"])
 
         # 2. True Gap Analysis
         resources_needed = []
@@ -128,6 +169,12 @@ class ResourceRecommendationEngine:
                     if resource_type == "Rescue Boats": recommendations.append("Request emergency backup Rescue Boats from neighboring wards.")
                     if resource_type == "Emergency Vehicles": recommendations.append("Reroute Emergency Vehicles to this ward to cover the deficit.")
                     if resource_type == "Structural Response Teams": recommendations.append("Mobilize Structural Response Teams to assess building risks.")
+                    if resource_type == "Fire Tender": recommendations.append("Deploy additional Fire Tenders to contain the blaze.")
+                    if resource_type == "Ambulance": recommendations.append("Dispatch Ambulances for immediate medical evacuation.")
+                    if resource_type == "Chainsaw": recommendations.append("Provide Chainsaws to clear road blockages.")
+                    if resource_type == "Earth Mover": recommendations.append("Deploy Earth Movers to clear heavy debris and collapsed structures.")
+                    if resource_type == "First Aid Kit": recommendations.append("Distribute First Aid Kits to on-ground volunteers.")
+                    if resource_type == "Rescue Teams": recommendations.append("Deploy general Rescue Teams for crowd control and evacuation.")
 
         # Deduplicate recommendations
         recommendations = list(set(recommendations))
