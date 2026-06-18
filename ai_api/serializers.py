@@ -14,6 +14,14 @@ class FirePredictionSerializer(serializers.Serializer):
     temperature = serializers.FloatField(min_value=-10.0, max_value=60.0)
     humidity = serializers.FloatField(min_value=0.0, max_value=100.0)
 
+class UniversalPredictionSerializer(serializers.Serializer):
+    ward = serializers.CharField(max_length=100)
+    temperature = serializers.FloatField(min_value=-10.0, max_value=60.0)
+    humidity = serializers.FloatField(min_value=0.0, max_value=100.0)
+    rainfall = serializers.FloatField(min_value=0.0)
+    water_level = serializers.FloatField(min_value=0.0)
+    is_monsoon = serializers.IntegerField(min_value=0, max_value=1)
+
 class ResourceRecommendationSerializer(serializers.Serializer):
     ward = serializers.CharField(max_length=100)
     flood_probability = serializers.FloatField(min_value=0.0, max_value=100.0)

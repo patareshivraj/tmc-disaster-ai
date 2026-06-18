@@ -10,7 +10,8 @@ from .serializers import (
     IncidentForecastSerializer,
     RecommendationEngineSerializer,
     ChatbotSerializer,
-    FirePredictionSerializer
+    FirePredictionSerializer,
+    UniversalPredictionSerializer
 )
 from .services import AIServiceLayer
 from ai_monitoring.services import LoggingService
@@ -88,6 +89,16 @@ class FirePredictionView(APIView):
         serializer = FirePredictionSerializer(data=request.data)
         if serializer.is_valid():
             result = ai_service.get_fire_prediction(serializer.validated_data)
+            return Response(result, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class UniversalPredictionView(APIView):
+    permission_classes = [AllowAny]
+    @monitor_request('Universal Threat Prediction AI')
+    def post(self, request):
+        serializer = UniversalPredictionSerializer(data=request.data)
+        if serializer.is_valid():
+            result = ai_service.get_universal_prediction(serializer.validated_data)
             return Response(result, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

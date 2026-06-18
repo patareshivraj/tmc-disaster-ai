@@ -8,12 +8,14 @@ from .views import (
     RecommendationEngineView,
     ChatbotView,
     CopilotView,
-    FirePredictionView
+    FirePredictionView,
+    UniversalPredictionView
 )
 
 urlpatterns = [
     path('flood-prediction/', FloodPredictionView.as_view(), name='api-flood-prediction'),
     path('fire-prediction/', FirePredictionView.as_view(), name='api-fire-prediction'),
+    path('universal-prediction/', UniversalPredictionView.as_view(), name='api-universal-prediction'),
     path('ward-risk/<str:ward>/', WardRiskView.as_view(), name='api-ward-risk'),
     path('resource-recommendation/', ResourceRecommendationView.as_view(), name='api-resource-recommendation'),
     path('building-advisor/', BuildingAdvisorView.as_view(), name='api-building-advisor'),

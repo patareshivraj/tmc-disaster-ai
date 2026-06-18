@@ -148,6 +148,7 @@ from ai_engine.models.building_advisor_model import BuildingAdvisorEngine
 from ai_engine.models.incident_forecast_model import IncidentForecastEngine
 from ai_engine.models.recommendation_engine import RecommendationEngine
 from ai_engine.models.fire_model import FirePredictionEngine
+from ai_engine.models.universal_model import UniversalPredictionEngine
 from ai_engine.chatbot.chatbot_engine import ChatbotEngine
 
 class AIServiceLayer:
@@ -188,6 +189,11 @@ class AIServiceLayer:
         except Exception:
             self.fire_ai = None
             
+        try:
+            self.universal_ai = UniversalPredictionEngine()
+        except Exception:
+            self.universal_ai = None
+
         try:
             self.chatbot_ai = ChatbotEngine()
         except Exception:
@@ -313,4 +319,17 @@ class AIServiceLayer:
             temperature=data['temperature'],
             humidity=data['humidity'],
             historical_fire_count=historical_fire_count
+        )
+
+    def get_universal_prediction(self, data):
+        from ai_engine.exceptions import AIUnavailableException
+        if not self.universal_ai: raise AIUnavailableException("AI model unavailable")
+        
+        return self.universal_ai.predict_all_threats(
+            ward=data['ward'],
+            temperature=data['temperature'],
+            humidity=data['humidity'],
+            rainfall=data['rainfall'],
+            water_level=data['water_level'],
+            is_monsoon=data['is_monsoon']
         )
