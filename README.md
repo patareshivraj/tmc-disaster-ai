@@ -508,9 +508,9 @@ The `ai_monitoring` app provides absolute observability over the platform, actin
 
 ## 21. Remaining Work & Roadmap
 
-* **Priority 1: Live Database Integration**
-  * *What:* Migrate `generated_data/` reliance to a live PostgreSQL feed.
-  * *Why:* To transition from historical baseline inference to real-time inference.
+* **Priority 1: Live Database Integration [COMPLETED]**
+  * *What:* Migrated `generated_data/` reliance to a live `tmc2` MySQL feed.
+  * *Why:* To transition from historical baseline inference to real-time inference and live inventory checks (`dmd_equipment`, `dmd_vehicle`).
   * *Effort:* Medium.
   * *Business Value:* High. Required for production deployment.
 * **Priority 2: Real-Time Streaming**
@@ -566,6 +566,7 @@ See the detailed breakdown in [`docs/project_timeline.md`](docs/project_timeline
 *   **Phase 15.1:** Independent Audit Remediation & Hardening.
 *   **Phase 15.2:** Production Data Alignment (MySQL Database Repository Layer).
 *   **Phase 15.3:** Live Database Parity Validation.
+*   **Phase 15.4:** Live Dynamic Inventory Integration (Real-time `dmd_equipment` and `dmd_vehicle` lookups).
 
 ---
 
