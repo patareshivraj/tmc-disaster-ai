@@ -14,6 +14,8 @@ This directory serves as the centralized repository for all project documentatio
 * `DATABASE_FEATURE_MAPPING.md` - SQL-to-Pandas feature transformations.
 * `FEATURE_CONTRACTS.md` - Strict typing rules for model inputs.
 * `REPOSITORY_LAYER_DESIGN.md` - Object-Oriented design of the data access layer.
+* `UNIVERSAL_PREDICTION_ARCHITECTURE.md` - Architecture mapping all 12 dynamic disaster models.
+* `GEMINI_COPILOT_INTEGRATION.md` - Generative Agent mapping from Groq to Gemini 2.5 Flash.
 
 ## Audits (`docs/audits/`)
 * `BREAKAGE_RISK_REPORT.md` - Analyzed risks before migrating DB logic.
