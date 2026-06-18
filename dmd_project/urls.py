@@ -24,5 +24,4 @@ urlpatterns = [
     # API Routes
     # path('api/accounts/', include('accounts.urls')),
     # path('api/disaster/', include('disaster.urls')),
-    path('api/ai/', include('ai_engine.api.urls')),
 ]
