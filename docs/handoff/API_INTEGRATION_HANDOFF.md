@@ -43,7 +43,38 @@ If an ID is missing from the live database, the API returns `HTTP 404 Not Found`
 
 ## 3. The Endpoints (API Contracts)
 
-### A. Flood Prediction AI
+### A. Universal Prediction AI
+Predicts 360-degree risk matrix across 12 disaster categories based on weather physics and historical incidents.
+
+* **Method:** `POST`
+* **Endpoint:** `/universal-prediction/`
+* **Request Body:**
+```json
+{
+    "ward": "Diva",
+    "rainfall": 150.0,
+    "humidity": 85.0,
+    "water_level": 2.5,
+    "temperature": 30.0,
+    "is_monsoon": 1
+}
+```
+* **Response Body (200 OK):**
+```json
+{
+    "ward": "Diva",
+    "active_weather_threats": [
+        {"disaster": "Heat Wave", "probability": 86.64, "severity_level": "Critical"}
+    ],
+    "historical_baseline_risks": [
+        {"disaster": "Road Accident", "probability": 14.32, "severity_level": "Low"}
+    ]
+}
+```
+
+---
+
+### B. Flood Prediction AI
 Predicts the exact probability of a flood based on current weather patterns and soil saturation baselines.
 
 * **Method:** `POST`
@@ -72,7 +103,32 @@ Predicts the exact probability of a flood based on current weather patterns and 
 
 ---
 
-### B. Ward Risk AI
+### C. Fire Prediction AI
+Predicts fire and electrical hazard probability based on temperature and humidity constraints.
+
+* **Method:** `POST`
+* **Endpoint:** `/fire-prediction/`
+* **Request Body:**
+```json
+{
+    "ward": "Diva",
+    "temperature": 41.5,
+    "humidity": 12.0
+}
+```
+* **Response Body (200 OK):**
+```json
+{
+    "ward": "Diva",
+    "fire_probability": 85.5,
+    "risk_level": "Critical",
+    "confidence": 95.0
+}
+```
+
+---
+
+### D. Ward Risk AI
 Calculates the overarching geographical and statistical vulnerability of a specific ward.
 
 * **Method:** `GET`
@@ -98,7 +154,7 @@ Calculates the overarching geographical and statistical vulnerability of a speci
 
 ---
 
-### C. Resource Recommendation AI
+### E. Resource Recommendation AI
 Determines exactly how much physical equipment is missing for an ongoing incident.
 
 * **Method:** `POST`
@@ -135,7 +191,7 @@ Determines exactly how much physical equipment is missing for an ongoing inciden
 
 ---
 
-### D. Building Advisor AI
+### F. Building Advisor AI
 Calculates the actuarial probability of building collapse based on age, condition, and delays in structural auditing.
 
 * **Method:** `POST`
@@ -172,7 +228,7 @@ Calculates the actuarial probability of building collapse based on age, conditio
 
 ---
 
-### E. Incident Forecast AI
+### G. Incident Forecast AI
 Projects short-term incident volumes based on historical seasonal velocity. Highly recommended for Dashboard "Home Pages".
 
 * **Method:** `POST`
@@ -205,7 +261,7 @@ Projects short-term incident volumes based on historical seasonal velocity. High
 
 ---
 
-### F. Apex Recommendation Engine
+### H. Apex Recommendation Engine
 Fuses all distinct AI components into a final, executive-level decision. 
 
 * **Method:** `POST`
@@ -238,11 +294,11 @@ Fuses all distinct AI components into a final, executive-level decision.
 
 ---
 
-### G. Natural Language Chatbot
-A single endpoint capable of parsing typed questions and invoking the other APIs automatically. Best used for Search Bars and Assistant UIs.
+### I. Generative Copilot API
+A single endpoint capable of parsing typed questions and invoking the other APIs automatically via Google Gemini 2.5 Flash. Best used for Search Bars and Assistant UIs.
 
 * **Method:** `POST`
-* **Endpoint:** `/chatbot/`
+* **Endpoint:** `/copilot/`
 * **Request Body:**
 ```json
 {
