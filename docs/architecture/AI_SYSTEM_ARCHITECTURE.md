@@ -35,7 +35,36 @@ The AI Layer acts as a decoupled intelligence hub. It consumes raw data from the
 
 ---
 
-## 2. Flood Prediction Architecture
+## 2. Universal Threat Prediction Architecture
+
+**Goal:** Predict imminent risks across ALL 12 disaster categories based on live weather constraints and database incident histories.
+
+*   **Input Datasets:** Live MySQL Database (`dmd_disaster_category`, `dmd_incident`), Weather Payload.
+*   **API:** `POST /api/ai/universal-prediction/`
+
+**Architecture Diagram:**
+```text
+Environmental Data Payload (Temp, Rainfall, Humidity)
+       ↓
+Dynamic SQL Category Discovery
+       ↓
+Historical Incident Baseline Engine (Counts ward-specific frequencies)
+       ↓
+Active Weather Heuristic Engine (Overlays physics constraints)
+       ↓
+Universal Threat Matrix
+       ↓
+API Response (Separated into Active Threats vs Baseline Risks)
+```
+
+**Definitions:**
+*   **Inputs:** `rainfall`, `water_level`, `temperature`, `humidity`, `is_monsoon`, `ward`
+*   **Processing Flow:** Parse inputs -> Query DB for categories -> Calculate historical baselines -> Apply weather heuristics (e.g., if temp > 40C, Heat Wave risk spikes) -> Sort by severity.
+*   **Outputs:** 360-degree risk array for 12+ disasters.
+
+---
+
+## 3. Flood Prediction Architecture
 
 **Goal:** Predict imminent flood risks based on weather conditions and geographical vulnerability.
 
@@ -195,39 +224,38 @@ API Response
 
 ---
 
-## 7. Chatbot Architecture
+## 8. Generative Copilot Architecture
 
-**Goal:** Enable conversational access to TMC disaster data and AI predictions.
+**Goal:** Provide an autonomous agentic interface to interact with all underlying AI models via natural language.
 
-*   **Components:** User Query, Intent Detection, Data Retrieval, AI Module Invocation, Response Generator.
-*   **Future API:** `POST /api/ai/chat/`
+*   **Components:** Google Gemini 2.5 Flash, OpenAI Compatibility Layer, Tool Router.
+*   **API:** `POST /api/ai/copilot/`
 
 **Architecture Diagram:**
 ```text
 User Natural Language Query
        ↓
-NLP Intent Detection & Entity Extraction (Identify Ward, Disaster Type)
+Gemini 2.5 Flash LLM (Reasoning Engine)
        ↓
-RAG (Retrieval-Augmented Generation) & Database Queries
+Tool Calling Logic (JSON Schemas)
+       ↓
+Tool Router Executes Deterministic Model (e.g. Universal Prediction)
        ↓
 Context Builder (Merges DB results + AI predictions)
        ↓
-LLM Response Generator
+LLM Synthesizes Officer-Ready Response
        ↓
-API Response (Text + Structured Data)
+API Response
 ```
 
 **Definitions:**
-*   **Query Flow:** Receive query -> Clean text -> Extract intents -> Fetch relevant context.
-*   **Response Flow:** Provide context to LLM -> Generate human-readable answer -> Return to user.
-*   **Data Sources Used:** All TMC datasets, live AI module endpoints.
-*   **Future LLM Integration:** OpenAI GPT-4o, Claude 3, or open-source LLaMA 3.
-*   **Future RAG Architecture:** Vector Database (e.g., Pinecone/Chroma) for querying SOPs and unstructured manuals.
-*   **Prompt Management Strategy:** Centralized prompt templates in `ai_engine/prompts/` with strict system instructions to prevent hallucination.
+*   **LLM Provider:** Google Gemini via `generativelanguage.googleapis.com` (Groq is deprecated).
+*   **Tool Router:** Connects the LLM directly to `AIServiceLayer` methods without manual intervention.
+*   **Prompt Management:** Strict system instructions enforce municipal guidelines and prevent hallucination.
 
 ---
 
-## 8. AI Service Layer Structure
+## 9. AI Service Layer Structure
 
 The business logic of the AI Layer is isolated in the `services/` directory. 
 

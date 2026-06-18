@@ -13,11 +13,23 @@ The AI API Layer acts as the bridge between the internal AI Python engines and e
 
 ## Endpoints
 
-### 1. Flood Prediction API
+### 1. Universal Prediction API
+*   **Method:** POST
+*   **Endpoint:** `/api/ai/universal-prediction/`
+*   **Input:** Ward context, weather variables.
+*   **Output:** 360-degree threat matrix split into active weather threats and historical baseline risks.
+
+### 2. Flood Prediction API
 *   **Method:** POST
 *   **Endpoint:** `/api/ai/flood-prediction/`
 *   **Input:** Ward context, weather variables (rainfall, water level, etc.)
 *   **Output:** Flood probability, risk level, confidence.
+
+### 3. Fire Prediction API
+*   **Method:** POST
+*   **Endpoint:** `/api/ai/fire-prediction/`
+*   **Input:** Ward context, temperature, humidity.
+*   **Output:** Fire probability, severity, based on DB incident frequencies.
 
 ### 2. Ward Risk API
 *   **Method:** GET
@@ -48,11 +60,17 @@ The AI API Layer acts as the bridge between the internal AI Python engines and e
 *   **Input:** Payload aggregating Flood, Ward Risk, Shortages, and Forecasts.
 *   **Output:** The apex priority score, escalation requirement, and generated operational actions.
 
-### 7. Chatbot Intelligence API
+### 8. Generative Copilot API
+*   **Method:** POST
+*   **Endpoint:** `/api/ai/copilot/`
+*   **Input:** Natural language user query.
+*   **Output:** Generative multi-agent reasoning utilizing Google Gemini 2.5 Flash.
+
+### 9. Chatbot Intelligence API
 *   **Method:** POST
 *   **Endpoint:** `/api/ai/chatbot/`
 *   **Input:** Natural language user query.
-*   **Output:** Extracted intents, multi-agent AI synthesized answer, and trace references for `modules_used`.
+*   **Output:** Extracted intents via Legacy NLP.
 
 ## Error Handling Standards
 *   `400 Bad Request`: Payload validation failures (e.g., missing fields).
