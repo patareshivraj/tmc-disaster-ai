@@ -71,12 +71,41 @@ class AIServiceLayer:
     def get_resource_recommendation(self, data):
         from ai_engine.exceptions import AIUnavailableException
         if not self.resource_ai: raise AIUnavailableException("AI model unavailable")
+        
+        # Pull live inventory from the MySQL Database if the caller didn't provide one
+        current_inventory = data.get('current_inventory', {})
+        if not current_inventory:
+            from django.db import connection
+            try:
+                with connection.cursor() as cursor:
+                    # Get real global equipment counts
+                    cursor.execute("SELECT name, available_quantity FROM dmd_equipment")
+                    for row in cursor.fetchall():
+                        name, qty = row[0], row[1]
+                        if name == 'Water Pump':
+                            current_inventory['Water Pumps'] = qty
+                        elif name == 'Rescue Boat':
+                            current_inventory['Rescue Boats'] = qty
+                        else:
+                            current_inventory[name] = qty
+                            
+                    # Get real vehicles assigned to this specific ward
+                    cursor.execute('''
+                        SELECT COUNT(*) FROM dmd_vehicle v 
+                        JOIN dmd_ward w ON v.ward_id = w.id 
+                        WHERE w.name = %s
+                    ''', [data['ward']])
+                    vehicles_in_ward = cursor.fetchone()[0]
+                    current_inventory['Emergency Vehicles'] = vehicles_in_ward
+            except Exception as e:
+                print(f"Error fetching live inventory: {e}")
+
         return self.resource_ai.recommend_resources(
             data['ward'], 
             data['flood_probability'], 
             data['risk_score'], 
             data['risk_factors'],
-            data.get('current_inventory', {})
+            current_inventory
         )
 
     def get_building_risk(self, data):
