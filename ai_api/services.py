@@ -75,7 +75,8 @@ class AIServiceLayer:
             data['ward'], 
             data['flood_probability'], 
             data['risk_score'], 
-            data['risk_factors']
+            data['risk_factors'],
+            data.get('current_inventory', {})
         )
 
     def get_building_risk(self, data):

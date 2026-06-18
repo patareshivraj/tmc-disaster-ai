@@ -14,6 +14,7 @@ class ResourceRecommendationSerializer(serializers.Serializer):
     flood_probability = serializers.FloatField(min_value=0.0, max_value=100.0)
     risk_score = serializers.FloatField(min_value=0.0, max_value=100.0)
     risk_factors = serializers.ListField(child=serializers.DictField(), required=False, default=list)
+    current_inventory = serializers.DictField(child=serializers.IntegerField(), required=False, default=dict)
 
 class BuildingAdvisorSerializer(serializers.Serializer):
     building_id = serializers.CharField(max_length=100)
