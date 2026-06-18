@@ -9,7 +9,8 @@ from .serializers import (
     BuildingAdvisorSerializer,
     IncidentForecastSerializer,
     RecommendationEngineSerializer,
-    ChatbotSerializer
+    ChatbotSerializer,
+    FirePredictionSerializer
 )
 from .services import AIServiceLayer
 from ai_monitoring.services import LoggingService
@@ -77,6 +78,16 @@ class FloodPredictionView(APIView):
         serializer = FloodPredictionSerializer(data=request.data)
         if serializer.is_valid():
             result = ai_service.get_flood_prediction(serializer.validated_data)
+            return Response(result, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class FirePredictionView(APIView):
+    permission_classes = [AllowAny]
+    @monitor_request('Fire Prediction AI')
+    def post(self, request):
+        serializer = FirePredictionSerializer(data=request.data)
+        if serializer.is_valid():
+            result = ai_service.get_fire_prediction(serializer.validated_data)
             return Response(result, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
