@@ -67,12 +67,27 @@ class ResourceRecommendationEngine:
         if current_inventory is None:
             current_inventory = {}
 
-        # 1. Data-Driven Allocation Logic
-        # Mathematically calculate required quantities based on learned coefficients and severity multipliers.
-        required_pumps = math.ceil((flood_probability / 100.0) * self.usage_coefficients['pump_coefficient'] * (risk_score / 20.0))
-        required_boats = math.ceil((flood_probability / 100.0) * self.usage_coefficients['boat_coefficient'] * (risk_score / 30.0))
+        # 0. Ward-Specific Historical Baselines
+        # Each ward has its own learned historical resource usage profile from the live DB.
+        # We compute a per-ward scaling factor relative to the global average.
+        ward_baseline = self.baselines[ward]
+        all_avg_pumps = sum(b['avg_pumps_used'] for b in self.baselines.values()) / len(self.baselines)
+        all_avg_boats = sum(b['avg_boats_used'] for b in self.baselines.values()) / len(self.baselines)
+        all_avg_vehicles = sum(b['avg_vehicles_used'] for b in self.baselines.values()) / len(self.baselines)
+        
+        # Ward-specific multipliers: if a ward historically uses more resources, it scales up
+        pump_scale = ward_baseline['avg_pumps_used'] / all_avg_pumps if all_avg_pumps > 0 else 1.0
+        boat_scale = ward_baseline['avg_boats_used'] / all_avg_boats if all_avg_boats > 0 else 1.0
+        vehicle_scale = ward_baseline['avg_vehicles_used'] / all_avg_vehicles if all_avg_vehicles > 0 else 1.0
+
+        # 1. Data-Driven Allocation Logic (Ward-Aware)
+        # Combines severity inputs with ward-specific historical scaling factors.
+        severity = (flood_probability / 100.0) * (risk_score / 50.0)  # Normalized severity [0..2]
+        
+        required_pumps = max(1, math.ceil(ward_baseline['avg_pumps_used'] * severity * pump_scale))
+        required_boats = max(0, math.ceil(ward_baseline['avg_boats_used'] * severity * boat_scale))
         required_teams = math.ceil((risk_score / 100.0) * self.usage_coefficients['team_coefficient'] * 3.0)
-        required_vehicles = math.ceil((risk_score / 100.0) * self.usage_coefficients['vehicle_coefficient'] * 2.0)
+        required_vehicles = max(0, math.ceil(ward_baseline['avg_vehicles_used'] * severity * vehicle_scale))
         
         if "High Building Risk" in risk_factors:
             required_structural_teams = math.ceil(self.usage_coefficients['structural_coefficient'] * 2.0)
