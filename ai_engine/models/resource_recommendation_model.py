@@ -48,7 +48,7 @@ class ResourceRecommendationEngine:
                 scores.append((w, target_demand_score))
             else:
                 risk = self.ward_risk_engine.predict_ward_risk(w)['risk_score']
-                demand = (0.0 * self.weights['flood_prob_weight']) + (risk * self.weights['risk_score_weight'])
+                demand = risk # Scale competing ward's score dynamically based on pure risk to ensure fair ranking
                 scores.append((w, demand))
                 
         scores.sort(key=lambda x: x[1], reverse=True)
