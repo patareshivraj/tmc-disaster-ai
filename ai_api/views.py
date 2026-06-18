@@ -109,7 +109,7 @@ class BuildingAdvisorView(APIView):
             try:
                 result = ai_service.get_building_risk(serializer.validated_data)
                 return Response(result, status=status.HTTP_200_OK)
-            except IndexError:
+            except ValueError:
                 return Response({"error": "Building ID not found in survey dataset."}, status=status.HTTP_404_NOT_FOUND)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
