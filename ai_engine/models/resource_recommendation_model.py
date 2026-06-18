@@ -122,17 +122,17 @@ class ResourceRecommendationEngine:
                         "required": required_qty,
                         "available": available_qty,
                         "shortage": shortage,
-                        "reason": f"Data-driven requirement ({required_qty}) exceeds current inventory ({available_qty})."
+                        "reason": f"Urgent: We only have {available_qty} ready, but the AI forecasts a need for {required_qty}. Short by {shortage} units."
                     })
-                    if resource_type == "Water Pumps": recommendations.append("Deploy Additional Pumps")
-                    if resource_type == "Rescue Boats": recommendations.append("Reallocate Boats")
-                    if resource_type == "Emergency Vehicles": recommendations.append("Increase Vehicle Coverage")
-                    if resource_type == "Structural Response Teams": recommendations.append("Deploy Structural Teams")
+                    if resource_type == "Water Pumps": recommendations.append("Dispatch additional Water Pumps to the affected areas immediately.")
+                    if resource_type == "Rescue Boats": recommendations.append("Request emergency backup Rescue Boats from neighboring wards.")
+                    if resource_type == "Emergency Vehicles": recommendations.append("Reroute Emergency Vehicles to this ward to cover the deficit.")
+                    if resource_type == "Structural Response Teams": recommendations.append("Mobilize Structural Response Teams to assess building risks.")
 
         # Deduplicate recommendations
         recommendations = list(set(recommendations))
         if not recommendations:
-            recommendations.append("Maintain Standard Vigilance")
+            recommendations.append("Current inventory is sufficient. Continue standard monitoring.")
 
         # 3. Shortage & Gap Scoring
         if total_required_units > 0:
