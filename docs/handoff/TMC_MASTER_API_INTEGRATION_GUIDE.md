@@ -9,7 +9,56 @@ This document contains **everything** required to fully integrate the TMC Disast
 
 ---
 
-## 1. FLOOD PREDICTION API
+## 1. UNIVERSAL PREDICTION API
+**Purpose:** Predict 360-degree risk matrix across 12 disaster categories.
+*   **Method:** `POST`
+*   **Endpoint:** `/api/ai/universal-prediction/`
+
+### Input Payload (Frontend Sends)
+```json
+{
+  "ward": "Mumbra",
+  "temperature": 41.5,
+  "humidity": 12.0,
+  "rainfall": 0.0,
+  "water_level": 0.0,
+  "is_monsoon": 0
+}
+```
+*   `ward` (String): Ward name.
+*   `temperature` (Float): Current temp in Celsius.
+*   `humidity` (Float): Humidity percentage (0-100).
+*   `rainfall` (Float): Rainfall in mm.
+*   `water_level` (Float): River/lake water level in meters.
+*   `is_monsoon` (Integer): 1 if monsoon season, 0 if not.
+
+### Output Payload (Backend/AI Returns)
+```json
+{
+  "ward": "Mumbra",
+  "timestamp": "2026-06-18T13:56:37",
+  "active_weather_threats": [
+    {
+      "disaster": "Heat Wave",
+      "probability": 86.64,
+      "severity_level": "Critical",
+      "historical_count_in_ward": 83
+    }
+  ],
+  "historical_baseline_risks": [
+    {
+      "disaster": "Road Accident",
+      "probability": 14.32,
+      "severity_level": "Low",
+      "historical_count_in_ward": 179
+    }
+  ]
+}
+```
+
+---
+
+## 2. FLOOD PREDICTION API
 **Purpose:** Predict localized flood probability.
 *   **Method:** `POST`
 *   **Endpoint:** `/api/ai/flood-prediction/`
@@ -46,7 +95,38 @@ This document contains **everything** required to fully integrate the TMC Disast
 
 ---
 
-## 2. WARD RISK API
+---
+
+## 3. FIRE PREDICTION API
+**Purpose:** Predict fire and electrical hazard probability.
+*   **Method:** `POST`
+*   **Endpoint:** `/api/ai/fire-prediction/`
+
+### Input Payload (Frontend Sends)
+```json
+{
+  "ward": "Mumbra",
+  "temperature": 41.5,
+  "humidity": 12.0
+}
+```
+*   `ward` (String): Ward name.
+*   `temperature` (Float): Current temp in Celsius.
+*   `humidity` (Float): Humidity percentage (0-100).
+
+### Output Payload (Backend/AI Returns)
+```json
+{
+  "ward": "Mumbra",
+  "fire_probability": 85.5,
+  "risk_level": "Critical",
+  "confidence": 95.0
+}
+```
+
+---
+
+## 4. WARD RISK API
 **Purpose:** Fetch total aggregated disaster risk for a single ward.
 *   **Method:** `GET`
 *   **Endpoint:** `/api/ai/ward-risk/<str:ward>/`
@@ -222,10 +302,10 @@ This document contains **everything** required to fully integrate the TMC Disast
 
 ---
 
-## 7. CHATBOT API
-**Purpose:** Provide conversational NLP access to all AI intelligence.
+## 9. GENERATIVE COPILOT API
+**Purpose:** Provide conversational Agent access to all AI intelligence via Google Gemini.
 *   **Method:** `POST`
-*   **Endpoint:** `/api/ai/chatbot/`
+*   **Endpoint:** `/api/ai/copilot/`
 
 ### Input Payload (Frontend Sends)
 ```json
